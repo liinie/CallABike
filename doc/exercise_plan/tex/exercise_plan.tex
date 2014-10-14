@@ -2,11 +2,10 @@
 
 \usepackage{fullpage}
 \usepackage{url}
+\usepackage{acronym}
 
-\author{Daniel Bischoff, Steffen Herrdum, Lin Xu 
-}
-\title{Research Proposal 
-}
+\author{Daniel Bischoff, Steffen Herrdum, Lin Xu}
+\title{Exercise Plan}
 \date{\today}
 
 \begin{document}
@@ -15,30 +14,38 @@
 \begin{table}[!th]
 \begin{tabular}{l p{0.8\textwidth}}
 
-Project Title &  \\
+Project Title: & Platform for Visualizing Life Cycle Assessment and Tracking of Consumer Products \\
 
 \end{tabular}
 \end{table}
 
 \section{Introduction}
 
-\section{platform, libraries, framworks}
-\subsection{platform}
-	javascript, html, google chrome. 
-\subsection{librearies}
-	d3.js; polymer; 
-\subsection{framworks}
-	
-\section{goals and limitations}
-
-goals  product tracking. Producer to retailer to comsumer. 
-limitations  fake daten, limited spectrum, time, resource, 
-
 \section{brief use case description}
 Life Cycle Assessment\\
-user would like to track the origin of the production, which he bought and scanned in the shop on his mobile phone\\
+% DNL: Let's make this our main concern: (it is way easier to design a desktop app than to efficiently design a mobile layout)
 The user could also analyse the daten from the desktop at home to see the details of the products\\
 producer would like to know the destination of the production\\
+% DNL: this should be secondary since it is way harder to create a good visual representation on a mobile phone. Tablets could be easier than this. We should not set the goals too high. Better to overachieve than to get lost trying.
+user would like to track the origin of the production, which he bought and scanned in the shop on his mobile phone\\
+
+\section{Platform, Libraries, and Framworks}
+The target development platform for our \ac{LCA} and tracking application is required to be Google Chrome. 
+We aim at using the newest standardized contents of HTML5, CSS3, and JavaScript.
+
+Since our application requires visual representations of geographical maps we will use DataMaps\footnote{http://datamaps.github.io/} which is built on D3js\footnote{http://d3js.org/}.
+Futhermore, we will directly use funtcionality provided by D3js to create visualizations of the product and component tracking data.
+
+For user interface and layout we will use the Polymer\footnote{https://www.polymer-project.org/} framework. 
+It provides easy ways of creating user interfaces based on principles of material design\footnote{https://www.google.com/design/spec/material-design/introduction.html} which we consider to be very appealing and simple.
+We aim for simplicity in user interface design since we will make our application available on mobile browsers so that users can look up the \ac{LCA} and component tracking info while still at the store trying to decide which product to buy.
+
+\section{Goals and Limitations}
+The main goal of our application is to provide a fast and efficient way to look up \ac{LCA} data of products and their components.
+Users should be able to search a certain product and get information on where the product and its components were assembled and which resources were used in what way. 
+
+We limit the scope of our application to use only constructed data sets that we will try to make as general as possible.
+However, we will still limit the amount of products supported.
 
 \section{Main Task}
  analyse Data structure\\
@@ -50,7 +57,10 @@ prestudie\\
 User Interface Design\\
 Date structure\\
 
-
+\newpage
+\begin{acronym}
+\acro{LCA}{Life Cycle Assessment}
+\end{acronym}
 
 \bibliographystyle{plain}
 \bibliography{../reading/kernels,../reading/commute_time,diffusion,../reading/maths}
