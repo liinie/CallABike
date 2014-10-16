@@ -1,0 +1,24 @@
+* {
+    font-family: "RobotoDraft";
+}
+#toolbar {
+    background-color:          #3e50b4;
+}
+#search-icon {
+    color:          #ddd;
+}
+#search-field {
+    width:          30%;
+    min-width:      200px;
+    border:         solid;
+    border-width:   1px;
+    border-color:   #999;
+    padding:        5px;
+    font-weight:    100;
+    font-size:      90%;
+}
+#search-field:hover {
+    color:              #ddd;
+    background-color:   #4456b9;
+    border-color:       #ddd;
+}

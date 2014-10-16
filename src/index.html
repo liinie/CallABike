@@ -3,6 +3,8 @@
     <head>
         <title>Testing</title>
         <script src="polymer-paper/platform/platform.js"></script>
+        <link href='//fonts.googleapis.com/css?family=RobotoDraft:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en' rel='stylesheet' type='text/css'>
+
         
         <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
         <script src="http://d3js.org/topojson.v1.min.js"></script>
@@ -16,17 +18,18 @@
         
         <link rel="import" href="polymer-paper/core-toolbar/core-toolbar.html">
         <link rel="import" href="polymer-paper/core-icons/core-icons.html">
-        <link rel="import" href="polymer-paper/core-field/core-field.html">
+        <link rel="import" href="polymer-paper/core-input/core-input.html">
+        <link rel="import" href="polymer-paper/paper-shadow/paper-shadow.html">
         
         <link rel="stylesheet" type="text/css" href="css/reset-stylesheet.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
     </head>
 
-    <body>
-        <core-toolbar>
-            <core-icon icon="search"></core-icon>
-            <core-field>
-                <input placeholder="Search for product ID" flex>
-            </core-field>
+    <body onload="onloadFun()">
+        <core-toolbar id="toolbar">
+            <paper-shadow z="1"></paper-shadow>
+            <core-icon id="search-icon" icon="search"></core-icon>
+            <core-input id="search-field" placeholder="Search for product ID"></core-input>
         </core-toolbar>
         <div id="map-container" style="position:relative; margin:auto; width:80%; height: 600px;"></div>
         
@@ -36,6 +39,13 @@
                 fills: {
                     defaultFill: 'rgb(171, 221, 164)',
                     bubbles: 'rgb(0, 0, 180)'
+                },
+                geographyConfig: {
+                    hideAntarctica: false
+                },
+                projection: 'mercator',
+                arcConfig: {
+                    animationSpeed:     200
                 }
             });
             
@@ -53,7 +63,7 @@
                     strokeColor: 'rgb(0, 0, 130)'
                 }
             }];
-            map.arc(testArcs);
+            //map.arc(testArcs);
             
             testBubbles = [{
                 name:       "Mapple Computers",
@@ -68,9 +78,12 @@
                 latitude:   manufacturers({name: "Badgerconn Electronics"}).first().location.latitude,
                 longitude:  manufacturers({name: "Badgerconn Electronics"}).first().location.longitude
             }];
-            map.bubbles(testBubbles);
+            //map.bubbles(testBubbles);
             
-            
+            onloadFun = function () {
+                map.bubbles(testBubbles);
+                map.arc(testArcs);
+            }
         </script>
     </body>
 </html>
