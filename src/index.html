@@ -15,6 +15,7 @@
         
         <script src="js/core-classes.js" type="text/javascript"></script>
         <script src="js/instance-creation.js" type="application/javascript"></script>
+        <script src="js/MapViewController.js" type="application/javascript"></script>
         
         <link rel="import" href="polymer-paper/core-toolbar/core-toolbar.html">
         <link rel="import" href="polymer-paper/core-icons/core-icons.html">
@@ -41,51 +42,34 @@
                 element: document.getElementById("map-container"),
                 fills: {
                     defaultFill: 'rgb(171, 221, 164)',
-                    bubbles: 'rgb(0, 0, 180)'
+                    bubbles: 'rgb(0, 0, 180)',
+                    highlightedBubble: 'rgb(171,0,0)'
                 },
                 geographyConfig: {
                     hideAntarctica: false
                 },
                 projection: 'mercator',
                 arcConfig: {
-                    animationSpeed:     200
+                    strokeColor: '#DD1C77',
+                    strokeWidth: 1,
+                    arcSharpness: 3,
+                    animationSpeed: 600
                 }
             });
             
-            testArcs = [{
-                origin: {
-                    latitude:  manufacturers({name: "Badgerconn Electronics"}).first().location.latitude,
-                    longitude: manufacturers({name: "Badgerconn Electronics"}).first().location.longitude
-                },
-                destination: {
-                    latitude:  manufacturers({name: "Mapple Computers"}).first().location.latitude,
-                    longitude: manufacturers({name: "Mapple Computers"}).first().location.longitude
-                },
-                options: {
-                    strokeWidth: 2,
-                    strokeColor: 'rgb(0, 0, 130)'
-                }
-            }];
-            //map.arc(testArcs);
-            
-            testBubbles = [{
-                name:       "Mapple Computers",
-                radius:     8,
-                fillKey:    'bubbles',
-                latitude:   manufacturers({name: "Mapple Computers"}).first().location.latitude,
-                longitude:  manufacturers({name: "Mapple Computers"}).first().location.longitude
-            }, {
-                name:       "Badgerconn Electronics",
-                radius:     8,
-                fillKey:    'bubbles',
-                latitude:   manufacturers({name: "Badgerconn Electronics"}).first().location.latitude,
-                longitude:  manufacturers({name: "Badgerconn Electronics"}).first().location.longitude
-            }];
-            //map.bubbles(testBubbles);
-            
             onloadFun = function () {
-                map.bubbles(testBubbles);
-                map.arc(testArcs);
+            //    map.bubbles(testBubbles);
+            //    map.arc(testArcs);        
+                var mvc = new MapViewController();
+                var prod = products({name:"MapBook 13\""}).first();
+                var arcsnbubbles = mvc.renderProduct(prod);
+                map.arc(arcsnbubbles.arcs);
+                map.bubbles(arcsnbubbles.bubbles,
+                {
+                    popupTemplate:
+                    function(geo, data) {
+                        return '<div class="hoverinfo"><body><table><tr><td><strong>Manufacturer:</strong></td><td>'+ data.name + '</td></tr><tr><td><strong>Product:</strong></td><td>' + data.productName + '</td></tr> </table></div>'}
+                });
             }
         </script>
     </body>
