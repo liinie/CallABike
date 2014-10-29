@@ -22,3 +22,13 @@
     background-color:   #4456b9;
     border-color:       #ddd;
 }
+#map-container {
+    float:left;
+    width: 75%;
+}
+#info-sidebar {
+    display: block;
+    float:right;
+    min-width: 25%;
+    height: 600px;
+}
