@@ -51,10 +51,13 @@ MapViewController = function () {
                 layer:          currentLayer
             });
         }
+        // go through all our components again (this is maybe wasteful in terms of performance)
         for ( idx = 0; idx < product.components.length; idx++ ) {
+            // if the component has more than zero subcomponents
             if ( product.components[idx].components.length > 0 ) {
-                console.log(product.components[idx].name);
+                // call recursion of this function
                 var subLayerRenderData = renderComponentsManufacturers(product.components[idx], currentLayer+1);
+                // append the results to our current renderData
                 renderData.arcs = renderData.arcs.concat(subLayerRenderData.arcs);
                 renderData.bubbles = renderData.bubbles.concat(subLayerRenderData.bubbles);
             }
