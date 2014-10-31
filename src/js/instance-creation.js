@@ -34,12 +34,12 @@ manufacturers.insert(man);
 
 man = new Manufacturer();
 man.name = "Orangutan Display Glasses";
-man.location = {latitude: 2*(Math.random()-0.5)*180, longitude: 2*(Math.random()-0.5)*90};
+man.location = {latitude: 55.747570, longitude: 37.640134};
 manufacturers.insert(man);
 
 man = new Manufacturer();
 man.name = "NextGen LED Display Technologies";
-man.location = {latitude: 2*(Math.random()-0.5)*180, longitude: 2*(Math.random()-0.5)*90};
+man.location = {latitude: 47.909718, longitude: 106.920067};
 manufacturers.insert(man);
 
 var prod = new Product();
@@ -53,14 +53,14 @@ prod = new Product();
 prod.name = "13\" Display Glass";
 prod.type = "";
 prod.id = "";
-prod.manufacturer = manufacturers({name: "Orangutan Display Glasses"});
+prod.manufacturer = manufacturers({name: "Orangutan Display Glasses"}).first();
 products.insert(prod);
 
 prod = new Product();
 prod.name = "13\" LED Display Module";
 prod.id = "";
 prod.type = "";
-prod.manufacturer = manufacturers({name: "NextGen LED Display Technologies"});
+prod.manufacturer = manufacturers({name: "NextGen LED Display Technologies"}).first();
 products.insert(prod);
 
 prod = new Product();
