@@ -39,6 +39,7 @@
         <div id="info-sidebar" style="background-color:#bbb;"></div>
         
         <script>
+            var mvc;
             var map = new Datamaps({
                 element: document.getElementById("map-container"),
                 fills: {
@@ -58,10 +59,23 @@
                 }
             });
             
+            var zoom = d3.behavior.zoom()
+                .translate([0,0])
+                .scale(1)
+                .scaleExtent([1,8])
+                .on("zoom",zoomed);
+            map.svg.call(zoom);
+            function zoomed () {
+                map.svg.select('[class=datamaps-subunits]').attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
+                map.svg.select('[class=bubbles]').attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
+                map.svg.select('[class=arc]').attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
+                console.log(d3.event.translate);
+            }
+            
             onloadFun = function () {
             //    map.bubbles(testBubbles);
             //    map.arc(testArcs);        
-                var mvc = new MapViewController();
+                mvc = new MapViewController();
                 var prod = products({name:"MapBook 13\""}).first();
                 var arcsnbubbles = mvc.renderProduct(prod);
                 map.arc(arcsnbubbles.arcs);
