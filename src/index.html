@@ -34,9 +34,10 @@
             <core-input id="search-field" placeholder="Search for product ID" onkeypress="runScript(event)"></core-input>
             <script>
                 function runScript(e) {
-                    
+                    // if enter key is pressed
                     if (e.keyCode == 13) {
-                       console.log("hahahahahah");
+                        var search = document.getElementById('search-field').inputValue;
+                        searchProduct(search);
                     }
                 }
             </script>
@@ -114,6 +115,19 @@
                 map.svg.select('[class=bubbles]').attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
                 map.svg.select('[class=arc]').attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
                 console.log(d3.event.translate);
+            }
+            
+            searchProduct = function (searchstring) {
+                console.log(searchstring);
+                var prod = products({name:searchstring}).first();
+                var arcsnbubbles = mvc.renderProduct(prod);
+                map.arc(arcsnbubbles.arcs);
+                map.bubbles(arcsnbubbles.bubbles,
+                {
+                    popupTemplate:
+                    function(geo, data) {
+                        return '<div class="hoverinfo"><body><table><tr><td><strong>Manufacturer:</strong></td><td>'+ data.name + '</td></tr><tr><td><strong>Product:</strong></td><td>' + data.productName + '</td></tr> </table></div>'}
+                });
             }
             
             onloadFun = function () {
