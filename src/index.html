@@ -53,8 +53,8 @@
                     <img class="sidebar-icon" src="images/factory.png">
                 </div>
                 <div class="sidebar-title">
-                    <h1>Manufacturer Name</h1>
-                    <p>Location Adress,<br/>Country</p>
+                    <h1 id="sidebar-manufacturer-name">Manufacturer Name</h1>
+                    <p id="sidebar-manufacturer-address">Location Adress,<br/>Country</p>
                 </div>
             </div>
             <div class="sidebar-banner">
@@ -63,7 +63,7 @@
                     <img class="sidebar-icon" src="images/laptop.jpg">
                 </div>
                 <div class="sidebar-title">
-                    <h1 style="display:inline-block;width:150px">Product Name (maybe it is too long for one line)</h1>
+                    <h1 style="display:inline-block;width:150px" id="sidebar-product-name">Product Name (maybe it is too long for one line)</h1>
                 </div>
             </div>
             
@@ -118,16 +118,21 @@
             }
             
             searchProduct = function (searchstring) {
-                console.log(searchstring);
+                console.log(searchstring + " " + products({name:searchstring}).first());
                 var prod = products({name:searchstring}).first();
-                var arcsnbubbles = mvc.renderProduct(prod);
-                map.arc(arcsnbubbles.arcs);
-                map.bubbles(arcsnbubbles.bubbles,
-                {
-                    popupTemplate:
-                    function(geo, data) {
-                        return '<div class="hoverinfo"><body><table><tr><td><strong>Manufacturer:</strong></td><td>'+ data.name + '</td></tr><tr><td><strong>Product:</strong></td><td>' + data.productName + '</td></tr> </table></div>'}
-                });
+                if(prod != false) {
+
+                    document.getElementById('sidebar-product-name').innerHTML = searchstring;
+                     var arcsnbubbles = mvc.renderProduct(prod);
+                    map.arc(arcsnbubbles.arcs);
+                    map.bubbles(arcsnbubbles.bubbles,
+                    {
+                        popupTemplate:
+                        function(geo, data) {
+                            return '<div class="hoverinfo"><body><table><tr><td><strong>Manufacturer:</strong></td><td>'+ data.name + '</td></tr><tr>                               <td><strong>Product:</strong></td><td>' + data.productName + '</td></tr> </table></div>'}
+                    });
+                }
+               
             }
             
             onloadFun = function () {
