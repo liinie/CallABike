@@ -44,18 +44,43 @@
         
         <div id="map-container" style="position:relative; height: 600px;"></div>
         
-        <div id="info-sidebar" style="background-color:#ffffff;">
-            <img src="image/laptop13.jpg"  style="width:304px;height:228px">
-            <core-selector>
-                <div class="item">Productname</div>
-                <div class="item">ID</div>
-                <div class="item">Retailer</div>
-            </core-selector>
-            <style>
-                .item.core-selected {
-                    background: #0094ff;
-                }
-            </style>
+        <div id="sidebar">
+            <paper-shadow z="1"></paper-shadow>
+            <div class="sidebar-banner">
+                <div class="sidebar-icon">
+                    <paper-shadow z="1"></paper-shadow>
+                    <img class="sidebar-icon" src="images/factory.png">
+                </div>
+                <div class="sidebar-title">
+                    <h1>Manufacturer Name</h1>
+                    <p>Location Adress,<br/>Country</p>
+                </div>
+            </div>
+            <div class="sidebar-banner">
+                <div class="sidebar-icon">
+                    <paper-shadow z="1"></paper-shadow>
+                    <img class="sidebar-icon" src="images/laptop.jpg">
+                </div>
+                <div class="sidebar-title">
+                    <h1 style="display:inline-block;width:150px">Product Name (maybe it is too long for one line)</h1>
+                </div>
+            </div>
+            
+            <div id="sidebar-stats">
+                <h1>Statistics</h1>
+                <table>
+                    <tr>
+                        <th>Travelled Distance</th>
+                        <td class="data">12000</td>
+                        <td> km</td>
+                    </tr>
+                    <tr>
+                        <th>Carbon Footprint</th>
+                        <td class="data">3.56</td>
+                        <td> kg</td>
+                    </tr>
+                </table>
+            </div>
         </div>
         <script>
             var mvc;

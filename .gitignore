@@ -1,4 +1,4 @@
 # ignore latex auto generated files:
 *.aux
 *.log
-*.synctex
+*.synctex*
