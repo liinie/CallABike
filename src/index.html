@@ -21,6 +21,7 @@
         <link rel="import" href="polymer-paper/core-icons/core-icons.html">
         <link rel="import" href="polymer-paper/core-input/core-input.html">
         <link rel="import" href="polymer-paper/paper-shadow/paper-shadow.html">
+        <link rel="import" href="polymer-paper/core-selector/core-selector.html">
         
         <link rel="stylesheet" type="text/css" href="css/reset-stylesheet.css">
         <link rel="stylesheet" type="text/css" href="css/main.css">
@@ -29,15 +30,33 @@
     <body onload="onloadFun()">
         <core-toolbar id="toolbar">
             <paper-shadow z="1"></paper-shadow>
-            <a href="product.html"><core-icon id="search-icon" icon="search"></core-icon> </a>
-                <core-input id="search-field" placeholder="Search for product ID"></core-input>
-           
+            <a href="product.html"><core-icon id="search-icon" icon="search" ></core-icon> </a>
+            <core-input id="search-field" placeholder="Search for product ID" onkeypress="runScript(event)"></core-input>
+            <script>
+                function runScript(e) {
+                    
+                    if (e.keyCode == 13) {
+                       console.log("hahahahahah");
+                    }
+                }
+            </script>
         </core-toolbar>
         
         <div id="map-container" style="position:relative; height: 600px;"></div>
         
-        <div id="info-sidebar" style="background-color:#bbb;"></div>
-        
+        <div id="info-sidebar" style="background-color:#ffffff;">
+            <img src="image/laptop13.jpg"  style="width:304px;height:228px">
+            <core-selector>
+                <div class="item">Productname</div>
+                <div class="item">ID</div>
+                <div class="item">Retailer</div>
+            </core-selector>
+            <style>
+                .item.core-selected {
+                    background: #0094ff;
+                }
+            </style>
+        </div>
         <script>
             var mvc;
             var map = new Datamaps({
