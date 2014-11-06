@@ -1,4 +1,13 @@
 MapViewController = function () {
+    var currentTransform = {
+        translate: [0,0],
+        scale: 1
+    };
+    var currentZoom = {
+        translate: [0,0],
+        scale: 1
+    }
+    
     var renderComponentsManufacturers = function (product, currentLayer) {
         // Initialze render data: we will create bubbles and arcs data
         var renderData = {arcs: [], bubbles: []};
@@ -83,5 +92,57 @@ MapViewController = function () {
         renderData.bubbles.unshift(firstBubble);
 
         return renderData;
+    }
+    // setTransform
+    // sets the transform of the svg object
+    this.setTransform = function ( translate, scale ) {
+        currentTransform = { translate: translate, scale: scale}; // cahe current transform for later use
+        // apply this transform to the svg
+        map.svg.selectAll('g').attr(
+            "transform", "translate("+ 
+            currentTransform.translate + 
+            ")scale(" + 
+            currentTransform.scale + 
+            ")");
+    };
+    // updateSize
+    // is called when the window has been resized and to ensure that the map is as long as the sidebar
+    this.updateSize = function () {
+        var prevW = map.svg.attr("width");      // previous width
+        var prevH = map.svg.attr("height");     // previous height
+        
+        mapParent = document.getElementById("map-container"); // get the div containing the map
+        var newW = mapParent.offsetWidth; // get its width
+        var newH = mapParent.offsetHeight; // get its height
+        // IMPORTANT: set the height as the height of the sidebar
+        // otherwise the map will be longer than the page
+        // we still have a scrollbar like this but only like one px too much (idk why)
+        newH = document.getElementById("sidebar").offsetHeight;
+        
+        var newScale = newH/prevH * currentTransform.scale; // calculate new scale
+        var newTranslate = [];
+        // calculate new x and y translation
+        newTranslate[0] = newH/prevH * (currentTransform.translate[0] - prevW/2) + newW/2;
+        newTranslate[1] = newH/prevH * (currentTransform.translate[1] - prevH/2) + newH/2;
+        
+        map.svg.attr("width", newW).attr("height", newH); // resize the svg container to fit the page
+        this.setTransform(newTranslate, newScale); // apply new transform
+    }
+    // zoomEvent
+    // handles the zoom event
+    this.zoomEvent = function (event) {
+        // create new transform
+        var newTransform = {
+            translate:  
+                [currentTransform.translate[0] + event.translate[0] - currentZoom.translate[0],
+                 currentTransform.translate[1] + event.translate[1] - currentZoom.translate[1]],
+            scale:      currentTransform.scale      + (event.scale      - currentZoom.scale)
+        };
+        // cache current zoom
+        currentZoom = {
+            translate:  event.translate,
+            scale:      event.scale
+        };
+        this.setTransform(newTransform.translate, newTransform.scale); // apply new transform
     }
 }

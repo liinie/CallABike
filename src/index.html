@@ -16,6 +16,7 @@
         <script src="js/core-classes.js" type="text/javascript"></script>
         <script src="js/instance-creation.js" type="application/javascript"></script>
         <script src="js/MapViewController.js" type="application/javascript"></script>
+        <script src="js/window-resize.js" type="application/javascript"></script>
         
         <link rel="import" href="polymer-paper/core-toolbar/core-toolbar.html">
         <link rel="import" href="polymer-paper/core-icons/core-icons.html">
@@ -85,7 +86,7 @@
         </div>
         
         <script>
-            var mvc;
+            var mvc = new MapViewController();
             var map = new Datamaps({
                 element: document.getElementById("map-container"),
                 fills: {
@@ -109,10 +110,10 @@
                 .translate([0,0])
                 .scale(1)
                 .scaleExtent([1,8])
-                .on("zoom",zoomed);
+                .on("zoom", zoomed);
             map.svg.call(zoom);
             function zoomed () {
-                map.svg.selectAll('g').attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
+                mvc.zoomEvent(d3.event, d3.event);
             }
             
             searchProduct = function (searchstring) {
@@ -121,7 +122,7 @@
                 if(prod != false) {
 
                     document.getElementById('sidebar-product-name').innerHTML = searchstring;
-                     var arcsnbubbles = mvc.renderProduct(prod);
+                    var arcsnbubbles = mvc.renderProduct(prod);
                     map.arc(arcsnbubbles.arcs);
                     map.bubbles(arcsnbubbles.bubbles,
                     {
@@ -136,7 +137,7 @@
             onloadFun = function () {
             //    map.bubbles(testBubbles);
             //    map.arc(testArcs);        
-                mvc = new MapViewController();
+                mvc.updateSize();
                 var prod = products({name:"MapBook 13\""}).first();
                 var arcsnbubbles = mvc.renderProduct(prod);
                 map.arc(arcsnbubbles.arcs);
