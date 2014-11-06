@@ -6,7 +6,6 @@
 }
 #toolbar {
     background-color:          #3e50b4;
-    height: 10vh;
 }
 #search-icon {
     color:          #ddd;
@@ -27,16 +26,12 @@
     border-color:       #ddd;
 }
 #map-container {
-    float:left;
-    width:75%;
-    height: 90vh;
 }
 #sidebar {
     background-color: #eee;
     display: block;
     float:right;
     min-width: 25%;
-    height: 90vh;
 }
 .sidebar-banner {
     display: block;

@@ -27,7 +27,7 @@
         <link rel="stylesheet" type="text/css" href="css/main.css">
     </head>
 
-    <body onload="onloadFun()">
+    <body onload="onloadFun()" fullbleed vertical layout>
         <core-toolbar id="toolbar">
             <paper-shadow z="1"></paper-shadow>
             <a href="product.html"><core-icon id="search-icon" icon="search" ></core-icon> </a>
@@ -42,47 +42,48 @@
                 }
             </script>
         </core-toolbar>
-        
-        <div id="map-container" style="position:relative; height: 600px;"></div>
-        
-        <div id="sidebar">
-            <paper-shadow z="1"></paper-shadow>
-            <div class="sidebar-banner">
-                <div class="sidebar-icon">
-                    <paper-shadow z="1"></paper-shadow>
-                    <img class="sidebar-icon" src="images/factory.png">
+        <div flex horizontal layout>
+            <div id="map-container" flex></div>
+            <div id="sidebar">
+                <paper-shadow z="1"></paper-shadow>
+                <div class="sidebar-banner">
+                    <div class="sidebar-icon">
+                        <paper-shadow z="1"></paper-shadow>
+                        <img class="sidebar-icon" src="images/factory.png">
+                    </div>
+                    <div class="sidebar-title">
+                        <h1 id="sidebar-manufacturer-name">Manufacturer Name</h1>
+                        <p id="sidebar-manufacturer-address">Location Adress,<br/>Country</p>
+                    </div>
                 </div>
-                <div class="sidebar-title">
-                    <h1 id="sidebar-manufacturer-name">Manufacturer Name</h1>
-                    <p id="sidebar-manufacturer-address">Location Adress,<br/>Country</p>
+                <div class="sidebar-banner">
+                    <div class="sidebar-icon">
+                        <paper-shadow z="1"></paper-shadow>
+                        <img class="sidebar-icon" src="images/laptop.jpg">
+                    </div>
+                    <div class="sidebar-title">
+                        <h1 style="display:inline-block;width:150px" id="sidebar-product-name">Product Name (maybe it is too long for one line)</h1>
+                    </div>
                 </div>
-            </div>
-            <div class="sidebar-banner">
-                <div class="sidebar-icon">
-                    <paper-shadow z="1"></paper-shadow>
-                    <img class="sidebar-icon" src="images/laptop.jpg">
+
+                <div id="sidebar-stats">
+                    <h1>Statistics</h1>
+                    <table>
+                        <tr>
+                            <th>Travelled Distance</th>
+                            <td class="data">12000</td>
+                            <td> km</td>
+                        </tr>
+                        <tr>
+                            <th>Carbon Footprint</th>
+                            <td class="data">3.56</td>
+                            <td> kg</td>
+                        </tr>
+                    </table>
                 </div>
-                <div class="sidebar-title">
-                    <h1 style="display:inline-block;width:150px" id="sidebar-product-name">Product Name (maybe it is too long for one line)</h1>
-                </div>
-            </div>
-            
-            <div id="sidebar-stats">
-                <h1>Statistics</h1>
-                <table>
-                    <tr>
-                        <th>Travelled Distance</th>
-                        <td class="data">12000</td>
-                        <td> km</td>
-                    </tr>
-                    <tr>
-                        <th>Carbon Footprint</th>
-                        <td class="data">3.56</td>
-                        <td> kg</td>
-                    </tr>
-                </table>
             </div>
         </div>
+        
         <script>
             var mvc;
             var map = new Datamaps({
