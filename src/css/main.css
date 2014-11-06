@@ -26,6 +26,7 @@
     border-color:       #ddd;
 }
 #map-container {
+    overflow: hidden;
 }
 #sidebar {
     background-color: #eee;

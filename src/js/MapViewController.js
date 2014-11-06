@@ -7,6 +7,7 @@ MapViewController = function () {
         translate: [0,0],
         scale: 1
     }
+    var innerMapHeigth = map.svg.attr("height");
     
     var renderComponentsManufacturers = function (product, currentLayer) {
         // Initialze render data: we will create bubbles and arcs data
@@ -96,7 +97,22 @@ MapViewController = function () {
     // setTransform
     // sets the transform of the svg object
     this.setTransform = function ( translate, scale ) {
-        currentTransform = { translate: translate, scale: scale}; // cahe current transform for later use
+        var width = map.svg.attr("width");
+        var height = map.svg.attr("height");
+        if ( translate[0] < (1-scale)*width ) {
+            translate[0] = (1-scale)*width;
+        }
+        if ( translate[0] > 0 ) {
+            translate[0] = 0;
+        }
+        
+        if ( translate[1] > 0 ) {
+            translate[1] = 0;
+        }
+        else if ( translate[1] < (1-scale)*height + (height-innerMapHeigth) ) {
+            translate[1] = (1-scale)*height + (height-innerMapHeigth);
+        }
+        currentTransform = { translate: translate, scale: scale}; // cache current transform for later use
         // apply this transform to the svg
         map.svg.selectAll('g').attr(
             "transform", "translate("+ 

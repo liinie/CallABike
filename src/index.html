@@ -86,7 +86,6 @@
         </div>
         
         <script>
-            var mvc = new MapViewController();
             var map = new Datamaps({
                 element: document.getElementById("map-container"),
                 fills: {
@@ -105,6 +104,7 @@
                     animationSpeed: 600
                 }
             });
+            var mvc = new MapViewController();
             
             var zoom = d3.behavior.zoom()
                 .translate([0,0])
@@ -146,7 +146,9 @@
                     function(geo, data) {
                         return '<div class="hoverinfo"><body><table><tr><td><strong>Manufacturer:</strong></td><td>'+ data.name + '</td></tr><tr><td><strong>Product:</strong></td><td>' + data.productName + '</td></tr> </table></div>'}
                 });
-                mvc.updateSize();
+                map.svg
+                .attr("width", document.getElementById("map-container").offsetWidth)
+                .attr("height",document.getElementById("map-container").offsetHeight);
             }
         </script>
     </body>
