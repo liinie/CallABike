@@ -95,7 +95,7 @@
                     highlightedBubble: 'rgb(171,0,0)'
                 },
                 geographyConfig: {
-                    hideAntarctica: false
+                    hideAntarctica: true
                 },
                 projection: 'mercator',
                 arcConfig: {
@@ -137,7 +137,6 @@
             onloadFun = function () {
             //    map.bubbles(testBubbles);
             //    map.arc(testArcs);        
-                mvc.updateSize();
                 var prod = products({name:"MapBook 13\""}).first();
                 var arcsnbubbles = mvc.renderProduct(prod);
                 map.arc(arcsnbubbles.arcs);
@@ -147,6 +146,7 @@
                     function(geo, data) {
                         return '<div class="hoverinfo"><body><table><tr><td><strong>Manufacturer:</strong></td><td>'+ data.name + '</td></tr><tr><td><strong>Product:</strong></td><td>' + data.productName + '</td></tr> </table></div>'}
                 });
+                mvc.updateSize();
             }
         </script>
     </body>
