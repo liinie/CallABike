@@ -33,7 +33,7 @@ MapController = function (mapContainerDiv) {
     var innerMapHeigth = this.map.svg.attr("height");
     
     this.renderProduct = function ( product ) {
-        var arcsnbubbles = this.dataPreparator.renderProduct(prod);
+        var arcsnbubbles = dataPreparator.getRenderDataFromProduct(prod);
         this.map.arc(arcsnbubbles.arcs);
         this.map.bubbles(arcsnbubbles.bubbles,
         {
