@@ -28,6 +28,7 @@
 }
 #map-container {
     overflow: hidden;
+    background-color: #a8afff;
 }
 #sidebar {
     background-color: #eee;

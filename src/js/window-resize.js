@@ -1,3 +1,3 @@
-window.onresize = function () {
-    mvc.updateSize();
-}
+//window.onresize = function () {
+//    mapController.updateSize();
+//}
