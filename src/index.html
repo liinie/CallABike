@@ -13,10 +13,14 @@
         
         <script src="js/taffydb/taffy.js"></script>
         
-        <script src="js/core-classes.js" type="text/javascript"></script>
-        <script src="js/instance-creation.js" type="application/javascript"></script>
-        <script src="js/MapViewController.js" type="application/javascript"></script>
-        <script src="js/window-resize.js" type="application/javascript"></script>
+        <script src="js/core-classes.js"        type="text/javascript"></script>
+        <script src="js/instance-creation.js"   type="application/javascript"></script>
+        <script src="js/MapController.js"       type="application/javascript"></script>
+        <script src="js/window-resize.js"       type="application/javascript"></script>
+        <script src="js/DataPreparator.js"      type="application/javascript"></script>
+        <script src="js/SearchProcessor.js"     type="application/javascript"></script>
+        <!--<script src="js/web-animations.js"      type="application/javascript"></script>-->
+        <!--<script src="js/AnimationController.js" type="application/javascript"></script>-->
         
         <link rel="import" href="polymer-paper/core-toolbar/core-toolbar.html">
         <link rel="import" href="polymer-paper/core-icons/core-icons.html">
@@ -32,22 +36,13 @@
         <core-toolbar id="toolbar">
             <paper-shadow z="1"></paper-shadow>
             <a href="product.html"><core-icon id="search-icon" icon="search" ></core-icon> </a>
-            <core-input id="search-field" placeholder="Search for product ID" onkeypress="runScript(event)"></core-input>
-            <script>
-                function runScript(e) {
-                    // if enter key is pressed
-                    if (e.keyCode == 13) {
-                        var search = document.getElementById('search-field').inputValue;
-                        searchProduct(search);
-                    }
-                }
-            </script>
+            <core-input id="search-field" placeholder="Search for product ID" onkeypress="var searchProc = new SearchProcessor(); searchProc.keyPressEvent(event);"></core-input>
         </core-toolbar>
         <div flex horizontal layout>
             <div id="map-container" flex></div>
             <div id="sidebar">
                 <paper-shadow z="1"></paper-shadow>
-                <div class="sidebar-banner">
+                <div id="manufacturer-banner" class="sidebar-banner">
                     <div class="sidebar-icon">
                         <paper-shadow z="1"></paper-shadow>
                         <img class="sidebar-icon" src="images/factory.png">
@@ -86,69 +81,30 @@
         </div>
         
         <script>
-            var map = new Datamaps({
-                element: document.getElementById("map-container"),
-                fills: {
-                    defaultFill: 'rgb(171, 221, 164)',
-                    bubbles: 'rgb(0, 0, 180)',
-                    highlightedBubble: 'rgb(171,0,0)'
-                },
-                geographyConfig: {
-                    hideAntarctica: true
-                },
-                projection: 'mercator',
-                arcConfig: {
-                    strokeColor: '#DD1C77',
-                    strokeWidth: 1,
-                    arcSharpness: 3,
-                    animationSpeed: 600
-                }
-            });
-            var mvc = new MapViewController();
             
-            var zoom = d3.behavior.zoom()
-                .translate([0,0])
-                .scale(1)
-                .scaleExtent([1,8])
-                .on("zoom", zoomed);
-            map.svg.call(zoom);
-            function zoomed () {
-                mvc.zoomEvent(d3.event, d3.event);
-            }
+            var mapController = new MapController(document.getElementById("map-container"));
             
-            searchProduct = function (searchstring) {
-                console.log(searchstring + " " + products({name:searchstring}).first());
-                var prod = products({name:searchstring}).first();
-                if(prod != false) {
-
-                    document.getElementById('sidebar-product-name').innerHTML = searchstring;
-                    var arcsnbubbles = mvc.renderProduct(prod);
-                    map.arc(arcsnbubbles.arcs);
-                    map.bubbles(arcsnbubbles.bubbles,
-                    {
-                        popupTemplate:
-                        function(geo, data) {
-                            return '<div class="hoverinfo"><body><table><tr><td><strong>Manufacturer:</strong></td><td>'+ data.name + '</td></tr><tr>                               <td><strong>Product:</strong></td><td>' + data.productName + '</td></tr> </table></div>'}
-                    });
-                }
-               
-            }
+            
+            
+            
             
             onloadFun = function () {
             //    map.bubbles(testBubbles);
             //    map.arc(testArcs);        
-                var prod = products({name:"MapBook 13\""}).first();
-                var arcsnbubbles = mvc.renderProduct(prod);
-                map.arc(arcsnbubbles.arcs);
-                map.bubbles(arcsnbubbles.bubbles,
-                {
-                    popupTemplate:
-                    function(geo, data) {
-                        return '<div class="hoverinfo"><body><table><tr><td><strong>Manufacturer:</strong></td><td>'+ data.name + '</td></tr><tr><td><strong>Product:</strong></td><td>' + data.productName + '</td></tr> </table></div>'}
-                });
-                map.svg
+                //var prod = products({name:"MapBook 13\""}).first();
+                //mapController.renderProduct(prod);
+                mapController.map.svg
                 .attr("width", document.getElementById("map-container").offsetWidth)
                 .attr("height",document.getElementById("map-container").offsetHeight);
+                
+                /*
+                var animator = new AnimationController();
+                var newTransform = {translate: [-110,-60], scale:3};
+                var startTransform = {translate: [0,0], scale:1};
+                var transformSetFun = function (stateObj) {
+                    mapController.setTransform(stateObj.translate, stateObj.scale);
+                }
+                animator.addAnimation(startTransform, newTransform, 10000, transformSetFun);*/
             }
         </script>
     </body>
