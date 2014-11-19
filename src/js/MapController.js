@@ -1,12 +1,12 @@
 MapController = function (mapContainerDiv) {
-    var currentTransform = {
+    /*var currentTransform = {
         translate: [0,0],
         scale: 1
     };
     var currentZoom = {
         translate: [0,0],
         scale: 1
-    }
+    }*/
     
     
     var dataPreparator = new DataPreparator();
@@ -25,48 +25,91 @@ MapController = function (mapContainerDiv) {
         arcConfig: {
             strokeColor: '#DD1C77',
             strokeWidth: 1,
-            arcSharpness: 3,
+            arcSharpness: 0,
             animationSpeed: 600
         }
     });
+    firstBubble = {
+        radius: 6,
+        fillKey: 'bubbles',
+        longitude: -180,
+        latitude: -90,
+        // our own layer reference again
+    };
+    this.map.bubbles([]);
+    this.map.arc([]);
     
     var innerMapHeigth = this.map.svg.attr("height");
     
     this.renderProduct = function ( product ) {
         var arcsnbubbles = dataPreparator.getRenderDataFromProduct(product);
-        this.map.arc(arcsnbubbles.arcs);
+        this.map.arc(arcsnbubbles.arcs,
+                {
+                    strokeWidth: 2,
+                    strokeColor: 'rgb(0,0,130)',
+                    arcSharpness: 0.3
+                });
         this.map.bubbles(arcsnbubbles.bubbles,
         {
             popupTemplate:
             function(geo, data) {
-                return '<div class="hoverinfo"><body><table><tr><td><strong>Manufacturer:</strong></td><td>'+ data.name + '</td></tr><tr><td><strong>Product:</strong></td><td>' + data.productName + '</td></tr> </table></div>'}
+                return '<div class="hoverinfo"><body><table><tr><td><strong>Manufacturer:</strong></td><td>'+ data.name + '</td></tr><tr><td><strong>Product:</strong></td><td>' + data.productName + '</td></tr><tr><td>Location:</td><td>' + data.longitude + ', ' + data.latitude + '</tr> </table></div>'}
         });
+        
+        var t = [0,0];
+        var s = 1;
+        bordersLatLng_min = arcsnbubbles.borders_min;
+        bordersLatLng_max = arcsnbubbles.borders_max;
+        
+        bordersXY_min = this.map.latLngToXY(bordersLatLng_min.latitude, bordersLatLng_min.longitude);
+        bordersXY_max = this.map.latLngToXY(bordersLatLng_max.latitude, bordersLatLng_max.longitude);
+        console.log(bordersXY_min);
+        console.log(bordersXY_max);
+        
+        w = document.getElementById("map-container").offsetWidth;
+        h = document.getElementById("map-container").offsetHeight;
+        s_x = w/(bordersXY_max[0] - bordersXY_min[0]+200);
+        s_y = h/(bordersXY_max[1] - bordersXY_min[1]+200);
+        s = Math.min(s_x, s_y);
+        
+        t[0] = -(s*(bordersXY_min[0] + (bordersXY_max[0] - bordersXY_min[0])/2) - w/2);
+        t[1] = -(s*(bordersXY_min[1] + (bordersXY_max[1] - bordersXY_min[1])/2) - h/2);
+        
+        
+        //t[0] = bordersXY_min[0] - (bordersXY_max[0] - bordersXY_min[0])/4;
+        //t[1] = (bordersXY_max[1] - bordersXY_min[1])/2;
+        
+        mapController.map.svg.selectAll('g').transition().duration(2000).attr("transform", "translate(" + t + ")scale(" + s + ")").style("stroke-width", 1 / s);
     }
 
-    // updateSize
-    // is called when the window has been resized and to ensure that the map is as long as the sidebar
-    this.updateSize = function () {
-        var prevW = this.map.svg.attr("width");      // previous width
-        var prevH = this.map.svg.attr("height");     // previous height
-        
-        mapParent = document.getElementById("map-container"); // get the div containing the map
-        var newW = mapParent.offsetWidth; // get its width
-        var newH = mapParent.offsetHeight; // get its height
-        // IMPORTANT: set the height as the height of the sidebar
-        // otherwise the map will be longer than the page
-        // we still have a scrollbar like this but only like one px too much (idk why)
-        newH = document.getElementById("sidebar").offsetHeight;
-        
-        var newScale = newH/prevH * currentTransform.scale; // calculate new scale
-        var newTranslate = [];
-        // calculate new x and y translation
-        newTranslate[0] = newH/prevH * (currentTransform.translate[0] - prevW/2) + newW/2;
-        newTranslate[1] = newH/prevH * (currentTransform.translate[1] - prevH/2) + newH/2;
-        
-        this.map.svg.attr("width", newW).attr("height", newH); // resize the svg container to fit the page
-        this.setTransform(newTranslate, newScale); // apply new transform
-    }
-    
+    // setTransform
+    // sets the transform of the svg object
+    /*this.setTransform = function ( translate, scale ) {
+        var width = this.map.svg.attr("width");
+        var height = this.map.svg.attr("height");
+        // WARNING: translation limits do not work if we zoom in...
+//        if ( translate[0] < (1-scale)*width ) {
+//            translate[0] = (1-scale)*width;
+//        }
+//        if ( translate[0] > 0 ) {
+//            translate[0] = 0;
+//        }
+//        
+//        if ( translate[1] > 0 ) {
+//            translate[1] = 0;
+//        }
+//        else if ( translate[1] < (1-scale)*height + (height-innerMapHeigth) ) {
+//            translate[1] = (1-scale)*height + (height-innerMapHeigth);
+//        }
+        currentTransform = { translate: translate, scale: scale}; // cache current transform for later use
+        // apply this transform to the svg
+        this.map.svg.selectAll('g').attr(
+            "transform", "translate("+ 
+            currentTransform.translate + 
+            ")scale(" + 
+            currentTransform.scale + 
+            ")");
+    };*/
     
     // zoomEvent
     // handles the zoom event
@@ -82,6 +125,7 @@ MapController = function (mapContainerDiv) {
 
         mapController.zoom.translate(t);
         mapController.map.svg.selectAll('g').attr("transform", "translate(" + t + ")scale(" + s + ")").style("stroke-width", 1 / s);
+        
         //mapController.setTransform(event.translate, event.scale); // apply new transform
     }
     this.zoom = d3.behavior.zoom()
