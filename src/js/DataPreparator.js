@@ -92,9 +92,6 @@ DataPreparator = function () {
         renderData.borders_min = borders_min;
         renderData.borders_max = borders_max;
         
-        console.log(borders_min.longitude, borders_min.latitude);
-        console.log(borders_max.longitude, borders_max.latitude);
-        
         return renderData;
     };
 };

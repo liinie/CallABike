@@ -66,8 +66,6 @@ MapController = function (mapContainerDiv) {
         
         var bordersXY_min = this.map.latLngToXY(bordersLatLng_min.latitude, bordersLatLng_min.longitude);
         var bordersXY_max = this.map.latLngToXY(bordersLatLng_max.latitude, bordersLatLng_max.longitude);
-        console.log(bordersXY_min);
-        console.log(bordersXY_max);
         
         var w = document.getElementById("map-container").offsetWidth;
         var h = document.getElementById("map-container").offsetHeight;

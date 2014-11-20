@@ -16,7 +16,6 @@ SearchProcessor= function (productsDb_, manufacturersDb_) {
         
         if(prod !== false) {
             mapController.renderProduct(prod);
-            console.log(searchString);
         }
     };
 };
