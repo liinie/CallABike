@@ -2,3 +2,5 @@
 *.aux
 *.log
 *.synctex*
+*exercise_plan.pdf
+*.vsdx

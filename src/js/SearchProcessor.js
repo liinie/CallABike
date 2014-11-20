@@ -8,15 +8,15 @@ SearchProcessor= function (productsDb_, manufacturersDb_) {
             var searchString = document.getElementById('search-field').inputValue;
             this.processSearchEntry(searchString);
         }
-    }
+    };
     this.processSearchEntry = function (searchString) {
         
         // WARNING: this cannot cope with names occurring more than once in the database
-        var prod = products({name:searchString}).first();
+        var prod = productsDb({name:searchString}).first();
         
         if(prod != false) {
             mapController.renderProduct(prod);
             console.log(searchString);
         }
-    }
-}
+    };
+};

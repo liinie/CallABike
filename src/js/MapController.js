@@ -29,17 +29,8 @@ MapController = function (mapContainerDiv) {
             animationSpeed: 600
         }
     });
-    firstBubble = {
-        radius: 6,
-        fillKey: 'bubbles',
-        longitude: -180,
-        latitude: -90,
-        // our own layer reference again
-    };
     this.map.bubbles([]);
     this.map.arc([]);
-    
-    var innerMapHeigth = this.map.svg.attr("height");
     
     var checkTransform = function (translate, scale) {
         var t = translate;
@@ -51,7 +42,7 @@ MapController = function (mapContainerDiv) {
         t[0] = Math.min(0, Math.max(width  * (1 - s), t[0]));
         t[1] = Math.min(height/2 * (s - 1) + h * s, Math.max(height * (1 - s) - h * s, t[1]));
         return {translate: t, scale: s};
-    }
+    };
     
     this.renderProduct = function ( product ) {
         var arcsnbubbles = dataPreparator.getRenderDataFromProduct(product);
@@ -70,18 +61,18 @@ MapController = function (mapContainerDiv) {
         
         var t = [0,0];
         var s = 1;
-        bordersLatLng_min = arcsnbubbles.borders_min;
-        bordersLatLng_max = arcsnbubbles.borders_max;
+        var bordersLatLng_min = arcsnbubbles.borders_min;
+        var bordersLatLng_max = arcsnbubbles.borders_max;
         
-        bordersXY_min = this.map.latLngToXY(bordersLatLng_min.latitude, bordersLatLng_min.longitude);
-        bordersXY_max = this.map.latLngToXY(bordersLatLng_max.latitude, bordersLatLng_max.longitude);
+        var bordersXY_min = this.map.latLngToXY(bordersLatLng_min.latitude, bordersLatLng_min.longitude);
+        var bordersXY_max = this.map.latLngToXY(bordersLatLng_max.latitude, bordersLatLng_max.longitude);
         console.log(bordersXY_min);
         console.log(bordersXY_max);
         
-        w = document.getElementById("map-container").offsetWidth;
-        h = document.getElementById("map-container").offsetHeight;
-        s_x = w/(bordersXY_max[0] - bordersXY_min[0]+200);
-        s_y = h/(bordersXY_max[1] - bordersXY_min[1]+200);
+        var w = document.getElementById("map-container").offsetWidth;
+        var h = document.getElementById("map-container").offsetHeight;
+        var s_x = w/(bordersXY_max[0] - bordersXY_min[0]+200);
+        var s_y = h/(bordersXY_max[1] - bordersXY_min[1]+200);
         s = Math.min(s_x, s_y);
         
         t[0] = -(s*(bordersXY_min[0] + (bordersXY_max[0] - bordersXY_min[0])/2) - w/2);
@@ -94,8 +85,10 @@ MapController = function (mapContainerDiv) {
         mapController.zoom.translate(t);
         mapController.zoom.scale(s);
         
-        mapController.map.svg.selectAll('g').transition().duration(2000).attr("transform", "translate(" + t + ")scale(" + s + ")").style("stroke-width", 1 / s);
-    }
+        mapController.map.svg.selectAll('g').transition().duration(2000).attr("transform", "translate(" + t + ")scale(" + s + ")");
+        mapController.map.svg.selectAll('path').transition().duration(2000).style("stroke-width", 1 / s);
+        //mapController.map.svg.selectAll('circle').transition().duration(2000).style("stroke-width", 1 / s).attr('r', 1 / s);
+    };
     
     // zoomEvent
     // handles the zoom event
@@ -108,13 +101,13 @@ MapController = function (mapContainerDiv) {
         s = checked.scale;
         
         mapController.zoom.translate(t);
-        mapController.map.svg.selectAll('g').attr("transform", "translate(" + t + ")scale(" + s + ")").style("stroke-width", 1 / s);
-        
-        //mapController.setTransform(event.translate, event.scale); // apply new transform
-    }
+        mapController.map.svg.selectAll('g').attr("transform", "translate(" + t + ")scale(" + s + ")");
+        mapController.map.svg.selectAll('path').style("stroke-width", 1 / s);
+        //mapController.map.svg.selectAll('circle').style("stroke-width", 1 / s).attr('r', 6 / s);
+    };
     this.zoom = d3.behavior.zoom()
         .scaleExtent([1,8])
         .on("zoom", this.zoomEvent);
     this.map.svg.call(this.zoom);
     
-}
+};

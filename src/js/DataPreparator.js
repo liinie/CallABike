@@ -7,7 +7,7 @@ DataPreparator = function () {
         var renderData = {arcs: [], bubbles: []};
         
         // go through all of the product's components
-        for ( idx = 0; idx < product.components.length; idx++) {
+        for ( var idx = 0; idx < product.components.length; idx++) {
             // generate the arcs:
             // we append the arc data we generate to renderData.arcs
             renderData.arcs.push(
@@ -67,14 +67,14 @@ DataPreparator = function () {
             }
         }
         return renderData;
-    }
+    };
     
     this.getRenderDataFromProduct = function ( product ) {
-        layer = 0;
+        var layer = 0;
         var renderData = {
             arcs: [],
             bubbles: []
-        }
+        };
         var firstBubble = {
             name: product.manufacturer.name,
             radius: 6,
@@ -96,5 +96,5 @@ DataPreparator = function () {
         console.log(borders_max.longitude, borders_max.latitude);
         
         return renderData;
-    }
-}
+    };
+};
