@@ -1,0 +1,48 @@
+.sidebar-banner {
+    display: block;
+    height:100px;
+    width:80%;
+    margin: auto;
+    margin-top:15px;
+}
+.sidebar-icon {
+    float:left;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+}
+.sidebar-title {
+    display:block;
+    padding-left:100px;
+    padding-top:20px;
+}
+#sidebar-stats {
+    margin:15px;
+    padding-top:15px;
+    border-top: solid;
+    border-color: #ccc;
+}
+#sidebar-stats h1 {
+    color: #333;
+    text-transform: uppercase;
+}
+#sidebar-stats table {
+    margin-top:15px;
+}
+#sidebar-stats table tr > td, th {
+    padding-bottom:15px;
+}
+#sidebar-stats table th {
+    width: 140px;
+    font-weight: normal;
+    text-align: left;
+}
+#sidebar-stats table td {
+    text-align: left;
+    width:15px;
+}
+#sidebar-stats table td.data {
+    text-align: right;
+    width: 120px;
+    padding-right:4px;
+}
