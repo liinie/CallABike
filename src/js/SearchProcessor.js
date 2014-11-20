@@ -14,7 +14,7 @@ SearchProcessor= function (productsDb_, manufacturersDb_) {
         // WARNING: this cannot cope with names occurring more than once in the database
         var prod = productsDb({name:searchString}).first();
         
-        if(prod != false) {
+        if(prod !== false) {
             mapController.renderProduct(prod);
             console.log(searchString);
         }

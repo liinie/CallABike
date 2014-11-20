@@ -36,7 +36,7 @@
         <core-toolbar id="toolbar">
             <paper-shadow z="1"></paper-shadow>
             <a href="product.html"><core-icon id="search-icon" icon="search" ></core-icon> </a>
-            <core-input id="search-field" placeholder="Search for product" onkeypress="var searchProc = new SearchProcessor(); searchProc.keyPressEvent(event);" spellcheck='false'></core-input>
+            <core-input id="search-field" placeholder="Search for product" onkeypress="var searchProc = new SearchProcessor(products, manufacturers); searchProc.keyPressEvent(event);" spellcheck='false'></core-input>
         </core-toolbar>
         <div flex horizontal layout>
             <div id="map-container" flex></div>
