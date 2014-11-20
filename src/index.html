@@ -28,6 +28,8 @@
         <link rel="import" href="polymer-paper/paper-shadow/paper-shadow.html">
         <link rel="import" href="polymer-paper/core-selector/core-selector.html">
         
+        <link rel="import" href="custom-elements/sidebar-product/sidebar-product.html">
+        
         <link rel="stylesheet" type="text/css" href="css/reset-stylesheet.css">
         <link rel="stylesheet" type="text/css" href="css/main.css">
     </head>
@@ -42,41 +44,13 @@
             <div id="map-container" flex></div>
             <div id="sidebar">
                 <paper-shadow z="1"></paper-shadow>
-                <div id="manufacturer-banner" class="sidebar-banner">
-                    <div class="sidebar-icon">
-                        <paper-shadow z="1"></paper-shadow>
-                        <img class="sidebar-icon" src="images/factory.png">
-                    </div>
-                    <div class="sidebar-title">
-                        <h1 id="sidebar-manufacturer-name">Manufacturer Name</h1>
-                        <p id="sidebar-manufacturer-address">Location Adress,<br/>Country</p>
-                    </div>
-                </div>
-                <div class="sidebar-banner">
-                    <div class="sidebar-icon">
-                        <paper-shadow z="1"></paper-shadow>
-                        <img class="sidebar-icon" src="images/laptop.jpg">
-                    </div>
-                    <div class="sidebar-title">
-                        <h1 style="display:inline-block;width:150px" id="sidebar-product-name">Product Name (maybe it is too long for one line)</h1>
-                    </div>
-                </div>
-
-                <div id="sidebar-stats">
-                    <h1>Statistics</h1>
-                    <table>
-                        <tr>
-                            <th>Travelled Distance</th>
-                            <td class="data">12000</td>
-                            <td> km</td>
-                        </tr>
-                        <tr>
-                            <th>Carbon Footprint</th>
-                            <td class="data">3.56</td>
-                            <td> kg</td>
-                        </tr>
-                    </table>
-                </div>
+                <script>
+                    var currentProd = products({name: "MapBook 13\""}).first();
+                </script>
+                <sidebar-product id="sidebar-product" product="prod"</sidebar-product>
+                <script>
+                    //document.querySelector('sidebar-product').product = prod;
+                </script>
             </div>
         </div>
         

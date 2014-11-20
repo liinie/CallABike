@@ -1,27 +1,31 @@
-<link rel="import" href="/polymer-paper/polymer/polymer.html">
-<link rel="import" href="/polymer-paper/paper-shadow/paper-shadow.html">
+<link rel="import" href="../../polymer-paper/polymer/polymer.html">
+<link rel="import" href="../../polymer-paper/paper-shadow/paper-shadow.html">
 
 
-<polymer-element name="sidebar-product" noscript>
+<polymer-element name="sidebar-product" attributes="product">
     <template>
+        <link rel="stylesheet" href="../../css/reset-stylesheet.css">
+        <link rel="stylesheet" href="../../css/main.css">
+        <link rel="stylesheet" href="sidebar-product.css">
+        
         <paper-shadow z="1"></paper-shadow>
         <div id="manufacturer-banner" class="sidebar-banner">
             <div class="sidebar-icon">
                 <paper-shadow z="1"></paper-shadow>
-                <img class="sidebar-icon" src="images/factory.png">
+                <img class="sidebar-icon" src="../../images/factory.png">
             </div>
             <div class="sidebar-title">
-                <h1 id="sidebar-manufacturer-name">Manufacturer Name</h1>
+                <h1 id="sidebar-manufacturer-name">{{product.manufacturer.name}}</h1>
                 <p id="sidebar-manufacturer-address">Location Adress,<br/>Country</p>
             </div>
         </div>
         <div class="sidebar-banner">
             <div class="sidebar-icon">
                 <paper-shadow z="1"></paper-shadow>
-                <img class="sidebar-icon" src="images/laptop.jpg">
+                <img class="sidebar-icon" src="../../images/laptop.jpg">
             </div>
             <div class="sidebar-title">
-                <h1 style="display:inline-block;width:150px" id="sidebar-product-name">Product Name (maybe it is too long for one line)</h1>
+                <h1 style="display:inline-block;width:150px" id="sidebar-product-name">{{product.name}}</h1>
             </div>
         </div>
 
@@ -42,6 +46,10 @@
         </div>
     </template>
     <script>
-        Polymer({}});
+        Polymer({
+            created: function() {
+                this.product = currentProduct;
+            }
+        });
     </script>
 </polymer-element>
