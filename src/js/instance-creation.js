@@ -23,6 +23,12 @@ man.location = {latitude: 31.298305, longitude: 121.586616};
 manufacturers.insert(man);
 
 man = new Manufacturer();
+man.name = "Steffens zuhause";
+man.location = {latitude: 10, longitude: 10};
+man.setAddress("Jämeräntaival 5, 02150 Espoo, Finland");
+manufacturers.insert(man);
+
+man = new Manufacturer();
 man.name = "HighSpeed Processors";
 man.location = {latitude: 19.089713, longitude: 72.862236};
 manufacturers.insert(man);
