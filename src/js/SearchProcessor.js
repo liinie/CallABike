@@ -16,7 +16,7 @@ SearchProcessor= function (productsDb_, manufacturersDb_) {
         
         if(prod !== false) {
             mapController.renderProduct(prod);
-            document.getElementById("sidebar-product").setAttribute('product',"{{prod}}");
+            document.getElementById("sidebar-product").product = prod;
         }
     };
 };
