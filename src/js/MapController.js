@@ -84,7 +84,7 @@ MapController = function (mapContainerDiv) {
         mapController.zoom.scale(s);
         
         mapController.map.svg.selectAll('g').transition().duration(2000).attr("transform", "translate(" + t + ")scale(" + s + ")");
-        mapController.map.svg.selectAll('path').transition().duration(2000).style("stroke-width", 1 / s);
+        //mapController.map.svg.selectAll('path').transition().duration(2000).style("stroke-width", 1 / s);
         //mapController.map.svg.selectAll('circle').transition().duration(2000).style("stroke-width", 1 / s).attr('r', 1 / s);
     };
     
@@ -100,7 +100,7 @@ MapController = function (mapContainerDiv) {
         
         mapController.zoom.translate(t);
         mapController.map.svg.selectAll('g').attr("transform", "translate(" + t + ")scale(" + s + ")");
-        mapController.map.svg.selectAll('path').style("stroke-width", 1 / s);
+        //mapController.map.svg.selectAll('path').style("stroke-width", 1 / s);
         //mapController.map.svg.selectAll('circle').style("stroke-width", 1 / s).attr('r', 6 / s);
     };
     this.zoom = d3.behavior.zoom()
