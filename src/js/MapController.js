@@ -9,8 +9,6 @@ MapController = function (mapContainerDiv) {
     }*/
     
     
-    var dataPreparator = new DataPreparator();
-    
     this.map = new Datamaps({
         element: mapContainerDiv,
         fills: {
@@ -32,6 +30,9 @@ MapController = function (mapContainerDiv) {
     this.map.bubbles([]);
     this.map.arc([]);
     
+    var dataPreparator = new DataPreparator();
+    var bubbleDrawer = new BubbleDrawer(this.map);
+    
     var checkTransform = function (translate, scale) {
         var t = translate;
         var s = scale;
@@ -52,7 +53,7 @@ MapController = function (mapContainerDiv) {
                     strokeColor: 'rgb(0,0,130)',
                     arcSharpness: 0.3
                 });
-        this.map.bubbles(arcsnbubbles.bubbles,
+        bubbleDrawer.drawBubbles(arcsnbubbles.bubbles,
         {
             popupTemplate:
             function(geo, data) {
