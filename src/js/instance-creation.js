@@ -1,5 +1,5 @@
 
-
+/*
 prod = new Product();
 prod.name                               = "";
 prod.manufacturer = manufacturers({name:  ""}).first();
@@ -18,7 +18,7 @@ man.workingConditions.employmentProtection  = ;
 man.workingConditions.salery                = ;
 man.workingConditions.workingHours          = ;
 manufacturers.insert(man);
-
+*/
 
 
 var products = TAFFY();
