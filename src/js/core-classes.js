@@ -1,5 +1,6 @@
 Manufacturer = function () {
     this.name = "";
+    this.address = "";
     this.location = {latitude: Number(), longitude: Number()};
     //this.location.latitude = Number();
     //this.location.longitude = Number();
@@ -8,6 +9,12 @@ Manufacturer = function () {
         workingHours: Number(),
         employmentProtection: Number()
     };
+    
+    this.setAddress = function(address) {
+        this.address = address;
+        this.location = Utils.getLocationFromAddress(address);
+    };
+    
 };
 
 Product = function () {
