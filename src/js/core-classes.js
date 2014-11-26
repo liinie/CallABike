@@ -1,4 +1,5 @@
 Manufacturer = function () {
+    this.id = Utils.generateId();
     this.name = "";
     this.address = "";
     this.location = {latitude: Number(), longitude: Number()};
@@ -20,7 +21,7 @@ Manufacturer = function () {
 Product = function () {
     this.name = "";
     this.type = "";
-    this.id = "";
+    this.id = Utils.generateId();
     this.retailer = {};
     this.manufacturer = [];
     this.components = [];
@@ -34,6 +35,7 @@ Product = function () {
 };
 
 Retailer = function () {
+    this.id = Utils.generateId();
     this.location = "";
     this.products = {};
 };

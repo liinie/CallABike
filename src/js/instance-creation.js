@@ -24,7 +24,6 @@ manufacturers.insert(man);
 
 man = new Manufacturer();
 man.name = "Steffens zuhause";
-man.location = {latitude: 10, longitude: 10};
 man.setAddress("Jämeräntaival 5, 02150 Espoo, Finland");
 manufacturers.insert(man);
 
@@ -95,7 +94,6 @@ products.insert(prod);
 prod = new Product();
 prod.name = "MapBook 13\"";
 prod.type = "electronics.computers.laptops";
-prod.id = "1234";
 prod.manufacturer = manufacturers({name: "Mapple Computers"}).first();
 prod.components.push(products({name: "13\" Display"}).first());
 prod.components.push(products({name: "8 GB DDR3 RAM"}).first());
