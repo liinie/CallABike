@@ -9,18 +9,12 @@ Manufacturer = function () {
         workingHours: Number(),
         employmentProtection: Number()
     };
+    
     this.setAddress = function(address) {
         this.address = address;
-            geocoder = new google.maps.Geocoder();
-            geocoder.geocode({
-            'address': address
-            }, function(results, status) {      
-                this.location.latitude = results[0].geometry.location.lat();    
-                this.location.longitude = results[0].geometry.location.lng();      
-                console.log(location.latitude);
-                console.log(location.longitude);
-            });
-    }
+        this.location = Utils.getLocationFromAddress(address);
+    };
+    
 };
 
 Product = function () {
