@@ -12,8 +12,6 @@ BubbleDrawer = function (map_) {
             .attr('cx', latLng[0])
             .attr('cy', latLng[1])
             .attr('r', 0)
-            .style('fill', 'rgb(255,255,0)')
-            .style('stroke', 3)
             .transition()
             .duration(500)
             .attr('r',6);
