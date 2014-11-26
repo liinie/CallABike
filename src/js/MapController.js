@@ -27,7 +27,7 @@ MapController = function (mapContainerDiv) {
             animationSpeed: 600
         }
     });
-    this.map.bubbles([]);
+    //this.map.bubbles([]);
     this.map.arc([]);
     
     var dataPreparator = new DataPreparator();
