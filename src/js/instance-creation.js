@@ -58,13 +58,13 @@ products.insert(prod);
 prod = new Product();
 prod.name = "13\" Display Glass";
 prod.type = "";
-prod.id = "";
+prod.id = "9348";
 prod.manufacturer = manufacturers({name: "Orangutan Display Glasses"}).first();
 products.insert(prod);
 
 prod = new Product();
 prod.name = "13\" LED Display Module";
-prod.id = "";
+prod.id = "6589";
 prod.type = "";
 prod.manufacturer = manufacturers({name: "NextGen LED Display Technologies"}).first();
 products.insert(prod);

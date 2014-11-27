@@ -31,7 +31,7 @@ MapController = function (mapContainerDiv) {
     this.map.arc([]);
     
     var dataPreparator = new DataPreparator();
-    var bubbleDrawer = new BubbleDrawer(this.map);
+    this.bubbleDrawer = new BubbleDrawer(this.map);
     
     var checkTransform = function (translate, scale) {
         var t = translate;
@@ -45,20 +45,21 @@ MapController = function (mapContainerDiv) {
         return {translate: t, scale: s};
     };
     
-    this.renderProduct = function ( product ) {
+    this.renderProduct = function ( product, numLayers ) {
         var arcsnbubbles = dataPreparator.getRenderDataFromProduct(product);
-        this.map.arc(arcsnbubbles.arcs,
+        /*this.map.arc(arcsnbubbles.arcs,
                 {
                     strokeWidth: 2,
                     strokeColor: 'rgb(0,0,130)',
                     arcSharpness: 0.3
-                });
-        bubbleDrawer.drawBubbles(arcsnbubbles.bubbles,
+                });*/
+        /*bubbleDrawer.drawBubbles(arcsnbubbles.bubbles,
         {
             popupTemplate:
             function(geo, data) {
                 return '<div class="hoverinfo"><body><table><tr><td><strong>Manufacturer:</strong></td><td>'+ data.name + '</td></tr><tr><td><strong>Product:</strong></td><td>' + data.productName + '</td></tr><tr><td>Location:</td><td>' + data.longitude + ', ' + data.latitude + '</tr> </table></div>'}
-        });
+        });*/
+        this.bubbleDrawer.initialDraw(product, 1);
         
         var t = [0,0];
         var s = 1;

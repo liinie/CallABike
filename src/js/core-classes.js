@@ -31,6 +31,9 @@ Product = function () {
         manufacturingCosts: Number(),
         productPrice: Number()
     };
+    this.compBubbles = [];
+    this.compArcs = [];
+    this.isExpanded = false;
 };
 
 Retailer = function () {
