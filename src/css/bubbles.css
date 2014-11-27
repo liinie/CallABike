@@ -8,3 +8,8 @@
     stroke:         rgb(255, 255, 255);
     stroke-width:   2;
 }
+.map-arc {
+    fill:           none !important;
+    stroke:         rgb(20, 64, 186) !important;
+    stroke-width:   2 !important;
+}

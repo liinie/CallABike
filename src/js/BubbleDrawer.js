@@ -5,8 +5,13 @@ BubbleDrawer = function (map_) {
         radiusLarge: 20,
         enlargingDuration: 300
     };
+    var arcOptions = {
+        arcSharpness: 1,
+        animationSpeed: 200
+    };
     
     // create a g node to append all bubbles to
+    map.svg.append('g').attr('class','arcs');
     map.svg.append('g').attr('class','bubbles');
     
     // Define hover-callback: mouseover
@@ -64,9 +69,11 @@ BubbleDrawer = function (map_) {
                 this.collapse(c[idx]);
             }
             for (idx in c) {
-                d3.select('[product-id="' + c[idx].id +'"]').
-                transition().
-                duration(bubbleConfig.enlargingDuration)
+                d3.select('path[product-id="' + c[idx].id +'"]')
+                .remove();
+                d3.select('circle[product-id="' + c[idx].id +'"]')
+                .transition()
+                .duration(bubbleConfig.enlargingDuration)
                 .attr('r', 0)
                 .remove();
             }
@@ -111,7 +118,39 @@ BubbleDrawer = function (map_) {
     this.drawArc = function (parentProduct, childProduct) {
         var p1 = parentProduct;
         var p2 = childProduct;
-        return "d3.selection";
+        var man1 = p1.manufacturer;
+        var man2 = p2.manufacturer;
+        var loc1 = man1.location;
+        var loc2 = man2.location;
+        console.log(loc1, loc2);
+        var originXY = map.latLngToXY(loc1.latitude, loc1.longitude);
+        var destXY = map.latLngToXY(loc2.latitude, loc2.longitude);
+        console.log(originXY, destXY);
+        var midXY = [ (originXY[0] + destXY[0]) / 2, (originXY[1] + destXY[1]) / 2];
+        
+        var pathData = 
+            "M" + originXY[0] + ',' + originXY[1] + 
+            "S" + (midXY[0] + (50 * arcOptions.arcSharpness)) + "," + (midXY[1] - (75 * arcOptions.arcSharpness)) + "," + destXY[0] + "," + destXY[1];
+        
+        var arc =
+        map.svg.select('g.bubbles').append('svg:path')
+        .attr('class','map-arc')
+        .attr('d', pathData)
+        .attr('product-id', p2.id)
+        .transition()
+        .duration(bubbleConfig.enlargingDuration)
+        .delay(10)
+        .style('fill', function() {
+            var length = this.getTotalLength();
+            this.style.transition = this.style.WebkitTransition = 'none';
+            this.style.strokeDasharray = length + ' ' + length;
+            this.style.strokeDashoffset = length;
+            this.getBoundingClientRect();
+            this.style.transition = this.style.WebkitTransition = 'stroke-dashoffset ' + arcOptions.animationSpeed + 'ms ease-out';
+            this.style.strokeDashoffset = '0';
+            return 'none';
+        });
+        return arc;
     };
     
 /*    this.drawBubbles = function (bubblesArray, options) {
