@@ -10,9 +10,8 @@ BubbleDrawer = function (map_) {
         animationSpeed: 200
     };
     
-    // create a g node to append all bubbles to
-    map.svg.append('g').attr('class','arcs');
-    map.svg.append('g').attr('class','bubbles');
+    map.svg.append('g').attr('class','arcs');       // create a node to which we can add the arcs later
+    map.svg.append('g').attr('class','bubbles');    // create a node to which we can add the bubbles later
     
     // Define hover-callback: mouseover
     var mouseoverfun = function() {
@@ -32,13 +31,13 @@ BubbleDrawer = function (map_) {
     
     // Define click-callback
     var clickfun = function () {
-        var id = d3.select(this).attr('product-id');
-        var p = products({id: id}).first();
-        if (!p.isExpanded) {
-            mapController.bubbleDrawer.expand(p);
+        var id = d3.select(this).attr('product-id');    // get the product-id attribute of the clicked circle
+        var p = products({id: id}).first();             // get the according product from the database
+        if (!p.isExpanded) {                            // if the product is not expanded
+            mapController.bubbleDrawer.expand(p);       // expand it
         }
         else {
-            mapController.bubbleDrawer.collapse(p);
+            mapController.bubbleDrawer.collapse(p);     // otherwise collapse it
         }
     };
     
@@ -56,7 +55,7 @@ BubbleDrawer = function (map_) {
                     this.expand(c[idx], numLayers-1);               // call ourselves recursively
                 }
             }
-            p.isExpanded = true;
+            p.isExpanded = true;                                    // set the product's isExpanded attribute to true
         }
     };
     
@@ -64,21 +63,21 @@ BubbleDrawer = function (map_) {
     this.collapse = function (product) {
         var p = product;
         var c = p.components;
-        if (c.length > 0) {
-            for (var idx in c) {
-                this.collapse(c[idx]);
+        if (c.length > 0) {                                         // do this only if there are components
+            for (var idx in c) {                                    // go through components
+                this.collapse(c[idx]);                              // first collapse all child products
             }
-            for (idx in c) {
+            for (idx in c) {                                        // go through products again
                 d3.select('path[product-id="' + c[idx].id +'"]')
-                .remove();
+                .remove();                                          // remove the path where the product-id attribute matches with the component product's id
                 d3.select('circle[product-id="' + c[idx].id +'"]')
                 .transition()
                 .duration(bubbleConfig.enlargingDuration)
                 .attr('r', 0)
-                .remove();
+                .remove();                                          // do the same with the circle
             }
-            p.compBubbles = [];
-            p.compArcs = [];
+            p.compBubbles = [];                                     // clear the product's component bubbles array
+            p.compArcs = [];                                        // clear the component arcs array
             p.isExpanded = false;
         }
     };
@@ -87,7 +86,7 @@ BubbleDrawer = function (map_) {
     this.initialDraw = function (product, numLayers) {
         var p = product;
         var b = this.drawBubble(p);                             // draw the bubble for the first product
-        b.attr('class','map-bubble-highlight');               // set the first bubble to be highlighted
+        b.attr('class','map-bubble-highlight');                 // set the first bubble to be highlighted
         this.expand(p, numLayers);                              // expand it to a given number of layers
     };
     
@@ -118,29 +117,32 @@ BubbleDrawer = function (map_) {
     this.drawArc = function (parentProduct, childProduct) {
         var p1 = parentProduct;
         var p2 = childProduct;
-        var man1 = p1.manufacturer;
+        var man1 = p1.manufacturer;         // get the p's manufacturer
         var man2 = p2.manufacturer;
-        var loc1 = man1.location;
+        var loc1 = man1.location;           // get the man's location
         var loc2 = man2.location;
-        console.log(loc1, loc2);
-        var originXY = map.latLngToXY(loc1.latitude, loc1.longitude);
+        
+        var originXY = map.latLngToXY(loc1.latitude, loc1.longitude);       // convert locations to XY coordinates
         var destXY = map.latLngToXY(loc2.latitude, loc2.longitude);
-        console.log(originXY, destXY);
+        
+        // calculate midpoint for path data
         var midXY = [ (originXY[0] + destXY[0]) / 2, (originXY[1] + destXY[1]) / 2];
         
+        // create the bezier description string
         var pathData = 
             "M" + originXY[0] + ',' + originXY[1] + 
             "S" + (midXY[0] + (50 * arcOptions.arcSharpness)) + "," + (midXY[1] - (75 * arcOptions.arcSharpness)) + "," + destXY[0] + "," + destXY[1];
         
+        // create the arc
         var arc =
-        map.svg.select('g.bubbles').append('svg:path')
-        .attr('class','map-arc')
-        .attr('d', pathData)
-        .attr('product-id', p2.id)
-        .transition()
-        .duration(bubbleConfig.enlargingDuration)
-        .delay(10)
-        .style('fill', function() {
+        map.svg.select('g.bubbles').append('svg:path')          // append a path element
+        .attr('class','map-arc')                                // apply class
+        .attr('d', pathData)                                    // specify description string
+        .attr('product-id', p2.id)                              // set attribute product-id
+        .transition()                                           // make animation
+        .duration(bubbleConfig.enlargingDuration)               // set transition duration
+        .delay(10)                                              // use a delay
+        .style('fill', function() {                             // set style (taken from datamaps for animation)
             var length = this.getTotalLength();
             this.style.transition = this.style.WebkitTransition = 'none';
             this.style.strokeDasharray = length + ' ' + length;
@@ -152,21 +154,4 @@ BubbleDrawer = function (map_) {
         });
         return arc;
     };
-    
-/*    this.drawBubbles = function (bubblesArray, options) {
-        for (var idx in bubblesArray) {
-            var latLng = map.latLngToXY(bubblesArray[idx].latitude, bubblesArray[idx].longitude);
-            map.svg.select('g.bubbles').append('svg:circle')
-            .on("mouseover", mouseoverfun)
-            .on("mouseout", mouseoutfun)
-            .on("click", clickfun)
-            .attr('class','map-bubble')
-            .attr('cx', latLng[0])
-            .attr('cy', latLng[1])
-            .attr('r', 0)
-            .transition()
-            .duration(bubbleConfig.enlargingDuration)
-            .attr('r',bubbleConfig.radiusSmall);
-        }
-    };*/
 };
