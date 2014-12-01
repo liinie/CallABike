@@ -206,7 +206,7 @@ products.insert(prod);
 
 man = new Manufacturer();
 man.name =     "Cereales Inc.";
-man.setAddress("Rue de la Vallée Saint-Ulrich, Barr, France");
+man.setAddress("Rue de la Vallee Saint-Ulrich, Barr, France");
 man.workingConditions.employmentProtection  = 6;
 man.workingConditions.salery                = 5;
 man.workingConditions.workingHours          = 5;
@@ -318,7 +318,10 @@ products.insert(prod);
 
 man = new Manufacturer();
 man.name =     "Shuanghui";
-man.setAddress("Luancheng, Shijiazhuang, Hebei, China");
+man.setAddress("Hongkong East Road, Qingdao, Shandong, China");
+man.location.latitude = 35.956997;
+man.location.longitude = 119.36065;
+
 man.workingConditions.employmentProtection  = 4;
 man.workingConditions.salery                = 4;
 man.workingConditions.workingHours          = 5;
@@ -347,10 +350,36 @@ prod.name                               = "Minced Meat";
 prod.manufacturer = manufacturers({name:  "Smithfield Foods"}).first();
 prod.components.push(products({name:      "Beef"}).first());
 prod.components.push(products({name:      "Pork"}).first());
-
 prod.carbonFootprint                    = 800;
 prod.price.productPrice                 = 5;
 prod.price.energyCosts                  = 0.4;
 prod.price.manufacturingCosts           = 0.3;
 prod.price.materialCosts                = 2;
+products.insert(prod);
+
+man = new Manufacturer();
+man.name = "LIDL";
+man.setAddress("Stiftsbergstraße 1, 74172 Neckarsulm, Germany");
+man.location.latitude = 49.1846;
+man.location.longitude = 9.2358;
+man.workingConditions.employmentProtection  = 7;
+man.workingConditions.salery                = 6;
+man.workingConditions.workingHours          = 7;
+manufacturers.insert(man);
+
+prod = new Product();
+prod.name                               = "Lasagne";
+prod.manufacturer = manufacturers({name:  "LIDL"}).first();
+prod.components.push(products({name:      "Minced Meat"}).first());
+prod.components.push(products({name:      "Tomato Sauce"}).first());
+prod.components.push(products({name:      "Onion"}).first());
+prod.components.push(products({name:      "Lasagne Pasta"}).first());
+prod.components.push(products({name:      "Bechamel"}).first());
+prod.components.push(products({name:      "Parmigiano Reggiano"}).first());
+prod.components.push(products({name:      "Carrots"}).first());
+prod.carbonFootprint                    = 10;
+prod.price.productPrice                 = 10;
+prod.price.energyCosts                  = 10;
+prod.price.manufacturingCosts           = 10;
+prod.price.materialCosts                = 10;
 products.insert(prod);
