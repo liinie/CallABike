@@ -17,13 +17,6 @@ path.slice{
 	stroke-width:2px;
 }
 
-polyline{
-	opacity: .3;
-	stroke: black;
-	stroke-width: 2px;
-	fill: none;
-}
-
 </style>
 <body>
 <button class="randomize">randomize</button>
@@ -38,23 +31,24 @@ var svg = d3.select("body")
 svg.append("g")
 	.attr("class", "slices");
 
-
 var width = 960,
     height = 450,
 	radius = Math.min(width, height) / 2;
+    
+var arc = d3.svg.arc()
+	.outerRadius(radius * 0.8)
+	.innerRadius(radius * 0.4);
 
+svg.attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+    
+    
 var pie = d3.layout.pie()
 	.sort(null)
 	.value(function(d) {
 		return d.value;
 	});
 
-var arc = d3.svg.arc()
-	.outerRadius(radius * 0.8)
-	.innerRadius(radius * 0.4);
 
-
-svg.attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
 var key = function(d){ return d.data.label; };
 
@@ -79,7 +73,6 @@ d3.select(".randomize")
 
 function change(data) {
 
-	/* ------- PIE SLICES -------*/
 	var slice = svg.select(".slices").selectAll("path.slice")
 		.data(pie(data), key);
 
