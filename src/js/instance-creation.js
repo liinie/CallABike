@@ -267,6 +267,64 @@ man.workingConditions.salery                = 5;
 man.workingConditions.workingHours          = 6;
 manufacturers.insert(man);
 
+man = new Manufacturer();
+man.name =     "Prezzemoli Inc.";
+man.setAddress("Via di Prima Porta, 11, 00188 Roma RM, Italy");
+man.workingConditions.employmentProtection  = 6;
+man.workingConditions.salery                = 6;
+man.workingConditions.workingHours          = 7;
+manufacturers.insert(man);
+
+prod = new Product();
+prod.name                               = "Parsley";
+prod.manufacturer = manufacturers({name:  "Prezzemoli Inc."}).first();
+prod.carbonFootprint                    = 5;
+prod.price.productPrice                 = 2;
+prod.price.energyCosts                  = 0.2;
+prod.price.manufacturingCosts           = 0.1;
+prod.price.materialCosts                = 0.1;
+products.insert(prod);
+
+man = new Manufacturer();
+man.name =     "Aglidiso";
+man.setAddress("50 Avenue de Cassan, 34320 Roujan, France");
+man.workingConditions.employmentProtection  = 7;
+man.workingConditions.salery                = 5;
+man.workingConditions.workingHours          = 7;
+manufacturers.insert(man);
+
+prod = new Product();
+prod.name                               = "Garlic";
+prod.manufacturer = manufacturers({name:  "Aglidiso"}).first();
+prod.carbonFootprint                    = 10;
+prod.price.productPrice                 = 1;
+prod.price.energyCosts                  = 0.1;
+prod.price.manufacturingCosts           = 0.1;
+prod.price.materialCosts                = 0.1;
+products.insert(prod);
+
+man = new Manufacturer();
+man.name =     "Insapori Inc.";
+//man.setAddress("Viale Nazioni Unite, 10, 17019 Varazze SV, Italy");
+man.location.latitude = 44.3598;
+man.location.latitude = 8.577741;
+man.workingConditions.employmentProtection  = 7;
+man.workingConditions.salery                = 5;
+man.workingConditions.workingHours          = 8;
+manufacturers.insert(man);
+
+prod = new Product();
+prod.name                               = "Mixed herbs";
+prod.manufacturer = manufacturers({name:  "Insapori Inc."}).first();
+prod.components.push(products({name:      "Parsley"}).first());
+prod.components.push(products({name:      "Garlic"}).first());
+prod.carbonFootprint                    = 3;
+prod.price.productPrice                 = 2;
+prod.price.energyCosts                  = 0.1;
+prod.price.manufacturingCosts           = 0.2;
+prod.price.materialCosts                = 0.1;
+products.insert(prod);
+
 
 prod = new Product();
 prod.name                               = "Tomato";
@@ -290,6 +348,7 @@ prod = new Product();
 prod.name                               = "Tomato Sauce";
 prod.manufacturer = manufacturers({name:  "Bonduelle"}).first();
 prod.components.push(products({name:      "Tomato"}).first());
+prod.components.push(products({name:      "Mixed Herbs"}).first());
 prod.carbonFootprint                    = 15;
 prod.price.productPrice                 = 3;
 prod.price.energyCosts                  = 0.2;
@@ -366,6 +425,8 @@ man.workingConditions.employmentProtection  = 7;
 man.workingConditions.salery                = 6;
 man.workingConditions.workingHours          = 7;
 manufacturers.insert(man);
+
+
 
 prod = new Product();
 prod.name                               = "Lasagne";
