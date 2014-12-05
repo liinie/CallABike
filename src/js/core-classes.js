@@ -35,6 +35,9 @@ Product = function () {
     this.compBubbles = [];
     this.compArcs = [];
     this.isExpanded = false;
+    this.hasComponents = function () {
+        return this.components.length > 0;
+    }
 };
 
 Retailer = function () {

@@ -61,7 +61,7 @@ BubbleDrawer = function (map_) {
     this.expand = function (product, numLayers) {
         var p = product;
         var c = p.components;
-        if (c.length > 0) {                                         // do this only if there are components
+        if (p.hasComponents()) {                                    // do this only if there are components
             for (var idx in c) {                                    // iterate through all components
                 p.compArcs.push(this.drawArc(p, c[idx]));           // draw arc and add ref to product.compArcs
                 p.compBubbles.push(this.drawBubble(c[idx]));        // draw bubble and add ref to product.compBubbles
@@ -72,6 +72,8 @@ BubbleDrawer = function (map_) {
                 }
             }
             p.isExpanded = true;                                    // set the product's isExpanded attribute to true
+            d3.select('circle.expand-collapse-bubble[product-id="' + p.id +'"]')
+            .attr('class', 'expand-collapse-bubble collapse-bubble');
         }
     };
     
@@ -79,7 +81,7 @@ BubbleDrawer = function (map_) {
     this.collapse = function (product) {
         var p = product;
         var c = p.components;
-        if (c.length > 0) {                                         // do this only if there are components
+        if (p.hasComponents()) {                                    // do this only if there are components
             for (var idx in c) {                                    // go through components
                 this.collapse(c[idx]);                              // first collapse all child products
             }
@@ -95,6 +97,9 @@ BubbleDrawer = function (map_) {
             p.compBubbles = [];                                     // clear the product's component bubbles array
             p.compArcs = [];                                        // clear the component arcs array
             p.isExpanded = false;
+            d3.select('circle.expand-collapse-bubble[product-id="' + p.id +'"]')
+            .attr('class', 'expand-collapse-bubble expand-bubble')
+            .text("+");
         }
     };
     
@@ -104,7 +109,7 @@ BubbleDrawer = function (map_) {
         map.svg.select('g.arcs').selectAll('*').remove();
         var p = product;
         var b = this.drawBubble(p);                             // draw the bubble for the first product
-        b.attr('class','map-bubble-highlight');                 // set the first bubble to be highlighted
+        b.attr('class','map-bubble map-bubble-highlight');                 // set the first bubble to be highlighted
         this.expand(p, numLayers);                              // expand it to a given number of layers
     };
     
@@ -129,16 +134,17 @@ BubbleDrawer = function (map_) {
         .duration(bubbleConfig.enlargingDuration)                   // set duration
         .attr('r',bubbleConfig.radiusSmall);                        // increase radius
         
-        var offset = [expCollConfig.expCollOffset,-expCollConfig.expCollOffset];
-        console.log(offset);
-        map.svg.select('g[product-id="' + p.id +'"]')
-        .append('svg:circle')
-        .on("click", clickfun)                                      // add click event function
-        .attr('class','expand-collapse-bubble')
-        .attr('product-id',p.id)
-        .attr('cx', xy_pos[0] + offset[0])
-        .attr('cy', xy_pos[1] + offset[1])
-        .attr('r', 0);
+        if (p.hasComponents()) {
+            var offset = [expCollConfig.expCollOffset,-expCollConfig.expCollOffset];
+            map.svg.select('g[product-id="' + p.id +'"]')
+            .append('svg:circle')
+            .on("click", clickfun)                                      // add click event function
+            .attr('class', 'expand-collapse-bubble expand-bubble')
+            .attr('product-id',p.id)
+            .attr('cx', xy_pos[0] + offset[0])
+            .attr('cy', xy_pos[1] + offset[1])
+            .attr('r', 0);
+        }
         
         return bubble;                                              // return ref to created element
     };
