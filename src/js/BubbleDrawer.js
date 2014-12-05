@@ -84,6 +84,8 @@ BubbleDrawer = function (map_) {
     
     // First draw of the first product
     this.initialDraw = function (product, numLayers) {
+        map.svg.select('g.bubbles').selectAll('*').remove();
+        map.svg.select('g.arcs').selectAll('*').remove();
         var p = product;
         var b = this.drawBubble(p);                             // draw the bubble for the first product
         b.attr('class','map-bubble-highlight');                 // set the first bubble to be highlighted
