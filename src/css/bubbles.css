@@ -1,3 +1,6 @@
+.g {
+    pointer-events: all;
+}
 .map-bubble {
     fill:           rgb(20, 64, 186);
     stroke:         rgb(255, 255, 255);
@@ -12,4 +15,9 @@
     fill:           none !important;
     stroke:         rgb(20, 64, 186) !important;
     stroke-width:   2 !important;
+}
+.expand-collapse-bubble {
+    fill:           rgb(189, 31, 11);
+    stroke:         rgb(255, 255, 255);
+    stroke-width:   2;
 }
