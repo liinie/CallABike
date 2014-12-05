@@ -93,6 +93,10 @@ BubbleDrawer = function (map_) {
                 .duration(bubbleConfig.enlargingDuration)
                 .attr('r', 0)
                 .remove();                                          // do the same with the circle
+                d3.selectAll('g[product-id="' + c[idx].id +'"]')
+                .transition()
+                .duration(bubbleConfig.enlargingDuration)
+                .remove();
             }
             p.compBubbles = [];                                     // clear the product's component bubbles array
             p.compArcs = [];                                        // clear the component arcs array
