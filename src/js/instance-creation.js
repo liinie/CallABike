@@ -126,6 +126,263 @@ prod.components.push(products({name: "8 GB DDR3 RAM"}).first());
 prod.components.push(products({name: "2.8 GHz e7 Processor"}).first());
 products.insert(prod);
 
+
+// Lenovo X1 Carbon
+
+man = new Manufacturer();
+man.name =     "BKP4 Technologies";
+man.setAddress("Rishi Raj Narayan Rd, Bansdroni, Kolkata, West Bengal 700070, Indien");
+man.workingConditions.employmentProtection  = 4;
+man.workingConditions.salery                = 3;
+man.workingConditions.workingHours          = 3;
+manufacturers.insert(man);
+
+prod = new Product();
+prod.name                               = "Battery 6 Cells";
+prod.manufacturer = manufacturers({name:  "BKP4 Technologies"}).first();
+prod.carbonFootprint                    = 30;
+prod.price.productPrice                 = 60;
+prod.price.energyCosts                  = 10;
+prod.price.manufacturingCosts           = 5;
+prod.price.materialCosts                = 10;
+products.insert(prod);
+
+man = new Manufacturer();
+man.name =     "Western Digital";
+man.setAddress("Krok Som Bun, Si Maha Phot District, Prachin Buri, Thailand");
+man.workingConditions.employmentProtection  = 4;
+man.workingConditions.salery                = 3;
+man.workingConditions.workingHours          = 5;
+manufacturers.insert(man);
+
+prod = new Product();
+prod.name                               = "HDD 2 TB";
+prod.manufacturer = manufacturers({name:  "Western Digital"}).first();
+prod.carbonFootprint                    = 30;
+prod.price.productPrice                 = 70;
+prod.price.energyCosts                  = 5;
+prod.price.manufacturingCosts           = 5;
+prod.price.materialCosts                = 10;
+products.insert(prod);
+
+man = new Manufacturer();
+man.name =     "Kingston";
+man.setAddress("3588 Hu Tai Lu, Baoshan Qu, Shanghai Shi, China");
+man.workingConditions.employmentProtection  = 4;
+man.workingConditions.salery                = 3;
+man.workingConditions.workingHours          = 4;
+manufacturers.insert(man);
+
+prod = new Product();
+prod.name                               = "8GB DDR3 RAM";
+prod.manufacturer = manufacturers({name:  "Kingston"}).first();
+prod.carbonFootprint                    = 20;
+prod.price.productPrice                 = 40;
+prod.price.energyCosts                  = 5;
+prod.price.manufacturingCosts           = 3;
+prod.price.materialCosts                = 5;
+products.insert(prod);
+
+man = new Manufacturer();
+man.name =     "Intel Corp.";
+man.setAddress("11 Jie Fang Lu Yi Duan, LiJiaTuo, Jinniu Qu, Chengdu Shi, Sichuan Sheng, China");
+man.workingConditions.employmentProtection  = 4;
+man.workingConditions.salery                = 4;
+man.workingConditions.workingHours          = 4;
+manufacturers.insert(man);
+
+prod = new Product();
+prod.name                               = "Core i7 Processor";
+prod.manufacturer = manufacturers({name:  "Intel Corp."}).first();
+prod.carbonFootprint                    = 20;
+prod.price.productPrice                 = 180;
+prod.price.energyCosts                  = 10;
+prod.price.manufacturingCosts           = 10;
+prod.price.materialCosts                = 20;
+products.insert(prod);
+
+
+man = new Manufacturer();
+man.name =     "Quanta Computer Inc.";
+man.setAddress("Hougang St, No. 11, Shilin District,Taipei City, Taiwan 111");
+man.workingConditions.employmentProtection  = 6;
+man.workingConditions.salery                = 5;
+man.workingConditions.workingHours          = 6;
+manufacturers.insert(man);
+
+prod = new Product();
+prod.name                               = "Motherboard";
+prod.manufacturer = manufacturers({name:  "Quanta Computer Inc."}).first();
+prod.components.push(products({name:      "Core i7 Processor"}).first());
+prod.components.push(products({name:      "8GB DDR3 RAM"}).first());
+prod.carbonFootprint                    = 30;
+prod.price.productPrice                 = 90;
+prod.price.energyCosts                  = 10;
+prod.price.manufacturingCosts           = 10;
+prod.price.materialCosts                = 10;
+products.insert(prod);
+
+
+man = new Manufacturer();
+man.name =     "Amkette";
+man.setAddress("40/10, Pocket 40, Kalkaji, New Delhi, India");
+man.workingConditions.employmentProtection  = 4;
+man.workingConditions.salery                = 3;
+man.workingConditions.workingHours          = 3;
+manufacturers.insert(man);
+
+prod = new Product();
+prod.name                               = "Keyboard";
+prod.manufacturer = manufacturers({name:  "Amkette"}).first();
+prod.carbonFootprint                    = 15;
+prod.price.productPrice                 = 40;
+prod.price.energyCosts                  = 5;
+prod.price.manufacturingCosts           = 5;
+prod.price.materialCosts                = 5;
+products.insert(prod);
+
+man = new Manufacturer();
+man.name =     "Cirque";
+man.setAddress("2463 South 3850 West, Salt Lake City, USA");
+man.workingConditions.employmentProtection  = 8;
+man.workingConditions.salery                = 7;
+man.workingConditions.workingHours          = 8;
+manufacturers.insert(man);
+
+prod = new Product();
+prod.name                               = "Trackpad";
+prod.manufacturer = manufacturers({name:  "Cirque"}).first();
+prod.carbonFootprint                    = 10;
+prod.price.productPrice                 = 20;
+prod.price.energyCosts                  = 3;
+prod.price.manufacturingCosts           = 5;
+prod.price.materialCosts                = 10;
+products.insert(prod);
+
+man = new Manufacturer();
+man.name =     "Lenovo Keyboard Inc.";
+man.setAddress("111 Hai Cheng Jie, Nangang Qu, Heilongjiang Sheng, China");
+man.workingConditions.employmentProtection  = 4;
+man.workingConditions.salery                = 3;
+man.workingConditions.workingHours          = 4;
+manufacturers.insert(man);
+
+prod = new Product();
+prod.name                               = "Keyboard Unit";
+prod.manufacturer = manufacturers({name:  "Lenovo Keyboard Inc."}).first();
+prod.components.push(products({name:      "Keyboard"}).first());
+prod.components.push(products({name:      "Trackpad"}).first());
+prod.carbonFootprint                    = 5;
+prod.price.productPrice                 = 10;
+prod.price.energyCosts                  = 0;
+prod.price.manufacturingCosts           = 3;
+prod.price.materialCosts                = 0;
+products.insert(prod);
+
+
+man = new Manufacturer();
+man.name =     "Lenovo Base Inc.";
+man.setAddress("26 Si Da Lin Jie, Heilongjiang Sheng, China");
+man.workingConditions.employmentProtection  = 4;
+man.workingConditions.salery                = 3;
+man.workingConditions.workingHours          = 4;
+manufacturers.insert(man);
+
+prod = new Product();
+prod.name                               = "Base Unit";
+prod.manufacturer = manufacturers({name:  "Lenovo Base Inc."}).first();
+prod.components.push(products({name:      "Keyboard Unit"}).first());
+prod.components.push(products({name:      "Motherboard"}).first());
+//prod.components.push(products({name:      "Battery 6 Cells"}).first());
+//prod.components.push(products({name:      "HDD 2 TB"}).first());
+prod.carbonFootprint                    = 10;
+prod.price.productPrice                 = 30;
+prod.price.energyCosts                  = 2;
+prod.price.manufacturingCosts           = 5;
+prod.price.materialCosts                = 10;
+products.insert(prod);
+
+man = new Manufacturer();
+man.name =     "B2";
+man.setAddress("12F, Tung Nam Commercial Centre, Kowloon, Hongkong, China");
+man.workingConditions.employmentProtection  = 4;
+man.workingConditions.salery                = 3;
+man.workingConditions.workingHours          = 3;
+manufacturers.insert(man);
+
+prod = new Product();
+prod.name                               = "Webcam";
+prod.manufacturer = manufacturers({name:  "B2"}).first();
+prod.carbonFootprint                    = 20;
+prod.price.productPrice                 = 40;
+prod.price.energyCosts                  = 5;
+prod.price.manufacturingCosts           = 5;
+prod.price.materialCosts                = 10;
+products.insert(prod);
+
+man = new Manufacturer();
+man.name =     "NEC Inc.";
+man.address = "1 Chome-36-12 Kitashinjuku, Tokio, Japan";
+man.location.latitude = 35.697749;
+man.location.longitude = 139.691290;
+man.workingConditions.employmentProtection  = 7;
+man.workingConditions.salery                = 7;
+man.workingConditions.workingHours          = 6;
+manufacturers.insert(man);
+
+prod = new Product();
+prod.name                               = "LCD Panel";
+prod.manufacturer = manufacturers({name:  "NEC Inc."}).first();
+prod.carbonFootprint                    = 40;
+prod.price.productPrice                 = 100;
+prod.price.energyCosts                  = 10;
+prod.price.manufacturingCosts           = 10;
+prod.price.materialCosts                = 10;
+products.insert(prod);
+
+man = new Manufacturer();
+man.name =     "Lenovo LCD";
+man.address = "691 Sahibzada Ajit Singh Nagar, Punjab, India";
+man.location.latitude = 30.726084;
+man.location.longitude = 76.724062;
+man.workingConditions.employmentProtection  = 4;
+man.workingConditions.salery                = 4;
+man.workingConditions.workingHours          = 4;
+manufacturers.insert(man);
+
+prod = new Product();
+prod.name                               = "LCD Unit";
+prod.manufacturer = manufacturers({name:  "Lenovo LCD"}).first();
+prod.components.push(products({name:      "LCD Panel"}).first());
+prod.components.push(products({name:      "Webcam"}).first());
+prod.carbonFootprint                    = 10;
+prod.price.productPrice                 = 40;
+prod.price.energyCosts                  = 5;
+prod.price.manufacturingCosts           = 5;
+prod.price.materialCosts                = 10;
+products.insert(prod);
+
+man = new Manufacturer();
+man.name =     "Lenovo Inc.";
+man.address = "test";
+man.location.latitude = 48.738752;
+man.location.longitude = 9.111401;
+man.workingConditions.employmentProtection  = 8;
+man.workingConditions.salery                = 7;
+man.workingConditions.workingHours          = 7;
+manufacturers.insert(man);
+
+prod = new Product();
+prod.name                               = "Lenovo Thinkpad X1 Carbon";
+prod.manufacturer = manufacturers({name:  "Lenovo Inc."}).first();
+prod.components.push(products({name:      "LCD Unit"}).first());
+prod.components.push(products({name:      "Base Unit"}).first());
+prod.carbonFootprint                    = 20;
+prod.price.productPrice                 = 1000;
+prod.price.energyCosts                  = 100;
+prod.price.manufacturingCosts           = 100;
+prod.price.materialCosts                = 200;
+products.insert(prod);
 // ------------------------------------------------------ //
 
 
@@ -305,9 +562,9 @@ products.insert(prod);
 
 man = new Manufacturer();
 man.name =     "Insapori Inc.";
-//man.setAddress("Viale Nazioni Unite, 10, 17019 Varazze SV, Italy");
-man.location.latitude = 44.3598;
-man.location.latitude = 8.577741;
+//man.address = "Viale Nazioni Unite, 10, 17019 Varazze SV, Italy";
+man.location.latitude = 44.360083;
+man.location.longitude = 8.577848;
 man.workingConditions.employmentProtection  = 7;
 man.workingConditions.salery                = 5;
 man.workingConditions.workingHours          = 8;
@@ -444,3 +701,4 @@ prod.price.energyCosts                  = 10;
 prod.price.manufacturingCosts           = 10;
 prod.price.materialCosts                = 10;
 products.insert(prod);
+
