@@ -36,9 +36,10 @@ Product = function () {
     this.compBubbles = [];
     this.compArcs = [];
     this.isExpanded = false;
-    this.roundedData = {
+    this.viewData = {
         carbonFootprint: Number(),
-        addedCarbonFootprint: Number()
+        addedCarbonFootprint: Number(),
+        address: [""]
     };
     this.hasComponents = function () {
         return this.components.length > 0;
@@ -56,9 +57,10 @@ Product = function () {
             return this.addedCarbonFootprint;
         }
     };
-    this.roundData = function () {
-        this.roundedData.carbonFootprint = Math.round(100*this.carbonFootprint)/100;
-        this.roundedData.addedCarbonFootprint = Math.round(100*this.addedCarbonFootprint)/100;
+    this.prepareViewData = function () {
+        this.viewData.carbonFootprint = Math.round(100*this.carbonFootprint)/100;
+        this.viewData.addedCarbonFootprint = Math.round(100*this.addedCarbonFootprint)/100;
+        this.viewData.address = this.manufacturer.address.split(', ');
     };
     // we need this method since we can only access poperties from insed the data binding in sidebar
     this.computeData = function () {
@@ -66,7 +68,21 @@ Product = function () {
         for (var idx in this.components) {
             this.components[idx].computeData();
         }
-        this.roundData();
+        this.prepareViewData();
+    };
+    this.getComponentNames = function () {
+        var names = [];
+        for (var idx in this.components) {
+            names.push(this.components[idx].name);
+        }
+        return names;
+    };
+    this.getComponentCarbonFootprints = function () {
+        var data = [];
+        for (var idx in this.components) {
+            data.push(this.components[idx].carbonFootprint);
+        }
+        return data;
     };
 };
 
