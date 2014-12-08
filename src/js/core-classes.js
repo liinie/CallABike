@@ -41,12 +41,13 @@ Product = function () {
     };
     this.getCarbonFootprint = function () {
         if (this.hasComponents()) {
-            var carbonFootprint = 0.0;
+            var sumCarbonFootprint = 0.0;
             
             for (var idx in this.components) {
-                carbonFootprint += this.components[idx].getCarbonFootprint();
+                sumCarbonFootprint += this.components[idx].getCarbonFootprint();
+                console.log(sumCarbonFootprint);
             }
-            return carbonFootprint + this.addedCarbonFootprint;
+            return sumCarbonFootprint + this.addedCarbonFootprint;
         }
         else {
             return this.addedCarbonFootprint;

@@ -373,7 +373,7 @@ man.workingConditions.workingHours          = 7;
 manufacturers.insert(man);
 
 prod = new Product();
-prod.name                               = "Lenovo Thinkpad X1 Carbon";
+prod.name                               = "Lenovo";
 prod.manufacturer = manufacturers({name:  "Lenovo Inc."}).first();
 prod.components.push(products({name:      "LCD Unit"}).first());
 prod.components.push(products({name:      "Base Unit"}).first());
