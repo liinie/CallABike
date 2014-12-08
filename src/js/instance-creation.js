@@ -364,9 +364,9 @@ products.insert(prod);
 
 man = new Manufacturer();
 man.name =     "Lenovo Inc.";
-man.address = "test";
-man.location.latitude = 48.738752;
-man.location.longitude = 9.111401;
+man.address = "Hevosenkenkä 3, 02600 Espoo, Finnland";
+man.location.latitude = 60.217939;
+man.location.longitude = 24.814446;
 man.workingConditions.employmentProtection  = 8;
 man.workingConditions.salery                = 7;
 man.workingConditions.workingHours          = 7;
@@ -409,7 +409,9 @@ products.insert(prod);
 
 man = new Manufacturer();
 man.name =     "Molkerei Weihenstephan";
-man.setAddress("Milchstraße 1A, 85354 Freising, Germany");
+man.address = "Milchstraße 1A, 85354 Freising, Germany";
+man.location.latitude = 48.379353;
+man.location.longitude = 11.731606;
 man.workingConditions.employmentProtection  = 9;
 man.workingConditions.salery                = 8;
 man.workingConditions.workingHours          = 8;
@@ -427,7 +429,9 @@ products.insert(prod);
 
 man = new Manufacturer();
 man.name =     "La Medesanese";
-man.setAddress("Via Carnevala 21/A, 43014 Medesano, Italy ");
+man.address = "Via Carnevala 21/A, 43014 Medesano, Italy";
+man.location.latitude = 44.763349;
+man.location.longitude = 10.129547;
 man.workingConditions.employmentProtection  = 6;
 man.workingConditions.salery                = 6;
 man.workingConditions.workingHours          = 7;
@@ -446,7 +450,9 @@ products.insert(prod);
 
 man = new Manufacturer();
 man.name =     "Thomy les Sauces";
-man.setAddress("4 La Rochette, 03340 La Ferté-Hauterive, France");
+man.address = "4 La Rochette, 03340 La Ferté-Hauterive, France";
+man.location.latitude = 46.400414;
+man.location.longitude = 3.335744;
 man.workingConditions.employmentProtection  = 6;
 man.workingConditions.salery                = 5;
 man.workingConditions.workingHours          = 7;
@@ -465,7 +471,9 @@ products.insert(prod);
 
 man = new Manufacturer();
 man.name =     "Cereales Inc.";
-man.setAddress("Rue de la Vallee Saint-Ulrich, Barr, France");
+man.address = "Rue de la Vallee Saint-Ulrich, Barr, France";
+man.location.latitude = 48.407148;
+man.location.longitude = 7.417145;
 man.workingConditions.employmentProtection  = 6;
 man.workingConditions.salery                = 5;
 man.workingConditions.workingHours          = 5;
@@ -483,7 +491,9 @@ products.insert(prod);
 
 man = new Manufacturer();
 man.name =     "De Cecco";
-man.setAddress("Via Nazionale, 4B, Fara San Martino CH, Italy");
+man.address = "Via Nazionale, 4B, Fara San Martino CH, Italy";
+man.location.latitude = 42.092088;
+man.location.longitude = 14.209575;
 man.workingConditions.employmentProtection  = 7;
 man.workingConditions.salery                = 7;
 man.workingConditions.workingHours          = 8;
@@ -502,7 +512,9 @@ products.insert(prod);
 
 man = new Manufacturer();
 man.name =     "Zwiebelhof";
-man.setAddress("Buchenweg 6, 73488 Ellenberg, Germany");
+man.address = "Buchenweg 6, 73488 Ellenberg, Germany";
+man.location.latitude = 49.012595;
+man.location.longitude = 10.210801;
 man.workingConditions.employmentProtection  = 8;
 man.workingConditions.salery                = 6;
 man.workingConditions.workingHours          = 7;
@@ -519,16 +531,10 @@ prod.price.materialCosts                = 0.1;
 products.insert(prod);
 
 man = new Manufacturer();
-man.name =     "CASI";
-man.setAddress("Calle Tomás Aznar Domenech, 30, 03007 Alacant, Alicante, Spain");
-man.workingConditions.employmentProtection  = 5;
-man.workingConditions.salery                = 5;
-man.workingConditions.workingHours          = 6;
-manufacturers.insert(man);
-
-man = new Manufacturer();
 man.name =     "Prezzemoli Inc.";
-man.setAddress("Via di Prima Porta, 11, 00188 Roma RM, Italy");
+man.address = "Via di Prima Porta, 11, 00188 Roma RM, Italy";
+man.location.latitude = 42.001276;
+man.location.longitude = 12.487432;
 man.workingConditions.employmentProtection  = 6;
 man.workingConditions.salery                = 6;
 man.workingConditions.workingHours          = 7;
@@ -546,7 +552,9 @@ products.insert(prod);
 
 man = new Manufacturer();
 man.name =     "Aglidiso";
-man.setAddress("50 Avenue de Cassan, 34320 Roujan, France");
+man.address = "50 Avenue de Cassan, 34320 Roujan, France";
+man.location.latitude = 43.507097;
+man.location.longitude = 3.307128;
 man.workingConditions.employmentProtection  = 7;
 man.workingConditions.salery                = 5;
 man.workingConditions.workingHours          = 7;
@@ -564,7 +572,7 @@ products.insert(prod);
 
 man = new Manufacturer();
 man.name =     "Insapori Inc.";
-//man.address = "Viale Nazioni Unite, 10, 17019 Varazze SV, Italy";
+man.address = "Viale Nazioni Unite, 10, 17019 Varazze SV, Italy";
 man.location.latitude = 44.360083;
 man.location.longitude = 8.577848;
 man.workingConditions.employmentProtection  = 7;
@@ -585,6 +593,16 @@ prod.price.materialCosts                = 0.1;
 products.insert(prod);
 
 
+man = new Manufacturer();
+man.name =     "CASI";
+man.address = "Calle Tomás Aznar Domenech, 30, 03007 Alacant, Alicante, Spain";
+man.location.latitude = 38.341548;
+man.location.longitude = -0.514416;
+man.workingConditions.employmentProtection  = 5;
+man.workingConditions.salery                = 5;
+man.workingConditions.workingHours          = 6;
+manufacturers.insert(man);
+
 prod = new Product();
 prod.name                               = "Tomato";
 prod.manufacturer = manufacturers({name:  "CASI"}).first();
@@ -597,7 +615,9 @@ products.insert(prod);
 
 man = new Manufacturer();
 man.name =     "Bonduelle";
-man.setAddress("Avenida Les Germaníes 49, 46291 Benimodo, Spain");
+man.address = "Avenida Les Germaníes 49, 46291 Benimodo, Spain";
+man.location.latitude = 39.215836;
+man.location.longitude = -0.522188;
 man.workingConditions.employmentProtection  = 7;
 man.workingConditions.salery                = 6;
 man.workingConditions.workingHours          = 7;
@@ -618,7 +638,9 @@ products.insert(prod);
 
 man = new Manufacturer();
 man.name =     "Texas Longhorn";
-man.setAddress("2139 San Jacinto Boulevard, Austin, Texas, USA");
+man.address = "2139 San Jacinto Boulevard, Austin, Texas, USA";
+man.location.latitude = 30.283808;
+man.location.longitude = -97.732715;
 man.workingConditions.employmentProtection  = 7;
 man.workingConditions.salery                = 7;
 man.workingConditions.workingHours          = 6;
@@ -657,7 +679,9 @@ products.insert(prod);
 
 man = new Manufacturer();
 man.name ="Smithfield Foods";
-man.setAddress("200 Commerce St, Smithfield, VA 23430, USA");
+man.address = "200 Commerce St, Smithfield, VA 23430, USA";
+man.location.latitude = 36.984743;
+man.location.longitude = -76.630274;
 man.workingConditions.employmentProtection  = 6;
 man.workingConditions.salery                = 6;
 man.workingConditions.workingHours          = 7;
