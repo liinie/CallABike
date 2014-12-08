@@ -571,7 +571,7 @@ man.workingConditions.workingHours          = 8;
 manufacturers.insert(man);
 
 prod = new Product();
-prod.name                               = "Mixed herbs";
+prod.name                               = "Mixed Herbs";
 prod.manufacturer = manufacturers({name:  "Insapori Inc."}).first();
 prod.components.push(products({name:      "Parsley"}).first());
 prod.components.push(products({name:      "Garlic"}).first());
