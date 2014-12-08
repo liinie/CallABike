@@ -139,6 +139,7 @@ manufacturers.insert(man);
 
 prod = new Product();
 prod.name                               = "Battery 6 Cells";
+prod.picture = "thinkpad/battery.png";
 prod.manufacturer = manufacturers({name:  "BKP4 Technologies"}).first();
 prod.addedCarbonFootprint                    = 30;
 prod.price.productPrice                 = 60;
@@ -157,6 +158,7 @@ manufacturers.insert(man);
 
 prod = new Product();
 prod.name                               = "HDD 2 TB";
+prod.picture = "thinkpad/hdd.png";
 prod.manufacturer = manufacturers({name:  "Western Digital"}).first();
 prod.addedCarbonFootprint                    = 30;
 prod.price.productPrice                 = 70;
@@ -175,6 +177,7 @@ manufacturers.insert(man);
 
 prod = new Product();
 prod.name                               = "8GB DDR3 RAM";
+prod.picture = "thinkpad/ram.png";
 prod.manufacturer = manufacturers({name:  "Kingston"}).first();
 prod.addedCarbonFootprint                    = 20;
 prod.price.productPrice                 = 40;
@@ -193,6 +196,7 @@ manufacturers.insert(man);
 
 prod = new Product();
 prod.name                               = "Core i7 Processor";
+prod.picture = "thinkpad/processor.png";
 prod.manufacturer = manufacturers({name:  "Intel Corp."}).first();
 prod.addedCarbonFootprint                    = 20;
 prod.price.productPrice                 = 180;
@@ -212,6 +216,7 @@ manufacturers.insert(man);
 
 prod = new Product();
 prod.name                               = "Motherboard";
+prod.picture = "thinkpad/motherboard.png";
 prod.manufacturer = manufacturers({name:  "Quanta Computer Inc."}).first();
 prod.components.push(products({name:      "Core i7 Processor"}).first());
 prod.components.push(products({name:      "8GB DDR3 RAM"}).first());
@@ -233,6 +238,7 @@ manufacturers.insert(man);
 
 prod = new Product();
 prod.name                               = "Keyboard";
+prod.picture = "thinkpad/keyboard.png";
 prod.manufacturer = manufacturers({name:  "Amkette"}).first();
 prod.addedCarbonFootprint                    = 15;
 prod.price.productPrice                 = 40;
@@ -251,6 +257,7 @@ manufacturers.insert(man);
 
 prod = new Product();
 prod.name                               = "Trackpad";
+prod.picture = "thinkpad/trackpad.png";
 prod.manufacturer = manufacturers({name:  "Cirque"}).first();
 prod.addedCarbonFootprint                    = 10;
 prod.price.productPrice                 = 20;
@@ -269,6 +276,7 @@ manufacturers.insert(man);
 
 prod = new Product();
 prod.name                               = "Keyboard Unit";
+prod.picture = "thinkpad/keyboard_unit.png";
 prod.manufacturer = manufacturers({name:  "Lenovo Keyboard Inc."}).first();
 prod.components.push(products({name:      "Keyboard"}).first());
 prod.components.push(products({name:      "Trackpad"}).first());
@@ -290,6 +298,7 @@ manufacturers.insert(man);
 
 prod = new Product();
 prod.name                               = "Base Unit";
+prod.picture = "thinkpad/base_unit.png";
 prod.manufacturer = manufacturers({name:  "Lenovo Base Inc."}).first();
 prod.components.push(products({name:      "Keyboard Unit"}).first());
 prod.components.push(products({name:      "Motherboard"}).first());
@@ -312,6 +321,7 @@ manufacturers.insert(man);
 
 prod = new Product();
 prod.name                               = "Webcam";
+prod.picture = "thinkpad/webcam_and_microphone_combo_card.png";
 prod.manufacturer = manufacturers({name:  "B2"}).first();
 prod.addedCarbonFootprint                    = 20;
 prod.price.productPrice                 = 40;
@@ -332,6 +342,7 @@ manufacturers.insert(man);
 
 prod = new Product();
 prod.name                               = "LCD Panel";
+prod.picture = "thinkpad/lcd_panel.png";
 prod.manufacturer = manufacturers({name:  "NEC Inc."}).first();
 prod.addedCarbonFootprint                    = 40;
 prod.price.productPrice                 = 100;
@@ -352,6 +363,7 @@ manufacturers.insert(man);
 
 prod = new Product();
 prod.name                               = "LCD Unit";
+prod.picture = "thinkpad/lcd_unit.png";
 prod.manufacturer = manufacturers({name:  "Lenovo LCD"}).first();
 prod.components.push(products({name:      "LCD Panel"}).first());
 prod.components.push(products({name:      "Webcam"}).first());
@@ -364,7 +376,7 @@ products.insert(prod);
 
 man = new Manufacturer();
 man.name =     "Lenovo Inc.";
-man.address = "Hevosenkenkä 3, 02600 Espoo, Finnland";
+man.address = "Hevosenkenkä 3, 02600 Espoo, Finland";
 man.location.latitude = 60.217939;
 man.location.longitude = 24.814446;
 man.workingConditions.employmentProtection  = 8;
@@ -374,6 +386,7 @@ manufacturers.insert(man);
 
 prod = new Product();
 prod.name                               = "Lenovo Thinkpad X1 Carbon";
+prod.picture = "thinkpad/lcd_unit.png";
 prod.manufacturer = manufacturers({name:  "Lenovo Inc."}).first();
 prod.components.push(products({name:      "LCD Unit"}).first());
 prod.components.push(products({name:      "Base Unit"}).first());
