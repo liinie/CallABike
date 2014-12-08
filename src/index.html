@@ -5,7 +5,8 @@
         <script src="polymer-paper/platform/platform.js"></script>
         <link href='//fonts.googleapis.com/css?family=RobotoDraft:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en' rel='stylesheet' type='text/css'>
 
-        
+        <script src="http://lorenzoongithub.github.io/completely/complete.ly.1.0.1.min.js"></script>
+
         <script src="js/d3/d3.v3.min.js" charset="utf-8"></script>
         <script src="js/topojson/topojson.v1.min.js"></script>
         <!--<script src="js/datamaps.world.min.js"></script>-->
@@ -43,7 +44,20 @@
         <core-toolbar id="toolbar">
             <paper-shadow z="1"></paper-shadow>
             <core-icon id="search-icon" icon="search"></core-icon>
-            <core-input id="search-field" placeholder="Search for product" onkeypress="var searchProc = new SearchProcessor(products, manufacturers); searchProc.keyPressEvent(event);" spellcheck='false'></core-input>
+            <div id="foo"></div>
+            <!--<core-input id="search-field" placeholder="Search for product" onkeypress="var searchProc = new SearchProcessor(products, manufacturers); searchProc.keyPressEvent(event);" spellcheck='false'></core-input>-->
+            <script>
+                var p = completely(document.getElementById('foo'));
+
+                options = products().distinct("name");
+                p.options = options;
+                p.onChange = function (text) {
+                    p.startFrom = text.indexOf(',') + 1;//starts from 0
+                    var searchProc = new SearchProcessor(products, manufacturers);
+                    searchProc.keyPressEvent(text);
+                    setTimeout(function () { p.input.focus(); p.repaint(); }, 0);
+                };
+            </script>
         </core-toolbar>
         <div flex horizontal layout>
             <div id="map-container" flex></div>
