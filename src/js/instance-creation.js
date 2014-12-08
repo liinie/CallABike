@@ -426,7 +426,7 @@ manufacturers.insert(man);
 
 prod = new Product();
 prod.name                               = "Carrots";
-prod.picture = "carrots.png";
+prod.picture = "lasagne/carrots.png";
 prod.manufacturer = manufacturers({name:  "Albert Hejin"}).first();
 prod.addedCarbonFootprint                    = 10;
 prod.price.productPrice                 = 1;
@@ -448,7 +448,7 @@ manufacturers.insert(man);
 
 prod = new Product();
 prod.name                               = "Milk";
-prod.picture = "milk.png";
+prod.picture = "lasagne/milk.png";
 prod.manufacturer = manufacturers({name:  "Molkerei Weihenstephan"}).first();
 prod.addedCarbonFootprint                    = 30;
 prod.price.productPrice                 = 1;
@@ -470,7 +470,7 @@ manufacturers.insert(man);
 
 prod = new Product();
 prod.name                               = "Parmigiano Reggiano";
-prod.picture = "parmigiano.png";
+prod.picture = "lasagne/parmigiano.png";
 prod.manufacturer = manufacturers({name:  "La Medesanese"}).first();
 prod.components.push(products({name:      "Milk"}).first());
 prod.addedCarbonFootprint                    = 50;
@@ -493,7 +493,7 @@ manufacturers.insert(man);
 
 prod = new Product();
 prod.name                               = "Bechamel";
-prod.picture = "bechamel.png";
+prod.picture = "lasagne/bechamel.png";
 prod.manufacturer = manufacturers({name:  "Thomy les Sauces"}).first();
 prod.components.push(products({name:      "Milk"}).first());
 prod.addedCarbonFootprint                    = 35;
@@ -516,7 +516,7 @@ manufacturers.insert(man);
 
 prod = new Product();
 prod.name                               = "Grain";
-prod.picture = "grain.png";
+prod.picture = "lasagne/grain.png";
 prod.manufacturer = manufacturers({name:  "Cereales Inc."}).first();
 prod.addedCarbonFootprint                    = 5;
 prod.price.productPrice                 = 1;
@@ -538,7 +538,7 @@ manufacturers.insert(man);
 
 prod = new Product();
 prod.name                               = "Lasagne Pasta";
-prod.picture = "lasagnepasta.png";
+prod.picture = "lasagne/lasagnepasta.png";
 prod.manufacturer = manufacturers({name:  "De Cecco"}).first();
 prod.components.push(products({name:      "Grain"}).first());
 prod.addedCarbonFootprint                    = 10;
@@ -561,7 +561,7 @@ manufacturers.insert(man);
 
 prod = new Product();
 prod.name                               = "Onion";
-prod.picture = "onion.png";
+prod.picture = "lasagne/onion.png";
 prod.manufacturer = manufacturers({name:  "Zwiebelhof"}).first();
 prod.addedCarbonFootprint                    = 5;
 prod.price.productPrice                 = 1;
@@ -583,7 +583,7 @@ manufacturers.insert(man);
 
 prod = new Product();
 prod.name                               = "Parsley";
-prod.picture = "parsley.png";
+prod.picture = "lasagne/parsley.png";
 prod.manufacturer = manufacturers({name:  "Prezzemoli Inc."}).first();
 prod.addedCarbonFootprint                    = 5;
 prod.price.productPrice                 = 2;
@@ -605,7 +605,7 @@ manufacturers.insert(man);
 
 prod = new Product();
 prod.name                               = "Garlic";
-prod.picture = "garlic.png";
+prod.picture = "lasagne/garlic.png";
 prod.manufacturer = manufacturers({name:  "Aglidiso"}).first();
 prod.addedCarbonFootprint                    = 10;
 prod.price.productPrice                 = 1;
@@ -627,7 +627,7 @@ manufacturers.insert(man);
 
 prod = new Product();
 prod.name                               = "Mixed Herbs";
-prod.picture = "mixedherbs.png";
+prod.picture = "lasagne/mixedherbs.png";
 prod.manufacturer = manufacturers({name:  "Insapori Inc."}).first();
 prod.components.push(products({name:      "Parsley"}).first());
 prod.components.push(products({name:      "Garlic"}).first());
@@ -652,7 +652,7 @@ manufacturers.insert(man);
 
 prod = new Product();
 prod.name                               = "Tomato";
-prod.picture = "tomato.png";
+prod.picture = "lasagne/tomato.png";
 prod.manufacturer = manufacturers({name:  "CASI"}).first();
 prod.addedCarbonFootprint                    = 10;
 prod.price.productPrice                 = 2;
@@ -674,7 +674,7 @@ manufacturers.insert(man);
 
 prod = new Product();
 prod.name                               = "Tomato Sauce";
-prod.picture = "tomatosauce.png";
+prod.picture = "lasagne/tomatosauce.png";
 prod.manufacturer = manufacturers({name:  "Bonduelle"}).first();
 prod.components.push(products({name:      "Tomato"}).first());
 prod.components.push(products({name:      "Mixed Herbs"}).first());
@@ -699,7 +699,7 @@ manufacturers.insert(man);
 
 prod = new Product();
 prod.name                               = "Beef";
-prod.picture = "beef.png";
+prod.picture = "lasagne/beef.png";
 prod.manufacturer = manufacturers({name:  "Texas Longhorn"}).first();
 prod.addedCarbonFootprint                    = 400;
 prod.price.productPrice                 = 30;
@@ -722,7 +722,7 @@ manufacturers.insert(man);
 
 prod = new Product();
 prod.name                               = "Pork";
-prod.picture = "pork.png";
+prod.picture = "lasagne/pork.png";
 prod.manufacturer = manufacturers({name:  "Shuanghui"}).first();
 prod.addedCarbonFootprint                    = 350;
 prod.price.productPrice                 = 35;
@@ -744,7 +744,7 @@ manufacturers.insert(man);
 
 prod = new Product();
 prod.name                               = "Minced Meat";
-prod.picture = "mincedmeat.png";
+prod.picture = "lasagne/mincedmeat.png";
 prod.manufacturer = manufacturers({name:  "Smithfield Foods"}).first();
 prod.components.push(products({name:      "Beef"}).first());
 prod.components.push(products({name:      "Pork"}).first());
@@ -770,7 +770,7 @@ manufacturers.insert(man);
 
 prod = new Product();
 prod.name                               = "Lasagne";
-prod.picture = "lasagne.png";
+prod.picture = "lasagne/lasagne.png";
 prod.manufacturer = manufacturers({name:  "LIDL"}).first();
 prod.components.push(products({name:      "Minced Meat"}).first());
 prod.components.push(products({name:      "Tomato Sauce"}).first());
