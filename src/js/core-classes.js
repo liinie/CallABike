@@ -36,6 +36,10 @@ Product = function () {
     this.compBubbles = [];
     this.compArcs = [];
     this.isExpanded = false;
+    this.roundedData = {
+        carbonFootprint: Number(),
+        addedCarbonFootprint: Number()
+    };
     this.hasComponents = function () {
         return this.components.length > 0;
     };
@@ -45,7 +49,6 @@ Product = function () {
             
             for (var idx in this.components) {
                 sumCarbonFootprint += this.components[idx].getCarbonFootprint();
-                console.log(sumCarbonFootprint);
             }
             return sumCarbonFootprint + this.addedCarbonFootprint;
         }
@@ -53,9 +56,17 @@ Product = function () {
             return this.addedCarbonFootprint;
         }
     };
+    this.roundData = function () {
+        this.roundedData.carbonFootprint = Math.round(100*this.carbonFootprint)/100;
+        this.roundedData.addedCarbonFootprint = Math.round(100*this.addedCarbonFootprint)/100;
+    };
     // we need this method since we can only access poperties from insed the data binding in sidebar
     this.computeData = function () {
-        this.carbonFootprint = this.getCarbonFootprint();
+        this.carbonFootprint =this.getCarbonFootprint();
+        for (var idx in this.components) {
+            this.components[idx].computeData();
+        }
+        this.roundData();
     };
 };
 

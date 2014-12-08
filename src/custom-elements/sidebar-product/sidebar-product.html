@@ -33,16 +33,31 @@
         <div id="sidebar-stats">
             <h1>Statistics</h1>
             <table>
-                <tr>
+                <!--<tr>
                     <th>Travelled Distance</th>
                     <td class="data"></td>
                     <td> km</td>
-                </tr>
+                </tr>-->
                 <tr>
                     <th>Carbon Footprint</th>
-                    <td class="data">{{product.carbonFootprint}}</td>
+                    <td class="data">{{product.roundedData.carbonFootprint}}</td>
                     <td> kg</td>
                 </tr>
+                <tr>
+                    
+                </tr>
+                <tr>
+                    <th class="components">Added</th>
+                    <td class="data">{{product.roundedData.addedCarbonFootprint}}</td>
+                    <td> kg</td>
+                </tr>
+                <template repeat="{{c in product.components}}">
+                    <tr>
+                        <th class="components">{{c.name}}</th>
+                        <td class="data">{{c.roundedData.carbonFootprint}}</td>
+                        <td> kg</td>
+                    </tr>
+                </template>
             </table>
         </div>
     </template>
@@ -50,6 +65,9 @@
         Polymer({
             created: function () {
                 this.product = new Product();
+            },
+            productChanged: function () {
+                console.log("Your fricking product changed!");
             }
         });
     </script>
