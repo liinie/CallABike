@@ -15,6 +15,7 @@ SearchProcessor= function (productsDb_, manufacturersDb_) {
         var prod = productsDb({name:searchString}).first();
         
         if(prod !== false) {
+            prod.computeData();
             mapController.renderProduct(prod);
             document.getElementById("sidebar-product").product = prod;
         }

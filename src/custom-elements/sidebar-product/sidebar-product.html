@@ -1,3 +1,4 @@
+
 <link rel="import" href="../../polymer-paper/polymer/polymer.html">
 <link rel="import" href="../../polymer-paper/paper-shadow/paper-shadow.html">
 
@@ -16,7 +17,7 @@
             </div>
             <div class="sidebar-title">
                 <h1 id="sidebar-manufacturer-name">{{product.manufacturer.name}}</h1>
-                <p id="sidebar-manufacturer-address">Location Adress,<br/>Country</p>
+                <p id="sidebar-manufacturer-address">{{product.manufacturer.address}}</p>
             </div>
         </div>
         <div class="sidebar-banner">
@@ -34,12 +35,12 @@
             <table>
                 <tr>
                     <th>Travelled Distance</th>
-                    <td class="data">12000</td>
+                    <td class="data"></td>
                     <td> km</td>
                 </tr>
                 <tr>
                     <th>Carbon Footprint</th>
-                    <td class="data">3.56</td>
+                    <td class="data">{{product.carbonFootprint}}</td>
                     <td> kg</td>
                 </tr>
             </table>

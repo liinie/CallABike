@@ -25,6 +25,7 @@ Product = function () {
     this.retailer = {};
     this.manufacturer = [];
     this.components = [];
+    this.carbonFootprint = Number();
     this.addedCarbonFootprint = Number();
     this.price = {
         energyCosts: Number(),
@@ -50,7 +51,11 @@ Product = function () {
         else {
             return this.addedCarbonFootprint;
         }
-    }
+    };
+    // we need this method since we can only access poperties from insed the data binding in sidebar
+    this.computeData = function () {
+        this.carbonFootprint = this.getCarbonFootprint();
+    };
 };
 
 Retailer = function () {
