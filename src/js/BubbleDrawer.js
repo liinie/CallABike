@@ -175,7 +175,7 @@ BubbleDrawer = function (map_) {
         
         // create the arc
         var arc =
-        map.svg.select('g.bubbles').append('svg:path')          // append a path element
+        map.svg.select('g.arcs').append('svg:path')          // append a path element
         .attr('class','map-arc')                                // apply class
         .attr('d', pathData)                                    // specify description string
         .attr('product-id', p2.id)                              // set attribute product-id

@@ -1,3 +1,4 @@
+
 * {
     font-family: "RobotoDraft";
 }
@@ -35,4 +36,7 @@
     display: block;
     float:right;
     min-width: 25%;
+}
+th.components {
+    padding-left: 15px;
 }

@@ -1,6 +1,8 @@
+
 <link rel="import" href="../../polymer-paper/polymer/polymer.html">
 <link rel="import" href="../../polymer-paper/paper-shadow/paper-shadow.html">
 
+<script src="../../js/d3/d3.v3.min.js" charset="utf-8"></script>
 
 <polymer-element name="sidebar-product" attributes="product">
     <template>
@@ -16,7 +18,11 @@
             </div>
             <div class="sidebar-title">
                 <h1 id="sidebar-manufacturer-name">{{product.manufacturer.name}}</h1>
-                <p id="sidebar-manufacturer-address">Location Adress,<br/>Country</p>
+                <p id="sidebar-manufacturer-address">
+                    <template repeat="{{line in product.viewData.address}}">
+                        {{line}}<br/>
+                    </template>
+                </p>
             </div>
         </div>
         <div class="sidebar-banner">
@@ -26,22 +32,35 @@
             </div>
             <div class="sidebar-title">
                 <h1 style="display:inline-block;width:150px" id="sidebar-product-name">{{product.name}}</h1>
+                <p>Rating: *****</p>
+                <p>Something else: value</p>
             </div>
         </div>
 
         <div id="sidebar-stats">
             <h1>Statistics</h1>
             <table>
-                <tr>
+                <!--<tr>
                     <th>Travelled Distance</th>
-                    <td class="data">12000</td>
+                    <td class="data"></td>
                     <td> km</td>
-                </tr>
+                </tr>-->
                 <tr>
                     <th>Carbon Footprint</th>
-                    <td class="data">3.56</td>
+                    <td class="data">{{product.viewData.carbonFootprint}}</td>
+                    <td> kg</td>
+                <tr>
+                    <th class="components">Added</th>
+                    <td class="data">{{product.viewData.addedCarbonFootprint}}</td>
                     <td> kg</td>
                 </tr>
+                <template repeat="{{c in product.components}}">
+                    <tr>
+                        <th class="components">{{c.name}}</th>
+                        <td class="data">{{c.viewData.carbonFootprint}}</td>
+                        <td> kg</td>
+                    </tr>
+                </template>
             </table>
         </div>
     </template>
@@ -49,6 +68,9 @@
         Polymer({
             created: function () {
                 this.product = new Product();
+            },
+            productChanged: function () {
+                console.log("Your fricking product changed!");
             }
         });
     </script>

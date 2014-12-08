@@ -403,7 +403,7 @@ prod.picture = "thinkpad/lcd_unit.png";
 prod.manufacturer = manufacturers({name:  "Lenovo Inc."}).first();
 prod.components.push(products({name:      "LCD Unit"}).first());
 prod.components.push(products({name:      "Base Unit"}).first());
-prod.addedCarbonFootprint                    = 20;
+prod.addedCarbonFootprint                    = 20.23456589234567;
 prod.price.productPrice                 = 1000;
 prod.price.energyCosts                  = 100;
 prod.price.manufacturingCosts           = 100;
