@@ -25,7 +25,7 @@ Product = function () {
     this.retailer = {};
     this.manufacturer = [];
     this.components = [];
-    this.carbonFootprint = Number();
+    this.addedCarbonFootprint = Number();
     this.price = {
         energyCosts: Number(),
         materialCosts: Number(),
@@ -37,6 +37,19 @@ Product = function () {
     this.isExpanded = false;
     this.hasComponents = function () {
         return this.components.length > 0;
+    };
+    this.getCarbonFootprint = function () {
+        if (this.hasComponents()) {
+            var carbonFootprint = 0.0;
+            
+            for (var idx in this.components) {
+                carbonFootprint += this.components[idx].getCarbonFootprint();
+            }
+            return carbonFootprint + this.addedCarbonFootprint;
+        }
+        else {
+            return this.addedCarbonFootprint;
+        }
     }
 };
 
