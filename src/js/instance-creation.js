@@ -261,7 +261,7 @@ products.insert(prod);
 
 man = new Manufacturer();
 man.name =     "Lenovo Keyboard Inc.";
-man.setAddress("111 Hai Cheng Jie, Nangang Qu, Heilongjiang Sheng, China");
+man.setAddress("2 Qian Jin Xiang, Wuwei Shi, Gansu Sheng, China");
 man.workingConditions.employmentProtection  = 4;
 man.workingConditions.salery                = 3;
 man.workingConditions.workingHours          = 4;
