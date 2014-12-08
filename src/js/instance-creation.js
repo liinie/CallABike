@@ -131,6 +131,7 @@ products.insert(prod);
 
 man = new Manufacturer();
 man.name =     "BKP4 Technologies";
+man.picture = "bkp4.png";
 man.setAddress("Rishi Raj Narayan Rd, Bansdroni, Kolkata, West Bengal 700070, Indien");
 man.workingConditions.employmentProtection  = 4;
 man.workingConditions.salery                = 3;
@@ -150,6 +151,7 @@ products.insert(prod);
 
 man = new Manufacturer();
 man.name =     "Western Digital";
+man.picture = "wd.png";
 man.setAddress("Krok Som Bun, Si Maha Phot District, Prachin Buri, Thailand");
 man.workingConditions.employmentProtection  = 4;
 man.workingConditions.salery                = 3;
@@ -169,6 +171,7 @@ products.insert(prod);
 
 man = new Manufacturer();
 man.name =     "Kingston";
+man.picture = "kingston.png";
 man.setAddress("3588 Hu Tai Lu, Baoshan Qu, Shanghai Shi, China");
 man.workingConditions.employmentProtection  = 4;
 man.workingConditions.salery                = 3;
@@ -188,6 +191,7 @@ products.insert(prod);
 
 man = new Manufacturer();
 man.name =     "Intel Corp.";
+man.picture = "intel.png";
 man.setAddress("11 Jie Fang Lu Yi Duan, LiJiaTuo, Jinniu Qu, Chengdu Shi, Sichuan Sheng, China");
 man.workingConditions.employmentProtection  = 4;
 man.workingConditions.salery                = 4;
@@ -208,6 +212,7 @@ products.insert(prod);
 
 man = new Manufacturer();
 man.name =     "Quanta Computer Inc.";
+man.picture = "quanta.png";
 man.setAddress("Hougang St, No. 11, Shilin District,Taipei City, Taiwan 111");
 man.workingConditions.employmentProtection  = 6;
 man.workingConditions.salery                = 5;
@@ -230,6 +235,7 @@ products.insert(prod);
 
 man = new Manufacturer();
 man.name =     "Amkette";
+man.picture = "amkette.png";
 man.setAddress("40/10, Pocket 40, Kalkaji, New Delhi, India");
 man.workingConditions.employmentProtection  = 4;
 man.workingConditions.salery                = 3;
@@ -249,6 +255,7 @@ products.insert(prod);
 
 man = new Manufacturer();
 man.name =     "Cirque";
+man.picture = "cirque.png";
 man.setAddress("2463 South 3850 West, Salt Lake City, USA");
 man.workingConditions.employmentProtection  = 8;
 man.workingConditions.salery                = 7;
@@ -268,6 +275,7 @@ products.insert(prod);
 
 man = new Manufacturer();
 man.name =     "Lenovo Keyboard Inc.";
+man.picture = "lenovo.png";
 man.setAddress("2 Qian Jin Xiang, Wuwei Shi, Gansu Sheng, China");
 man.workingConditions.employmentProtection  = 4;
 man.workingConditions.salery                = 3;
@@ -290,6 +298,7 @@ products.insert(prod);
 
 man = new Manufacturer();
 man.name =     "Lenovo Base Inc.";
+man.picture = "lenovo.png";
 man.setAddress("26 Si Da Lin Jie, Heilongjiang Sheng, China");
 man.workingConditions.employmentProtection  = 4;
 man.workingConditions.salery                = 3;
@@ -313,6 +322,7 @@ products.insert(prod);
 
 man = new Manufacturer();
 man.name =     "B2";
+man.picture = "b2.png";
 man.setAddress("12F, Tung Nam Commercial Centre, Kowloon, Hongkong, China");
 man.workingConditions.employmentProtection  = 4;
 man.workingConditions.salery                = 3;
@@ -332,6 +342,7 @@ products.insert(prod);
 
 man = new Manufacturer();
 man.name =     "NEC Inc.";
+man.picture = "nec.png";
 man.address = "1 Chome-36-12 Kitashinjuku, Tokio, Japan";
 man.location.latitude = 35.697749;
 man.location.longitude = 139.691290;
@@ -353,6 +364,7 @@ products.insert(prod);
 
 man = new Manufacturer();
 man.name =     "Lenovo LCD";
+man.picture = "lenovo.png";
 man.address = "691 Sahibzada Ajit Singh Nagar, Punjab, India";
 man.location.latitude = 30.726084;
 man.location.longitude = 76.724062;
@@ -376,6 +388,7 @@ products.insert(prod);
 
 man = new Manufacturer();
 man.name =     "Lenovo Inc.";
+man.picture = "lenovo.png";
 man.address = "Hevosenkenkä 3, 02600 Espoo, Finland";
 man.location.latitude = 60.217939;
 man.location.longitude = 24.814446;
@@ -401,6 +414,7 @@ products.insert(prod);
 
 man = new Manufacturer();
 man.name =     "Albert Hejin";
+man.picture = "albert.png";
 man.address = "Romeinse Tijd 2-8, 5053 ET Goirle, Niederlande";
 man.location.latitude = 51.531646;
 man.location.longitude = 5.071066;
@@ -412,6 +426,7 @@ manufacturers.insert(man);
 
 prod = new Product();
 prod.name                               = "Carrots";
+prod.picture = "carrots.png";
 prod.manufacturer = manufacturers({name:  "Albert Hejin"}).first();
 prod.addedCarbonFootprint                    = 10;
 prod.price.productPrice                 = 1;
@@ -422,6 +437,7 @@ products.insert(prod);
 
 man = new Manufacturer();
 man.name =     "Molkerei Weihenstephan";
+man.picture = "weihenstephan.png";
 man.address = "Milchstraße 1A, 85354 Freising, Germany";
 man.location.latitude = 48.379353;
 man.location.longitude = 11.731606;
@@ -432,6 +448,7 @@ manufacturers.insert(man);
 
 prod = new Product();
 prod.name                               = "Milk";
+prod.picture = "milk.png";
 prod.manufacturer = manufacturers({name:  "Molkerei Weihenstephan"}).first();
 prod.addedCarbonFootprint                    = 30;
 prod.price.productPrice                 = 1;
@@ -442,6 +459,7 @@ products.insert(prod);
 
 man = new Manufacturer();
 man.name =     "La Medesanese";
+man.picture = "lamedesanese.png";
 man.address = "Via Carnevala 21/A, 43014 Medesano, Italy";
 man.location.latitude = 44.763349;
 man.location.longitude = 10.129547;
@@ -452,6 +470,7 @@ manufacturers.insert(man);
 
 prod = new Product();
 prod.name                               = "Parmigiano Reggiano";
+prod.picture = "parmigiano.png";
 prod.manufacturer = manufacturers({name:  "La Medesanese"}).first();
 prod.components.push(products({name:      "Milk"}).first());
 prod.addedCarbonFootprint                    = 50;
@@ -463,6 +482,7 @@ products.insert(prod);
 
 man = new Manufacturer();
 man.name =     "Thomy les Sauces";
+man.picture = "thomy.png";
 man.address = "4 La Rochette, 03340 La Ferté-Hauterive, France";
 man.location.latitude = 46.400414;
 man.location.longitude = 3.335744;
@@ -473,6 +493,7 @@ manufacturers.insert(man);
 
 prod = new Product();
 prod.name                               = "Bechamel";
+prod.picture = "bechamel.png";
 prod.manufacturer = manufacturers({name:  "Thomy les Sauces"}).first();
 prod.components.push(products({name:      "Milk"}).first());
 prod.addedCarbonFootprint                    = 35;
@@ -484,6 +505,7 @@ products.insert(prod);
 
 man = new Manufacturer();
 man.name =     "Cereales Inc.";
+man.picture = "cereales.png";
 man.address = "Rue de la Vallee Saint-Ulrich, Barr, France";
 man.location.latitude = 48.407148;
 man.location.longitude = 7.417145;
@@ -494,6 +516,7 @@ manufacturers.insert(man);
 
 prod = new Product();
 prod.name                               = "Grain";
+prod.picture = "grain.png";
 prod.manufacturer = manufacturers({name:  "Cereales Inc."}).first();
 prod.addedCarbonFootprint                    = 5;
 prod.price.productPrice                 = 1;
@@ -504,6 +527,7 @@ products.insert(prod);
 
 man = new Manufacturer();
 man.name =     "De Cecco";
+man.picture = "dececco.png";
 man.address = "Via Nazionale, 4B, Fara San Martino CH, Italy";
 man.location.latitude = 42.092088;
 man.location.longitude = 14.209575;
@@ -514,6 +538,7 @@ manufacturers.insert(man);
 
 prod = new Product();
 prod.name                               = "Lasagne Pasta";
+prod.picture = "lasagnepasta.png";
 prod.manufacturer = manufacturers({name:  "De Cecco"}).first();
 prod.components.push(products({name:      "Grain"}).first());
 prod.addedCarbonFootprint                    = 10;
@@ -525,6 +550,7 @@ products.insert(prod);
 
 man = new Manufacturer();
 man.name =     "Zwiebelhof";
+man.picture = "zwiebelhof.png";
 man.address = "Buchenweg 6, 73488 Ellenberg, Germany";
 man.location.latitude = 49.012595;
 man.location.longitude = 10.210801;
@@ -535,6 +561,7 @@ manufacturers.insert(man);
 
 prod = new Product();
 prod.name                               = "Onion";
+prod.picture = "onion.png";
 prod.manufacturer = manufacturers({name:  "Zwiebelhof"}).first();
 prod.addedCarbonFootprint                    = 5;
 prod.price.productPrice                 = 1;
@@ -545,6 +572,7 @@ products.insert(prod);
 
 man = new Manufacturer();
 man.name =     "Prezzemoli Inc.";
+man.picture = "prezzemoli.png";
 man.address = "Via di Prima Porta, 11, 00188 Roma RM, Italy";
 man.location.latitude = 42.001276;
 man.location.longitude = 12.487432;
@@ -555,6 +583,7 @@ manufacturers.insert(man);
 
 prod = new Product();
 prod.name                               = "Parsley";
+prod.picture = "parsley.png";
 prod.manufacturer = manufacturers({name:  "Prezzemoli Inc."}).first();
 prod.addedCarbonFootprint                    = 5;
 prod.price.productPrice                 = 2;
@@ -565,6 +594,7 @@ products.insert(prod);
 
 man = new Manufacturer();
 man.name =     "Aglidiso";
+man.picture = "aglidiso.png";
 man.address = "50 Avenue de Cassan, 34320 Roujan, France";
 man.location.latitude = 43.507097;
 man.location.longitude = 3.307128;
@@ -575,6 +605,7 @@ manufacturers.insert(man);
 
 prod = new Product();
 prod.name                               = "Garlic";
+prod.picture = "garlic.png";
 prod.manufacturer = manufacturers({name:  "Aglidiso"}).first();
 prod.addedCarbonFootprint                    = 10;
 prod.price.productPrice                 = 1;
@@ -584,6 +615,7 @@ prod.price.materialCosts                = 0.1;
 products.insert(prod);
 
 man = new Manufacturer();
+man.picture = "insapori.png";
 man.name =     "Insapori Inc.";
 man.address = "Viale Nazioni Unite, 10, 17019 Varazze SV, Italy";
 man.location.latitude = 44.360083;
@@ -595,6 +627,7 @@ manufacturers.insert(man);
 
 prod = new Product();
 prod.name                               = "Mixed Herbs";
+prod.picture = "mixedherbs.png";
 prod.manufacturer = manufacturers({name:  "Insapori Inc."}).first();
 prod.components.push(products({name:      "Parsley"}).first());
 prod.components.push(products({name:      "Garlic"}).first());
@@ -608,6 +641,7 @@ products.insert(prod);
 
 man = new Manufacturer();
 man.name =     "CASI";
+man.picture = "casi.png";
 man.address = "Calle Tomás Aznar Domenech, 30, 03007 Alacant, Alicante, Spain";
 man.location.latitude = 38.341548;
 man.location.longitude = -0.514416;
@@ -618,6 +652,7 @@ manufacturers.insert(man);
 
 prod = new Product();
 prod.name                               = "Tomato";
+prod.picture = "tomato.png";
 prod.manufacturer = manufacturers({name:  "CASI"}).first();
 prod.addedCarbonFootprint                    = 10;
 prod.price.productPrice                 = 2;
@@ -628,6 +663,7 @@ products.insert(prod);
 
 man = new Manufacturer();
 man.name =     "Bonduelle";
+man.picture = "bonduelle.png"; 
 man.address = "Avenida Les Germaníes 49, 46291 Benimodo, Spain";
 man.location.latitude = 39.215836;
 man.location.longitude = -0.522188;
@@ -638,6 +674,7 @@ manufacturers.insert(man);
 
 prod = new Product();
 prod.name                               = "Tomato Sauce";
+prod.picture = "tomatosauce.png";
 prod.manufacturer = manufacturers({name:  "Bonduelle"}).first();
 prod.components.push(products({name:      "Tomato"}).first());
 prod.components.push(products({name:      "Mixed Herbs"}).first());
@@ -651,6 +688,7 @@ products.insert(prod);
 
 man = new Manufacturer();
 man.name =     "Texas Longhorn";
+man.picture = "texaslonghorn.png";
 man.address = "2139 San Jacinto Boulevard, Austin, Texas, USA";
 man.location.latitude = 30.283808;
 man.location.longitude = -97.732715;
@@ -661,6 +699,7 @@ manufacturers.insert(man);
 
 prod = new Product();
 prod.name                               = "Beef";
+prod.picture = "beef.png";
 prod.manufacturer = manufacturers({name:  "Texas Longhorn"}).first();
 prod.addedCarbonFootprint                    = 400;
 prod.price.productPrice                 = 30;
@@ -671,6 +710,7 @@ products.insert(prod);
 
 man = new Manufacturer();
 man.name =     "Shuanghui";
+man.picture = "shuanghui.png";
 man.setAddress("Hongkong East Road, Qingdao, Shandong, China");
 man.location.latitude = 35.956997;
 man.location.longitude = 119.36065;
@@ -682,6 +722,7 @@ manufacturers.insert(man);
 
 prod = new Product();
 prod.name                               = "Pork";
+prod.picture = "pork.png";
 prod.manufacturer = manufacturers({name:  "Shuanghui"}).first();
 prod.addedCarbonFootprint                    = 350;
 prod.price.productPrice                 = 35;
@@ -692,6 +733,7 @@ products.insert(prod);
 
 man = new Manufacturer();
 man.name ="Smithfield Foods";
+man.picture = "smithfield.png";
 man.address = "200 Commerce St, Smithfield, VA 23430, USA";
 man.location.latitude = 36.984743;
 man.location.longitude = -76.630274;
@@ -702,6 +744,7 @@ manufacturers.insert(man);
 
 prod = new Product();
 prod.name                               = "Minced Meat";
+prod.picture = "mincedmeat.png";
 prod.manufacturer = manufacturers({name:  "Smithfield Foods"}).first();
 prod.components.push(products({name:      "Beef"}).first());
 prod.components.push(products({name:      "Pork"}).first());
@@ -714,6 +757,7 @@ products.insert(prod);
 
 man = new Manufacturer();
 man.name = "LIDL";
+man.picture = "lidl.png";
 man.setAddress("Stiftsbergstraße 1, 74172 Neckarsulm, Germany");
 man.location.latitude = 49.1846;
 man.location.longitude = 9.2358;
@@ -726,6 +770,7 @@ manufacturers.insert(man);
 
 prod = new Product();
 prod.name                               = "Lasagne";
+prod.picture = "lasagne.png";
 prod.manufacturer = manufacturers({name:  "LIDL"}).first();
 prod.components.push(products({name:      "Minced Meat"}).first());
 prod.components.push(products({name:      "Tomato Sauce"}).first());
