@@ -48,7 +48,7 @@ DataPreparator = function () {
                 // our own layer reference again
                 layer:          currentLayer
             });
-
+            // this is where we aggerate the borders
             borders_min.longitude = Math.min(borders_min.longitude, product.components[idx].manufacturer.location.longitude);
             borders_max.longitude = Math.max(borders_max.longitude, product.components[idx].manufacturer.location.longitude);
             
@@ -75,6 +75,7 @@ DataPreparator = function () {
             arcs: [],
             bubbles: []
         };
+        // create the first bubble
         var firstBubble = {
             name: product.manufacturer.name,
             radius: 6,
@@ -83,12 +84,16 @@ DataPreparator = function () {
             longitude: product.manufacturer.location.longitude,
             latitude: product.manufacturer.location.latitude
         };
+        // initialize the borders
         borders_min.latitude  = product.manufacturer.location.latitude;
         borders_min.longitude = product.manufacturer.location.longitude;
         borders_max.latitude  = product.manufacturer.location.latitude;
         borders_max.longitude = product.manufacturer.location.longitude;
+        // start recursion
         renderData = getRenderDataFromComponentsManufacturers(product);
+        // add the first bubble to the top
         renderData.bubbles.unshift(firstBubble);
+        // assign the new borders
         renderData.borders_min = borders_min;
         renderData.borders_max = borders_max;
         

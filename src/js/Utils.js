@@ -1,4 +1,5 @@
 UTILS = function () {
+    // use google maps API to get the geolocation of an address
     this.getLocationFromAddress = function ( address ) {
         var geocoder = new google.maps.Geocoder();
         var geolocation = {latitude: 0, longitude: 0};
@@ -12,6 +13,7 @@ UTILS = function () {
         return geolocation;
     };
     
+    // generate "unique" ids (not really unique but random enough to seem so)
     this.generateId = function () {
         // Source: http://stackoverflow.com/questions/105034/create-guid-uuid-in-javascript
         var d = new Date().getTime();

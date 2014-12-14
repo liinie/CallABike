@@ -19,30 +19,31 @@ BubbleDrawer = function (map_) {
     
     // Define hover-callback: mouseover
     var mouseoverfun = function() {
-        var id = d3.select(this).attr('product-id');
-        map.svg.select('circle.map-bubble[product-id="' + id +'"]')
+        var id = d3.select(this).attr('product-id');    // get the product-id of the hovered bubble
+        map.svg.select('circle.map-bubble[product-id="' + id +'"]') // select all product bubbles that have the specified product-id
         .transition()                               // make animation
         .duration(bubbleConfig.enlargingDuration)   // set duration
         .attr('r',bubbleConfig.radiusLarge);        // increase radius
-        map.svg.select('circle.expand-collapse-bubble[product-id="' + id +'"]')
+        map.svg.select('circle.expand-collapse-bubble[product-id="' + id +'"]') // select all circles of this class of the product-id specified
         .transition()
-        .delay(70)
-        .duration(bubbleConfig.enlargingDuration-70)
-        .attr('r', expCollConfig.radius);
+        .delay(70)                                      // transition is delayed after the big bubbles
+        .duration(bubbleConfig.enlargingDuration-70)    // transition is faster to finish at the same time as the big bubbles
+        .attr('r', expCollConfig.radius);               // make them bigger
     };
     
     // Define hover-callback: mouseout
     var mouseoutfun = function () {
+        // the fade-out is the other way round than the fade in.
         var id = d3.select(this).attr('product-id');    // get the product-id of the hovered bubble
         map.svg.select('circle.map-bubble[product-id="' + id +'"]') // select the product bubble with the specified product-id
         .transition()                                   // make transition
-        .delay(70)
-        .duration(bubbleConfig.enlargingDuration-70)
+        .delay(70)                                      // now this one is delayed
+        .duration(bubbleConfig.enlargingDuration-70)    // and made faster to finish at the same time as the next transition
         .attr('r', bubbleConfig.radiusSmall);       // reduce radius
         map.svg.select('circle.expand-collapse-bubble[product-id="' + id +'"]') // select all expand bubbles with the specified product-id
         .transition()                               // make animation
         .duration(bubbleConfig.enlargingDuration)   // set duration
-        .attr('r', 0);
+        .attr('r', 0);                              // and make it disappear
     };
     
     // Define click-callback
@@ -73,7 +74,7 @@ BubbleDrawer = function (map_) {
             }
             p.isExpanded = true;                                    // set the product's isExpanded attribute to true
             d3.select('circle.expand-collapse-bubble[product-id="' + p.id +'"]')
-            .attr('class', 'expand-collapse-bubble collapse-bubble');
+            .attr('class', 'expand-collapse-bubble collapse-bubble');   // change the class of the bubble
         }
     };
     
@@ -102,8 +103,8 @@ BubbleDrawer = function (map_) {
             p.compArcs = [];                                        // clear the component arcs array
             p.isExpanded = false;
             d3.select('circle.expand-collapse-bubble[product-id="' + p.id +'"]')
-            .attr('class', 'expand-collapse-bubble expand-bubble')
-            .text("+");
+            .attr('class', 'expand-collapse-bubble expand-bubble')  // change the class of the bubble
+            .text("+"); // is not displayed :(
         }
     };
     
@@ -143,17 +144,18 @@ BubbleDrawer = function (map_) {
             map.svg.select('g[product-id="' + p.id +'"]')
             .append('svg:circle')
             .on("click", clickfun)                                      // add click event function
-            .attr('class', 'expand-collapse-bubble expand-bubble')
-            .attr('product-id',p.id)
-            .attr('cx', xy_pos[0] + offset[0])
-            .attr('cy', xy_pos[1] + offset[1])
-            .attr('r', 0);
+            .attr('class', 'expand-collapse-bubble expand-bubble')      // set the class
+            .attr('product-id',p.id)                                    // set prduct id for identification later
+            .attr('cx', xy_pos[0] + offset[0])                          // set x position
+            .attr('cy', xy_pos[1] + offset[1])                          // set y position
+            .attr('r', 0);                                              // set radius to 0 so that is not visible by default
         }
         
         return bubble;                                              // return ref to created element
     };
     
     // draw a single arc
+    // adapted from the arc drawing feature of datamaps.js
     this.drawArc = function (parentProduct, childProduct) {
         var p1 = parentProduct;
         var p2 = childProduct;
