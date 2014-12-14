@@ -33,13 +33,13 @@ BubbleDrawer = function (map_) {
     
     // Define hover-callback: mouseout
     var mouseoutfun = function () {
-        var id = d3.select(this).attr('product-id');
-        map.svg.select('circle.expand-collapse-bubble[product-id="' + id +'"]')
-        .transition()
+        var id = d3.select(this).attr('product-id');    // get the product-id of the hovered bubble
+        map.svg.select('circle.map-bubble[product-id="' + id +'"]') // select the product bubble with the specified product-id
+        .transition()                                   // make transition
         .delay(70)
         .duration(bubbleConfig.enlargingDuration-70)
         .attr('r', bubbleConfig.radiusSmall);       // reduce radius
-        map.svg.select('circle.map-bubble[product-id="' + id +'"]')
+        map.svg.select('circle.expand-collapse-bubble[product-id="' + id +'"]') // select all expand bubbles with the specified product-id
         .transition()                               // make animation
         .duration(bubbleConfig.enlargingDuration)   // set duration
         .attr('r', 0);
