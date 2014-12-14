@@ -103,6 +103,7 @@ MapController = function (mapContainerDiv) {
         s = checked.scale;
         
         mapController.zoom.translate(t);
+        mapController.zoom.scale(s);
         mapController.map.svg.select('g.datamaps-subunits').attr("transform", "translate(" + t + ")scale(" + s + ")");
         mapController.map.svg.select('g.bubbles').attr("transform", "translate(" + t + ")scale(" + s + ")");
         mapController.map.svg.select('g.arcs').attr("transform", "translate(" + t + ")scale(" + s + ")");
