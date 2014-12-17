@@ -663,10 +663,11 @@ products.insert(prod);
 
 
 //----------------------------------------//
+
 man = new Manufacturer();
-man.name = "Mercedes";
-man.picture = "mercedes.png";
-man.setAddress("Im Holter Feld, 28309 Bremen, Germany");
+man.name = "MTU";
+man.picture = "mtu.png";
+man.setAddress("Maybachplatz 1, 88045 Friedrichshafen, Germany");
 man.location.latitude = 53.066751;
 man.location.longitude = 8.903028;
 man.workingConditions.employmentProtection = 9;
@@ -675,9 +676,32 @@ man.workingConditions.workingHours = 7;
 manufacturers.insert(man);
 
 prod = new Product();
+prod.name = "Ground propulsion";
+prod.picture = "Mercedes-Benz/fahrwerk.png";
+prod.manufacturer = manufacturers({ name: "MTU" }).first();
+prod.addedCarbonFootprint = 200;
+prod.price.productPrice = 10000;
+prod.price.energyCosts = 100;
+prod.price.manufacturingCosts = 100;
+prod.price.materialCosts = 5000;
+products.insert(prod);
+
+man = new Manufacturer();
+man.name = "Mercedes Benz";
+man.picture = "mercedes.png";
+man.setAddress("Im Holter Feld, 28309 Bremen, Germany");
+man.location.latitude = 47.657110;
+man.location.longitude = 9.469640;
+man.workingConditions.employmentProtection = 8;
+man.workingConditions.salery = 8;
+man.workingConditions.workingHours = 8;
+manufacturers.insert(man);
+
+prod = new Product();
 prod.name = "Mercedes E Class";
 prod.picture = "Mercedes-Benz/e-class.png";
-prod.manufacturer = manufacturers({ name: "Mercedes" }).first();
+prod.manufacturer = manufacturers({ name: "Mercedes Benz" }).first();
+prod.components.push(products({ name: "Ground propulsion" }).first());
 prod.addedCarbonFootprint = 300;
 prod.price.productPrice = 30000;
 prod.price.energyCosts = 200;
