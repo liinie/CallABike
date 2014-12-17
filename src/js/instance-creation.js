@@ -661,3 +661,26 @@ prod.price.manufacturingCosts           = 10;
 prod.price.materialCosts                = 10;
 products.insert(prod);
 
+
+//----------------------------------------//
+man = new Manufacturer();
+man.name = "Mercedes";
+man.picture = "mercedes.png";
+man.setAddress("Im Holter Feld, 28309 Bremen, Germany");
+man.location.latitude = 53.066751;
+man.location.longitude = 8.903028;
+man.workingConditions.employmentProtection = 9;
+man.workingConditions.salery = 9;
+man.workingConditions.workingHours = 7;
+manufacturers.insert(man);
+
+prod = new Product();
+prod.name = "Mercedes E Class";
+prod.picture = "Mercedes-Benz/e-class.png";
+prod.manufacturer = manufacturers({ name: "Mercedes" }).first();
+prod.addedCarbonFootprint = 300;
+prod.price.productPrice = 30000;
+prod.price.energyCosts = 200;
+prod.price.manufacturingCosts = 200;
+prod.price.materialCosts = 10000;
+products.insert(prod);
