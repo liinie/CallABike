@@ -10,7 +10,7 @@
 
         <script src="js/d3/d3.v3.min.js" charset="utf-8"></script>
         <script src="js/topojson/topojson.v1.min.js"></script>
-        <!--<script src="js/datamaps.world.min.js"></script>-->
+        
         <script src="js/datamaps/datamaps.all.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>
 
@@ -25,8 +25,6 @@
         <script src="js/DataPreparator.js"      type="application/javascript"></script>
         <script src="js/SearchProcessor.js"     type="application/javascript"></script>
         <script src="js/BubbleDrawer.js"        type="application/javascript"></script>
-        <!--<script src="js/web-animations.js"      type="application/javascript"></script>-->
-        <!--<script src="js/AnimationController.js" type="application/javascript"></script>-->
         
         <link rel="import" href="polymer-paper/core-toolbar/core-toolbar.html">
         <link rel="import" href="polymer-paper/core-icons/core-icons.html">
@@ -79,9 +77,7 @@
             var mapController = new MapController(document.getElementById("map-container"));
             
             onloadFun = function () {
-                //mapController.map.svg
-                //.attr("width", document.getElementById("map-container").offsetWidth)
-                //.attr("height",document.getElementById("map-container").offsetHeight);
+                
             }
         </script>
     </body>
