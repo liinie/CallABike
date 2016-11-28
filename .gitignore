@@ -1,8 +1,0 @@
-# ignore latex auto generated files:
-*.aux
-*.log
-*.synctex*
-*exercise_plan.pdf
-*.vsdx
-*examples/polymer*
-*data/
