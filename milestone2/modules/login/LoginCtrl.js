@@ -3,7 +3,7 @@ app.controller('LoginCtrl',['$scope','$state',function($scope,$state){
   $scope.show_message=false;
   $scope.loginAction=function(){
     var data=$scope.user;
-    if(data.email==='demo@demo.com' && data.password==='demo'){
+    if(data.email==='' && data.password==='demo'){
       localStorage.session_id = Date.now();
       $state.go('main.dashboard');
     }
