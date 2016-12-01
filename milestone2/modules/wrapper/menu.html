@@ -3,20 +3,25 @@
 		<a class="brand-logo center">Getting insignt into CallABike</a>
 		<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
 		<ul class="right hide-on-med-and-down" style="margin-right: 20px">
-			<li><a class='dropdown-button' data-beloworigin="true" href='#' data-activates='user-dw'><i class="material-icons left">account_circle</i>User<i class="material-icons right">arrow_drop_down</i></a></li>
+			<li><a class='dropdown-button' data-beloworigin="true" href='#' data-activates='user-dw'><i class="material-icons left">account_circle</i>Lin<i class="material-icons right">arrow_drop_down</i></a></li>
 		</ul>
 		<ul id="slide-out" class="side-nav fixed">
+			<li><a ui-sref='main.dashboard'>Statistics</a></li>
+			<li class="divider"></li>
+			<li><a ui-sref='main.dashboard'>Bookings Total</a></li>
+			<li><a ui-sref='main.dashboard'>Bookings by City</a></li>
+			<li class="hide"><a ui-sref='main.users'>Users</a></li>
+			<li class="hide-on-large-only"><a ui-sref="logout">logout</a></li>
+			<li class="divider"></li>
 			<li><a ui-sref='main.dashboard'>Filter Options</a></li>
 			<li class="divider"></li>
-			<li><a ui-sref='main.dashboard'>Dashboard</a></li>
-			<li><a ui-sref='main.users'>Users</a></li>
-			<li class="hide-on-large-only"><a ui-sref="logout">logout</a></li>
+
 		</ul>
 	</div>
 </nav>
 
 <ul id='user-dw' class='dropdown-content'>
-	<li><a ui-sref="logout" >logout</a></li>
+	<li><a ui-sref="logout" >Logout</a></li>
 </ul>
 <script type="text/javascript">	
 	$('.dropdown-button').dropdown({

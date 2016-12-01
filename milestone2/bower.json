@@ -25,6 +25,7 @@
     "angular-ui-router": "~0.2.17",
     "Materialize": "materialize#~0.97.5",
     "angular-chart.js": "~0.8.8",
-    "angular-materialize": "^0.2.1"
+    "angular-materialize": "^0.2.1",
+    "angular-nvd3": "^1.0.9"
   }
 }

@@ -1,70 +1,47 @@
 <br/>
 
-<main>
-	<div class="container">
-		<div class="row">
-			<div class="section col s4">
-				<div input-field>
-					<select ng-model="select.value" material-select>
-						<option ng-repeat="value in select.choices">{{value}}</option>
-					</select>
-				</div>
-			</div>
-			<div class="section col s8">
-				<h5>You selected: <b>{{select.value}}</b></h5>
-			</div>
-		</div>
-	</div>
+<main class="hide">
+  <div class="container">
+    <div class="row">
+      <div class="section col s4">
+        <div input-field>
+          <select ng-model="select.value" material-select>
+            <option ng-repeat="value in select.choices">{{value}}</option>
+          </select>
+        </div>
+      </div>
+      <div class="section col s8">
+        <h5>You selected: <b>{{select.value}}</b></h5>
+      </div>
+    </div>
+  </div>
 </main>
 
-
-<div >
-	<div class="row">
-		<div class="col l6 s12 m12">
-			<div class="card">
-				<div class="card-content">
-					<h5 class="grey-text">Growth</h5>
-					<canvas id="line" class="chart chart-line" chart-data="data"
-						chart-labels="labels" chart-legend="true" chart-series="series"
-						chart-click="onClick" >
-					</canvas>
-				</div>
-			</div>
-		</div>
-		<div class="col l6 s12 m12">
-			<div class="card">
-				<div class="card-content">
-					<h5 class="grey-text">Sales Report</h5>
-					<canvas id="bar" class="chart chart-bar"
-						chart-data="data" chart-labels="labels"> chart-series="series"
-					</canvas>
-					<p>
-						This are the amazing report for the company, only need to looking to last month's report
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-		<div class="row">
-		<div class="col l6 s12 m12">
-			<div class="card">
-				<div class="card-content">
-					<h5 class="grey-text center">Pie Chart</h5>
-					<canvas id="pie" class="chart chart-pie"
-						chart-data="dataPie" chart-labels="labelsPie">
-					</canvas>
-				</div>
-			</div>
-		</div>
-		<div class="col l6 s12 m12">
-			<div class="card">
-				<div class="card-content">
-					<h5 class="grey-text center">Doughnut Chart</h5>
-					<canvas id="doughnut" class="chart chart-doughnut"
-						chart-data="dataPie" chart-labels="labelsPie">
-					</canvas> 
-				</div>
-			</div>
-		</div>
-	</div>
+<div>
+  <div class="row">
+    <div class="col s12 m12">
+      <div class="card">
+        <div class="card-content">
+          <nvd3 options="bookingCountDailyOptions" data="bookingCountDailyData"></nvd3>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col l6 s12 m12">
+      <div class="card">
+        <div class="card-content">
+          <nvd3 options="bookingCountDailyOptions" data="bookingCountDailyData"></nvd3>
+        </div>
+      </div>
+    </div>
+    <div class="col l6 s12 m12">
+      <div class="card">
+        <div class="card-content">
+          <nvd3 options="bookingCountDailyOptions" data="bookingCountDailyData"></nvd3>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+
