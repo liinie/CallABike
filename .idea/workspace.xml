@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4797aef-4c1b-4b1f-9f12-63f2e5dc2237" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/milestone2/modules/login/login.html" afterPath="$PROJECT_DIR$/milestone2/modules/login/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/milestone2/modules/wrapper/menu.html" afterPath="$PROJECT_DIR$/milestone2/modules/wrapper/menu.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/milestone2/index.html" afterPath="$PROJECT_DIR$/milestone2/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,11 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/milestone2/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="24" lean-forward="false" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+            <state relative-caret-position="150">
+              <caret line="10" column="73" lean-forward="false" selection-start-line="10" selection-start-column="73" selection-end-line="10" selection-end-column="73" />
               <folding />
             </state>
           </provider>
@@ -84,11 +83,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="menu.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="menu.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/milestone2/modules/wrapper/menu.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="67" lean-forward="false" selection-start-line="3" selection-start-column="67" selection-end-line="3" selection-end-column="67" />
+            <state relative-caret-position="375">
+              <caret line="25" column="6" lean-forward="true" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -180,9 +179,9 @@
         <option value="$PROJECT_DIR$/milestone2/modules/milestones/milestones.html" />
         <option value="$PROJECT_DIR$/milestone2/modules/login/LoginCtrl.js" />
         <option value="$PROJECT_DIR$/milestone2/modules/users/DataService.js" />
-        <option value="$PROJECT_DIR$/milestone2/index.html" />
         <option value="$PROJECT_DIR$/milestone2/modules/login/login.html" />
         <option value="$PROJECT_DIR$/milestone2/modules/wrapper/menu.html" />
+        <option value="$PROJECT_DIR$/milestone2/index.html" />
       </list>
     </option>
   </component>
@@ -524,12 +523,12 @@
       <workItem from="1480348522258" duration="43000" />
       <workItem from="1480348576688" duration="14674000" />
       <workItem from="1480457060898" duration="4691000" />
-      <workItem from="1480546736465" duration="12223000" />
+      <workItem from="1480546736465" duration="12649000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35881000" />
+    <option name="totallyTimeSpent" value="36307000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1273" y="0" width="1294" height="1047" extended-state="0" />
@@ -680,14 +679,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/milestone2/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="24" lean-forward="false" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/milestone2/modules/login/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -698,8 +689,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/milestone2/modules/wrapper/menu.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="67" lean-forward="false" selection-start-line="3" selection-start-column="67" selection-end-line="3" selection-end-column="67" />
+        <state relative-caret-position="375">
+          <caret line="25" column="6" lean-forward="true" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/milestone2/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="73" lean-forward="false" selection-start-line="10" selection-start-column="73" selection-end-line="10" selection-end-column="73" />
           <folding />
         </state>
       </provider>
