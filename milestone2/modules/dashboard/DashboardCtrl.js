@@ -1,4 +1,4 @@
-app.controller('DashboardCtrl',['$state','$scope','$http', function($state,$scope, $http){
+app.controller('DashboardCtrl',['$state','$scope','dataService', function($state,$scope,dataService){
 
   $scope.select = {
     value: "Option1",
@@ -6,7 +6,7 @@ app.controller('DashboardCtrl',['$state','$scope','$http', function($state,$scop
   };
 
 
-	/* Chart options */
+  /* Chart options */
   $scope.bookingCountDailyOptions = {
     chart: {
       type: 'lineWithFocusChart',
@@ -66,15 +66,15 @@ app.controller('DashboardCtrl',['$state','$scope','$http', function($state,$scop
     caption: {
       "enable": false,
       "html":
-				"<b>Figure 1.</b> " +
-				"Lorem ipsum dolor sit amet, at eam blandit sadipscing, " +
-				"<span style=\"text-decoration: underline;\">vim adhuc sanctus disputando ex</span>, " +
-				"cu usu affert alienum urbanitas. <i>Cum in purto erat, mea ne nominavi persecuti reformidans." +
-				"</i> Docendi blandit abhorreant ea has, minim tantas alterum pro eu. <span style=\"color: darkred;\">" +
-				"Exerci graeci ad vix, elit tacimates ea duo</span>. " +
-				"Id mel eruditi fuisset. Stet vidit patrioque in pro, eum ex veri verterem abhorreant, " +
-				"id unum oportere intellegam nec<sup>[1, " +
-				"<a href=\"https://github.com/krispo/angular-nvd3\" target=\"_blank\">2</a>, 3]</sup>.",
+      "<b>Figure 1.</b> " +
+      "Lorem ipsum dolor sit amet, at eam blandit sadipscing, " +
+      "<span style=\"text-decoration: underline;\">vim adhuc sanctus disputando ex</span>, " +
+      "cu usu affert alienum urbanitas. <i>Cum in purto erat, mea ne nominavi persecuti reformidans." +
+      "</i> Docendi blandit abhorreant ea has, minim tantas alterum pro eu. <span style=\"color: darkred;\">" +
+      "Exerci graeci ad vix, elit tacimates ea duo</span>. " +
+      "Id mel eruditi fuisset. Stet vidit patrioque in pro, eum ex veri verterem abhorreant, " +
+      "id unum oportere intellegam nec<sup>[1, " +
+      "<a href=\"https://github.com/krispo/angular-nvd3\" target=\"_blank\">2</a>, 3]</sup>.",
       "css": {
         "text-align": "justify",
         "margin": "10px 13px 0px 7px"
@@ -84,7 +84,7 @@ app.controller('DashboardCtrl',['$state','$scope','$http', function($state,$scop
 
 
   function getBookingCountDaily() {
-    $http.get('data/BookingCountDaily.json').success(function(data) {
+    dataService.getBookingCountDaily().then(function(data){
       $scope.bookingCountDailyData =
         [
           {
