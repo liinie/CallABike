@@ -57,6 +57,16 @@ app.config(function($stateProvider,$urlRouterProvider){
       },
       data:{requireLogin:true}
     })
+    .state('main.bookingsPerCity',{
+      url:'/bookingsPerCity',
+      views:{
+        'mainSection@main':{
+          templateUrl:'modules/bookingCity/bookingCity.html',
+          controller:'BookingCityCtrl'
+        }
+      },
+      data:{requireLogin:true}
+    })
     .state('main.users',{
       url:'/users',
       views:{

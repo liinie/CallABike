@@ -85,11 +85,12 @@ app.controller('DashboardCtrl',['$state','$scope','dataService', function($state
 
   function getBookingCountDaily() {
     dataService.getBookingCountDaily().then(function(data){
+      console.log(data);
       $scope.bookingCountDailyData =
         [
           {
             key: 'Number of bookings daily',
-            values: data.rows.map(d => {
+            values: data.data.rows.map(d => {
               return {
                 x: new Date(d['booking date']).getTime(),
                 y: d['number of bookings']
