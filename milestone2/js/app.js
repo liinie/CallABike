@@ -37,6 +37,16 @@ app.config(function($stateProvider,$urlRouterProvider){
         'content@main' : { templateUrl: 'modules/wrapper/wrap.html',},
       },
     })
+    .state('main.milestones',{
+      url:'/milestones',
+      views:{
+        'mainSection@main':{
+          templateUrl:'modules/milestones/milestones.html',
+          controller:'MilestonesCtrl'
+        }
+      },
+      data:{requireLogin:true}
+    })
     .state('main.dashboard',{
       url:'/bookingsTotal',
       views:{

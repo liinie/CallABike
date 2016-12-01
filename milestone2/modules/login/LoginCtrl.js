@@ -13,7 +13,7 @@ app.controller('LoginCtrl',['$scope','$state',function($scope,$state){
     var data=$scope.user;
     if(data.email==='Lin.Xu@campus.lmu.de' && data.password==='InfoVisIsCool'){
       localStorage.session_id = Date.now();
-      $state.go('main.dashboard');
+      $state.go('main.milestones');
     }
     else{
       $scope.show_message=true;
