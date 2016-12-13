@@ -1,0 +1,261 @@
+{
+  "query": "SELECT bookingPerStation.CITY as city, sum(bookingPerStation.booking_num) as num_bookings, count(bookingPerStation.zone_id and bookingPerStation.zone_src) as num_stations  FROM  (  SELECT zone.zone_id, zone.zone_src, r.RENTAL_ZONE_GROUP, r.CITY, zone.booking_num  FROM  hackathon_rental_zone_call_a_bike as r,  (  SELECT  b.RENTAL_ZONE_HAL_ID as zone_id, b.RENTAL_ZONE_HAL_SRC as zone_src, count(`BOOKING_HAL_ID`) as booking_num  FROM `hackathon_booking_call_a_bike` as b  GROUP By b.RENTAL_ZONE_HAL_ID, b.RENTAL_ZONE_HAL_SRC  ) as zone  WHERE r.RENTAL_ZONE_HAL_ID = zone.zone_id and r.RENTAL_ZONE_HAL_SRC = zone.zone_src  ) as bookingPerStation  GROUP BY bookingPerStation.CITY",
+  "rows":
+  [
+    {
+      "city": "Hamburg",
+      "num_bookings": 6784099,
+      "num_stations": 213
+    },
+    {
+      "city": "Frankfurt am Main",
+      "num_bookings": 1312319,
+      "num_stations": 316
+    },
+    {
+      "city": "Berlin",
+      "num_bookings": 1069810,
+      "num_stations": 158
+    },
+    {
+      "city": "Kassel",
+      "num_bookings": 573325,
+      "num_stations": 63
+    },
+    {
+      "city": "Stuttgart",
+      "num_bookings": 477405,
+      "num_stations": 47
+    },
+    {
+      "city": "Darmstadt",
+      "num_bookings": 293459,
+      "num_stations": 36
+    },
+    {
+      "city": "Marburg",
+      "num_bookings": 208534,
+      "num_stations": 21
+    },
+    {
+      "city": "Rüsselsheim",
+      "num_bookings": 67119,
+      "num_stations": 9
+    },
+    {
+      "city": "Köln",
+      "num_bookings": 63003,
+      "num_stations": 182
+    },
+    {
+      "city": "München",
+      "num_bookings": 55117,
+      "num_stations": 92
+    },
+    {
+      "city": "Wiesbaden",
+      "num_bookings": 29776,
+      "num_stations": 18
+    },
+    {
+      "city": "Flugh. Frankfurt",
+      "num_bookings": 7608,
+      "num_stations": 3
+    },
+    {
+      "city": "Halle",
+      "num_bookings": 2143,
+      "num_stations": 4
+    },
+    {
+      "city": "Kiel",
+      "num_bookings": 1882,
+      "num_stations": 6
+    },
+    {
+      "city": "Mannheim",
+      "num_bookings": 1545,
+      "num_stations": 2
+    },
+    {
+      "city": "Baden-Baden",
+      "num_bookings": 1404,
+      "num_stations": 8
+    },
+    {
+      "city": "Hannover",
+      "num_bookings": 1119,
+      "num_stations": 4
+    },
+    {
+      "city": "Heidelberg",
+      "num_bookings": 1096,
+      "num_stations": 2
+    },
+    {
+      "city": "Düsseldorf",
+      "num_bookings": 934,
+      "num_stations": 2
+    },
+    {
+      "city": "Bonn",
+      "num_bookings": 909,
+      "num_stations": 2
+    },
+    {
+      "city": "Freiburg",
+      "num_bookings": 898,
+      "num_stations": 2
+    },
+    {
+      "city": "Troisdorf",
+      "num_bookings": 664,
+      "num_stations": 4
+    },
+    {
+      "city": "Bremen",
+      "num_bookings": 660,
+      "num_stations": 2
+    },
+    {
+      "city": "Göttingen",
+      "num_bookings": 658,
+      "num_stations": 2
+    },
+    {
+      "city": "Mainz",
+      "num_bookings": 586,
+      "num_stations": 2
+    },
+    {
+      "city": "Karlsruhe",
+      "num_bookings": 487,
+      "num_stations": 3
+    },
+    {
+      "city": "Würzburg",
+      "num_bookings": 473,
+      "num_stations": 2
+    },
+    {
+      "city": "Lübeck",
+      "num_bookings": 408,
+      "num_stations": 2
+    },
+    {
+      "city": "Saarbrücken",
+      "num_bookings": 307,
+      "num_stations": 1
+    },
+    {
+      "city": "Braunschweig",
+      "num_bookings": 292,
+      "num_stations": 2
+    },
+    {
+      "city": "Weimar",
+      "num_bookings": 279,
+      "num_stations": 2
+    },
+    {
+      "city": "Magdeburg",
+      "num_bookings": 244,
+      "num_stations": 2
+    },
+    {
+      "city": "Bamberg",
+      "num_bookings": 237,
+      "num_stations": 2
+    },
+    {
+      "city": "Fulda",
+      "num_bookings": 224,
+      "num_stations": 2
+    },
+    {
+      "city": "Wolfsburg",
+      "num_bookings": 212,
+      "num_stations": 1
+    },
+    {
+      "city": "Hanau",
+      "num_bookings": 210,
+      "num_stations": 2
+    },
+    {
+      "city": "Kaiserslautern",
+      "num_bookings": 191,
+      "num_stations": 1
+    },
+    {
+      "city": "Erlangen",
+      "num_bookings": 185,
+      "num_stations": 2
+    },
+    {
+      "city": "Aschaffenburg",
+      "num_bookings": 174,
+      "num_stations": 2
+    },
+    {
+      "city": "Rostock",
+      "num_bookings": 171,
+      "num_stations": 2
+    },
+    {
+      "city": "Bielefeld",
+      "num_bookings": 166,
+      "num_stations": 2
+    },
+    {
+      "city": "Ingolstadt",
+      "num_bookings": 153,
+      "num_stations": 2
+    },
+    {
+      "city": "Oldenburg (Oldb)",
+      "num_bookings": 143,
+      "num_stations": 2
+    },
+    {
+      "city": "Warnemünde",
+      "num_bookings": 141,
+      "num_stations": 2
+    },
+    {
+      "city": "Gütersloh",
+      "num_bookings": 118,
+      "num_stations": 2
+    },
+    {
+      "city": "Oberhausen",
+      "num_bookings": 91,
+      "num_stations": 2
+    },
+    {
+      "city": "Hennef",
+      "num_bookings": 43,
+      "num_stations": 1
+    },
+    {
+      "city": "Freiham",
+      "num_bookings": 17,
+      "num_stations": 1
+    },
+    {
+      "city": "Augsburg",
+      "num_bookings": 10,
+      "num_stations": 1
+    },
+    {
+      "city": "Passau",
+      "num_bookings": 5,
+      "num_stations": 1
+    },
+    {
+      "city": "Dortmund",
+      "num_bookings": 1,
+      "num_stations": 1
+    }
+  ]
+}

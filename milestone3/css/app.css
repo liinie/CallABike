@@ -1,0 +1,24 @@
+.top-margin{
+  margin-top: 50px;
+}
+
+.custom-text{
+	font-size: 25px;
+	font-weight:bolder;
+}
+.padit{
+  padding: 5px;
+}
+header, main, footer {
+  padding-left: 240px;
+}
+
+@media only screen and (max-width : 992px) {
+  header, main, footer {
+    padding-left: 0;
+  }
+}
+
+.side-nav {
+    width: 240px !important;
+}

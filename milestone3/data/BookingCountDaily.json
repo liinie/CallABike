@@ -1,0 +1,3666 @@
+{
+  "query": "SELECT DATE(`DATE_BOOKING`) as 'booking date', count(`BOOKING_HAL_ID`) as 'number of bookings' FROM `hackathon_booking_call_a_bike` GROUP By DATE(`DATE_BOOKING`)",
+  "rows":
+  [
+    {
+      "booking date": "2014-01-01",
+      "number of bookings": 3260
+    },
+    {
+      "booking date": "2014-01-02",
+      "number of bookings": 4547
+    },
+    {
+      "booking date": "2014-01-03",
+      "number of bookings": 5480
+    },
+    {
+      "booking date": "2014-01-04",
+      "number of bookings": 5043
+    },
+    {
+      "booking date": "2014-01-05",
+      "number of bookings": 4181
+    },
+    {
+      "booking date": "2014-01-06",
+      "number of bookings": 5228
+    },
+    {
+      "booking date": "2014-01-07",
+      "number of bookings": 7696
+    },
+    {
+      "booking date": "2014-01-08",
+      "number of bookings": 6995
+    },
+    {
+      "booking date": "2014-01-09",
+      "number of bookings": 6479
+    },
+    {
+      "booking date": "2014-01-10",
+      "number of bookings": 5777
+    },
+    {
+      "booking date": "2014-01-11",
+      "number of bookings": 3738
+    },
+    {
+      "booking date": "2014-01-12",
+      "number of bookings": 4413
+    },
+    {
+      "booking date": "2014-01-13",
+      "number of bookings": 6087
+    },
+    {
+      "booking date": "2014-01-14",
+      "number of bookings": 7207
+    },
+    {
+      "booking date": "2014-01-15",
+      "number of bookings": 6719
+    },
+    {
+      "booking date": "2014-01-16",
+      "number of bookings": 5327
+    },
+    {
+      "booking date": "2014-01-17",
+      "number of bookings": 7167
+    },
+    {
+      "booking date": "2014-01-18",
+      "number of bookings": 5976
+    },
+    {
+      "booking date": "2014-01-19",
+      "number of bookings": 3819
+    },
+    {
+      "booking date": "2014-01-20",
+      "number of bookings": 5929
+    },
+    {
+      "booking date": "2014-01-21",
+      "number of bookings": 5780
+    },
+    {
+      "booking date": "2014-01-22",
+      "number of bookings": 5620
+    },
+    {
+      "booking date": "2014-01-23",
+      "number of bookings": 4734
+    },
+    {
+      "booking date": "2014-01-24",
+      "number of bookings": 4231
+    },
+    {
+      "booking date": "2014-01-25",
+      "number of bookings": 2623
+    },
+    {
+      "booking date": "2014-01-26",
+      "number of bookings": 1930
+    },
+    {
+      "booking date": "2014-01-27",
+      "number of bookings": 4622
+    },
+    {
+      "booking date": "2014-01-28",
+      "number of bookings": 5152
+    },
+    {
+      "booking date": "2014-01-29",
+      "number of bookings": 4994
+    },
+    {
+      "booking date": "2014-01-30",
+      "number of bookings": 5271
+    },
+    {
+      "booking date": "2014-01-31",
+      "number of bookings": 5156
+    },
+    {
+      "booking date": "2014-02-01",
+      "number of bookings": 2992
+    },
+    {
+      "booking date": "2014-02-02",
+      "number of bookings": 4783
+    },
+    {
+      "booking date": "2014-02-03",
+      "number of bookings": 6024
+    },
+    {
+      "booking date": "2014-02-04",
+      "number of bookings": 6780
+    },
+    {
+      "booking date": "2014-02-05",
+      "number of bookings": 6550
+    },
+    {
+      "booking date": "2014-02-06",
+      "number of bookings": 7245
+    },
+    {
+      "booking date": "2014-02-07",
+      "number of bookings": 5260
+    },
+    {
+      "booking date": "2014-02-08",
+      "number of bookings": 4373
+    },
+    {
+      "booking date": "2014-02-09",
+      "number of bookings": 4145
+    },
+    {
+      "booking date": "2014-02-10",
+      "number of bookings": 7415
+    },
+    {
+      "booking date": "2014-02-11",
+      "number of bookings": 7297
+    },
+    {
+      "booking date": "2014-02-12",
+      "number of bookings": 8053
+    },
+    {
+      "booking date": "2014-02-13",
+      "number of bookings": 6790
+    },
+    {
+      "booking date": "2014-02-14",
+      "number of bookings": 7247
+    },
+    {
+      "booking date": "2014-02-15",
+      "number of bookings": 6424
+    },
+    {
+      "booking date": "2014-02-16",
+      "number of bookings": 4376
+    },
+    {
+      "booking date": "2014-02-17",
+      "number of bookings": 7706
+    },
+    {
+      "booking date": "2014-02-18",
+      "number of bookings": 7926
+    },
+    {
+      "booking date": "2014-02-19",
+      "number of bookings": 6948
+    },
+    {
+      "booking date": "2014-02-20",
+      "number of bookings": 7959
+    },
+    {
+      "booking date": "2014-02-21",
+      "number of bookings": 7059
+    },
+    {
+      "booking date": "2014-02-22",
+      "number of bookings": 6170
+    },
+    {
+      "booking date": "2014-02-23",
+      "number of bookings": 7493
+    },
+    {
+      "booking date": "2014-02-24",
+      "number of bookings": 8999
+    },
+    {
+      "booking date": "2014-02-25",
+      "number of bookings": 9475
+    },
+    {
+      "booking date": "2014-02-26",
+      "number of bookings": 8471
+    },
+    {
+      "booking date": "2014-02-27",
+      "number of bookings": 8620
+    },
+    {
+      "booking date": "2014-02-28",
+      "number of bookings": 6850
+    },
+    {
+      "booking date": "2014-03-01",
+      "number of bookings": 6356
+    },
+    {
+      "booking date": "2014-03-02",
+      "number of bookings": 5637
+    },
+    {
+      "booking date": "2014-03-03",
+      "number of bookings": 8774
+    },
+    {
+      "booking date": "2014-03-04",
+      "number of bookings": 9014
+    },
+    {
+      "booking date": "2014-03-05",
+      "number of bookings": 9132
+    },
+    {
+      "booking date": "2014-03-06",
+      "number of bookings": 9320
+    },
+    {
+      "booking date": "2014-03-07",
+      "number of bookings": 9886
+    },
+    {
+      "booking date": "2014-03-08",
+      "number of bookings": 10485
+    },
+    {
+      "booking date": "2014-03-09",
+      "number of bookings": 11640
+    },
+    {
+      "booking date": "2014-03-10",
+      "number of bookings": 12126
+    },
+    {
+      "booking date": "2014-03-11",
+      "number of bookings": 11241
+    },
+    {
+      "booking date": "2014-03-12",
+      "number of bookings": 11812
+    },
+    {
+      "booking date": "2014-03-13",
+      "number of bookings": 12240
+    },
+    {
+      "booking date": "2014-03-14",
+      "number of bookings": 9401
+    },
+    {
+      "booking date": "2014-03-15",
+      "number of bookings": 5875
+    },
+    {
+      "booking date": "2014-03-16",
+      "number of bookings": 4190
+    },
+    {
+      "booking date": "2014-03-17",
+      "number of bookings": 8237
+    },
+    {
+      "booking date": "2014-03-18",
+      "number of bookings": 10918
+    },
+    {
+      "booking date": "2014-03-19",
+      "number of bookings": 12571
+    },
+    {
+      "booking date": "2014-03-20",
+      "number of bookings": 15834
+    },
+    {
+      "booking date": "2014-03-21",
+      "number of bookings": 8994
+    },
+    {
+      "booking date": "2014-03-22",
+      "number of bookings": 7832
+    },
+    {
+      "booking date": "2014-03-23",
+      "number of bookings": 7309
+    },
+    {
+      "booking date": "2014-03-24",
+      "number of bookings": 9605
+    },
+    {
+      "booking date": "2014-03-25",
+      "number of bookings": 12554
+    },
+    {
+      "booking date": "2014-03-26",
+      "number of bookings": 15585
+    },
+    {
+      "booking date": "2014-03-27",
+      "number of bookings": 13711
+    },
+    {
+      "booking date": "2014-03-28",
+      "number of bookings": 12127
+    },
+    {
+      "booking date": "2014-03-29",
+      "number of bookings": 14058
+    },
+    {
+      "booking date": "2014-03-30",
+      "number of bookings": 14225
+    },
+    {
+      "booking date": "2014-03-31",
+      "number of bookings": 13767
+    },
+    {
+      "booking date": "2014-04-01",
+      "number of bookings": 14477
+    },
+    {
+      "booking date": "2014-04-02",
+      "number of bookings": 16983
+    },
+    {
+      "booking date": "2014-04-03",
+      "number of bookings": 16502
+    },
+    {
+      "booking date": "2014-04-04",
+      "number of bookings": 10129
+    },
+    {
+      "booking date": "2014-04-05",
+      "number of bookings": 8788
+    },
+    {
+      "booking date": "2014-04-06",
+      "number of bookings": 8649
+    },
+    {
+      "booking date": "2014-04-07",
+      "number of bookings": 15251
+    },
+    {
+      "booking date": "2014-04-08",
+      "number of bookings": 10702
+    },
+    {
+      "booking date": "2014-04-09",
+      "number of bookings": 12851
+    },
+    {
+      "booking date": "2014-04-10",
+      "number of bookings": 13783
+    },
+    {
+      "booking date": "2014-04-11",
+      "number of bookings": 15478
+    },
+    {
+      "booking date": "2014-04-12",
+      "number of bookings": 15470
+    },
+    {
+      "booking date": "2014-04-13",
+      "number of bookings": 11822
+    },
+    {
+      "booking date": "2014-04-14",
+      "number of bookings": 9327
+    },
+    {
+      "booking date": "2014-04-15",
+      "number of bookings": 13420
+    },
+    {
+      "booking date": "2014-04-16",
+      "number of bookings": 16506
+    },
+    {
+      "booking date": "2014-04-17",
+      "number of bookings": 15017
+    },
+    {
+      "booking date": "2014-04-18",
+      "number of bookings": 5847
+    },
+    {
+      "booking date": "2014-04-19",
+      "number of bookings": 11564
+    },
+    {
+      "booking date": "2014-04-20",
+      "number of bookings": 11590
+    },
+    {
+      "booking date": "2014-04-21",
+      "number of bookings": 7949
+    },
+    {
+      "booking date": "2014-04-22",
+      "number of bookings": 13368
+    },
+    {
+      "booking date": "2014-04-23",
+      "number of bookings": 16290
+    },
+    {
+      "booking date": "2014-04-24",
+      "number of bookings": 17204
+    },
+    {
+      "booking date": "2014-04-25",
+      "number of bookings": 21274
+    },
+    {
+      "booking date": "2014-04-26",
+      "number of bookings": 18833
+    },
+    {
+      "booking date": "2014-04-27",
+      "number of bookings": 15442
+    },
+    {
+      "booking date": "2014-04-28",
+      "number of bookings": 16839
+    },
+    {
+      "booking date": "2014-04-29",
+      "number of bookings": 18446
+    },
+    {
+      "booking date": "2014-04-30",
+      "number of bookings": 18734
+    },
+    {
+      "booking date": "2014-05-01",
+      "number of bookings": 15159
+    },
+    {
+      "booking date": "2014-05-02",
+      "number of bookings": 13580
+    },
+    {
+      "booking date": "2014-05-03",
+      "number of bookings": 15054
+    },
+    {
+      "booking date": "2014-05-04",
+      "number of bookings": 10972
+    },
+    {
+      "booking date": "2014-05-05",
+      "number of bookings": 16344
+    },
+    {
+      "booking date": "2014-05-06",
+      "number of bookings": 16165
+    },
+    {
+      "booking date": "2014-05-07",
+      "number of bookings": 13604
+    },
+    {
+      "booking date": "2014-05-08",
+      "number of bookings": 11598
+    },
+    {
+      "booking date": "2014-05-09",
+      "number of bookings": 12180
+    },
+    {
+      "booking date": "2014-05-10",
+      "number of bookings": 9784
+    },
+    {
+      "booking date": "2014-05-11",
+      "number of bookings": 8100
+    },
+    {
+      "booking date": "2014-05-12",
+      "number of bookings": 11257
+    },
+    {
+      "booking date": "2014-05-13",
+      "number of bookings": 14587
+    },
+    {
+      "booking date": "2014-05-14",
+      "number of bookings": 14997
+    },
+    {
+      "booking date": "2014-05-15",
+      "number of bookings": 15916
+    },
+    {
+      "booking date": "2014-05-16",
+      "number of bookings": 18955
+    },
+    {
+      "booking date": "2014-05-17",
+      "number of bookings": 17661
+    },
+    {
+      "booking date": "2014-05-18",
+      "number of bookings": 13346
+    },
+    {
+      "booking date": "2014-05-19",
+      "number of bookings": 18182
+    },
+    {
+      "booking date": "2014-05-20",
+      "number of bookings": 22110
+    },
+    {
+      "booking date": "2014-05-21",
+      "number of bookings": 23612
+    },
+    {
+      "booking date": "2014-05-22",
+      "number of bookings": 22587
+    },
+    {
+      "booking date": "2014-05-23",
+      "number of bookings": 16174
+    },
+    {
+      "booking date": "2014-05-24",
+      "number of bookings": 19494
+    },
+    {
+      "booking date": "2014-05-25",
+      "number of bookings": 18942
+    },
+    {
+      "booking date": "2014-05-26",
+      "number of bookings": 18545
+    },
+    {
+      "booking date": "2014-05-27",
+      "number of bookings": 13028
+    },
+    {
+      "booking date": "2014-05-28",
+      "number of bookings": 13866
+    },
+    {
+      "booking date": "2014-05-29",
+      "number of bookings": 12948
+    },
+    {
+      "booking date": "2014-05-30",
+      "number of bookings": 19332
+    },
+    {
+      "booking date": "2014-05-31",
+      "number of bookings": 17228
+    },
+    {
+      "booking date": "2014-06-01",
+      "number of bookings": 12764
+    },
+    {
+      "booking date": "2014-06-02",
+      "number of bookings": 18665
+    },
+    {
+      "booking date": "2014-06-03",
+      "number of bookings": 19897
+    },
+    {
+      "booking date": "2014-06-04",
+      "number of bookings": 18574
+    },
+    {
+      "booking date": "2014-06-05",
+      "number of bookings": 16052
+    },
+    {
+      "booking date": "2014-06-06",
+      "number of bookings": 21154
+    },
+    {
+      "booking date": "2014-06-07",
+      "number of bookings": 18969
+    },
+    {
+      "booking date": "2014-06-08",
+      "number of bookings": 15752
+    },
+    {
+      "booking date": "2014-06-09",
+      "number of bookings": 15875
+    },
+    {
+      "booking date": "2014-06-10",
+      "number of bookings": 20212
+    },
+    {
+      "booking date": "2014-06-11",
+      "number of bookings": 18835
+    },
+    {
+      "booking date": "2014-06-12",
+      "number of bookings": 21536
+    },
+    {
+      "booking date": "2014-06-13",
+      "number of bookings": 18931
+    },
+    {
+      "booking date": "2014-06-14",
+      "number of bookings": 16861
+    },
+    {
+      "booking date": "2014-06-15",
+      "number of bookings": 17522
+    },
+    {
+      "booking date": "2014-06-16",
+      "number of bookings": 19941
+    },
+    {
+      "booking date": "2014-06-17",
+      "number of bookings": 21213
+    },
+    {
+      "booking date": "2014-06-18",
+      "number of bookings": 20245
+    },
+    {
+      "booking date": "2014-06-19",
+      "number of bookings": 15904
+    },
+    {
+      "booking date": "2014-06-20",
+      "number of bookings": 17693
+    },
+    {
+      "booking date": "2014-06-21",
+      "number of bookings": 14905
+    },
+    {
+      "booking date": "2014-06-22",
+      "number of bookings": 13880
+    },
+    {
+      "booking date": "2014-06-23",
+      "number of bookings": 18080
+    },
+    {
+      "booking date": "2014-06-24",
+      "number of bookings": 17438
+    },
+    {
+      "booking date": "2014-06-25",
+      "number of bookings": 17830
+    },
+    {
+      "booking date": "2014-06-26",
+      "number of bookings": 21018
+    },
+    {
+      "booking date": "2014-06-27",
+      "number of bookings": 18430
+    },
+    {
+      "booking date": "2014-06-28",
+      "number of bookings": 14668
+    },
+    {
+      "booking date": "2014-06-29",
+      "number of bookings": 11083
+    },
+    {
+      "booking date": "2014-06-30",
+      "number of bookings": 17682
+    },
+    {
+      "booking date": "2014-07-01",
+      "number of bookings": 17306
+    },
+    {
+      "booking date": "2014-07-02",
+      "number of bookings": 19163
+    },
+    {
+      "booking date": "2014-07-03",
+      "number of bookings": 21463
+    },
+    {
+      "booking date": "2014-07-04",
+      "number of bookings": 23053
+    },
+    {
+      "booking date": "2014-07-05",
+      "number of bookings": 16194
+    },
+    {
+      "booking date": "2014-07-06",
+      "number of bookings": 18521
+    },
+    {
+      "booking date": "2014-07-07",
+      "number of bookings": 19320
+    },
+    {
+      "booking date": "2014-07-08",
+      "number of bookings": 10979
+    },
+    {
+      "booking date": "2014-07-09",
+      "number of bookings": 15630
+    },
+    {
+      "booking date": "2014-07-10",
+      "number of bookings": 20946
+    },
+    {
+      "booking date": "2014-07-11",
+      "number of bookings": 21381
+    },
+    {
+      "booking date": "2014-07-12",
+      "number of bookings": 18533
+    },
+    {
+      "booking date": "2014-07-13",
+      "number of bookings": 12910
+    },
+    {
+      "booking date": "2014-07-14",
+      "number of bookings": 21104
+    },
+    {
+      "booking date": "2014-07-15",
+      "number of bookings": 21252
+    },
+    {
+      "booking date": "2014-07-16",
+      "number of bookings": 21806
+    },
+    {
+      "booking date": "2014-07-17",
+      "number of bookings": 22951
+    },
+    {
+      "booking date": "2014-07-18",
+      "number of bookings": 22628
+    },
+    {
+      "booking date": "2014-07-19",
+      "number of bookings": 19508
+    },
+    {
+      "booking date": "2014-07-20",
+      "number of bookings": 15699
+    },
+    {
+      "booking date": "2014-07-21",
+      "number of bookings": 17753
+    },
+    {
+      "booking date": "2014-07-22",
+      "number of bookings": 20531
+    },
+    {
+      "booking date": "2014-07-23",
+      "number of bookings": 22335
+    },
+    {
+      "booking date": "2014-07-24",
+      "number of bookings": 17817
+    },
+    {
+      "booking date": "2014-07-25",
+      "number of bookings": 17707
+    },
+    {
+      "booking date": "2014-07-26",
+      "number of bookings": 20341
+    },
+    {
+      "booking date": "2014-07-27",
+      "number of bookings": 18168
+    },
+    {
+      "booking date": "2014-07-28",
+      "number of bookings": 19483
+    },
+    {
+      "booking date": "2014-07-29",
+      "number of bookings": 19127
+    },
+    {
+      "booking date": "2014-07-30",
+      "number of bookings": 18774
+    },
+    {
+      "booking date": "2014-07-31",
+      "number of bookings": 21237
+    },
+    {
+      "booking date": "2014-08-01",
+      "number of bookings": 22925
+    },
+    {
+      "booking date": "2014-08-02",
+      "number of bookings": 20256
+    },
+    {
+      "booking date": "2014-08-03",
+      "number of bookings": 17396
+    },
+    {
+      "booking date": "2014-08-04",
+      "number of bookings": 18213
+    },
+    {
+      "booking date": "2014-08-05",
+      "number of bookings": 18925
+    },
+    {
+      "booking date": "2014-08-06",
+      "number of bookings": 21185
+    },
+    {
+      "booking date": "2014-08-07",
+      "number of bookings": 17993
+    },
+    {
+      "booking date": "2014-08-08",
+      "number of bookings": 21767
+    },
+    {
+      "booking date": "2014-08-09",
+      "number of bookings": 18152
+    },
+    {
+      "booking date": "2014-08-10",
+      "number of bookings": 15927
+    },
+    {
+      "booking date": "2014-08-11",
+      "number of bookings": 17562
+    },
+    {
+      "booking date": "2014-08-12",
+      "number of bookings": 17590
+    },
+    {
+      "booking date": "2014-08-13",
+      "number of bookings": 17700
+    },
+    {
+      "booking date": "2014-08-14",
+      "number of bookings": 17789
+    },
+    {
+      "booking date": "2014-08-15",
+      "number of bookings": 16266
+    },
+    {
+      "booking date": "2014-08-16",
+      "number of bookings": 12529
+    },
+    {
+      "booking date": "2014-08-17",
+      "number of bookings": 11029
+    },
+    {
+      "booking date": "2014-08-18",
+      "number of bookings": 14009
+    },
+    {
+      "booking date": "2014-08-19",
+      "number of bookings": 15258
+    },
+    {
+      "booking date": "2014-08-20",
+      "number of bookings": 14880
+    },
+    {
+      "booking date": "2014-08-21",
+      "number of bookings": 18249
+    },
+    {
+      "booking date": "2014-08-22",
+      "number of bookings": 16496
+    },
+    {
+      "booking date": "2014-08-23",
+      "number of bookings": 13584
+    },
+    {
+      "booking date": "2014-08-24",
+      "number of bookings": 13068
+    },
+    {
+      "booking date": "2014-08-25",
+      "number of bookings": 14894
+    },
+    {
+      "booking date": "2014-08-26",
+      "number of bookings": 14791
+    },
+    {
+      "booking date": "2014-08-27",
+      "number of bookings": 17913
+    },
+    {
+      "booking date": "2014-08-28",
+      "number of bookings": 19337
+    },
+    {
+      "booking date": "2014-08-29",
+      "number of bookings": 16940
+    },
+    {
+      "booking date": "2014-08-30",
+      "number of bookings": 14001
+    },
+    {
+      "booking date": "2014-08-31",
+      "number of bookings": 9959
+    },
+    {
+      "booking date": "2014-09-01",
+      "number of bookings": 15234
+    },
+    {
+      "booking date": "2014-09-02",
+      "number of bookings": 17448
+    },
+    {
+      "booking date": "2014-09-03",
+      "number of bookings": 18065
+    },
+    {
+      "booking date": "2014-09-04",
+      "number of bookings": 19297
+    },
+    {
+      "booking date": "2014-09-05",
+      "number of bookings": 20109
+    },
+    {
+      "booking date": "2014-09-06",
+      "number of bookings": 16759
+    },
+    {
+      "booking date": "2014-09-07",
+      "number of bookings": 13845
+    },
+    {
+      "booking date": "2014-09-08",
+      "number of bookings": 17511
+    },
+    {
+      "booking date": "2014-09-09",
+      "number of bookings": 15610
+    },
+    {
+      "booking date": "2014-09-10",
+      "number of bookings": 15711
+    },
+    {
+      "booking date": "2014-09-11",
+      "number of bookings": 16657
+    },
+    {
+      "booking date": "2014-09-12",
+      "number of bookings": 15741
+    },
+    {
+      "booking date": "2014-09-13",
+      "number of bookings": 14040
+    },
+    {
+      "booking date": "2014-09-14",
+      "number of bookings": 12092
+    },
+    {
+      "booking date": "2014-09-15",
+      "number of bookings": 17321
+    },
+    {
+      "booking date": "2014-09-16",
+      "number of bookings": 19112
+    },
+    {
+      "booking date": "2014-09-17",
+      "number of bookings": 19377
+    },
+    {
+      "booking date": "2014-09-18",
+      "number of bookings": 19025
+    },
+    {
+      "booking date": "2014-09-19",
+      "number of bookings": 19713
+    },
+    {
+      "booking date": "2014-09-20",
+      "number of bookings": 16974
+    },
+    {
+      "booking date": "2014-09-21",
+      "number of bookings": 11373
+    },
+    {
+      "booking date": "2014-09-22",
+      "number of bookings": 13825
+    },
+    {
+      "booking date": "2014-09-23",
+      "number of bookings": 16189
+    },
+    {
+      "booking date": "2014-09-24",
+      "number of bookings": 15157
+    },
+    {
+      "booking date": "2014-09-25",
+      "number of bookings": 14949
+    },
+    {
+      "booking date": "2014-09-26",
+      "number of bookings": 14048
+    },
+    {
+      "booking date": "2014-09-27",
+      "number of bookings": 15691
+    },
+    {
+      "booking date": "2014-09-28",
+      "number of bookings": 14415
+    },
+    {
+      "booking date": "2014-09-29",
+      "number of bookings": 16981
+    },
+    {
+      "booking date": "2014-09-30",
+      "number of bookings": 14946
+    },
+    {
+      "booking date": "2014-10-01",
+      "number of bookings": 16926
+    },
+    {
+      "booking date": "2014-10-02",
+      "number of bookings": 17668
+    },
+    {
+      "booking date": "2014-10-03",
+      "number of bookings": 16539
+    },
+    {
+      "booking date": "2014-10-04",
+      "number of bookings": 15833
+    },
+    {
+      "booking date": "2014-10-05",
+      "number of bookings": 12063
+    },
+    {
+      "booking date": "2014-10-06",
+      "number of bookings": 15031
+    },
+    {
+      "booking date": "2014-10-07",
+      "number of bookings": 11869
+    },
+    {
+      "booking date": "2014-10-08",
+      "number of bookings": 13276
+    },
+    {
+      "booking date": "2014-10-09",
+      "number of bookings": 15398
+    },
+    {
+      "booking date": "2014-10-10",
+      "number of bookings": 17273
+    },
+    {
+      "booking date": "2014-10-11",
+      "number of bookings": 14897
+    },
+    {
+      "booking date": "2014-10-12",
+      "number of bookings": 12856
+    },
+    {
+      "booking date": "2014-10-13",
+      "number of bookings": 13333
+    },
+    {
+      "booking date": "2014-10-14",
+      "number of bookings": 18032
+    },
+    {
+      "booking date": "2014-10-15",
+      "number of bookings": 16252
+    },
+    {
+      "booking date": "2014-10-16",
+      "number of bookings": 15058
+    },
+    {
+      "booking date": "2014-10-17",
+      "number of bookings": 15963
+    },
+    {
+      "booking date": "2014-10-18",
+      "number of bookings": 16161
+    },
+    {
+      "booking date": "2014-10-19",
+      "number of bookings": 15551
+    },
+    {
+      "booking date": "2014-10-20",
+      "number of bookings": 14829
+    },
+    {
+      "booking date": "2014-10-21",
+      "number of bookings": 11581
+    },
+    {
+      "booking date": "2014-10-22",
+      "number of bookings": 11886
+    },
+    {
+      "booking date": "2014-10-23",
+      "number of bookings": 15128
+    },
+    {
+      "booking date": "2014-10-24",
+      "number of bookings": 15146
+    },
+    {
+      "booking date": "2014-10-25",
+      "number of bookings": 10439
+    },
+    {
+      "booking date": "2014-10-26",
+      "number of bookings": 11747
+    },
+    {
+      "booking date": "2014-10-27",
+      "number of bookings": 15361
+    },
+    {
+      "booking date": "2014-10-28",
+      "number of bookings": 15007
+    },
+    {
+      "booking date": "2014-10-29",
+      "number of bookings": 12913
+    },
+    {
+      "booking date": "2014-10-30",
+      "number of bookings": 14864
+    },
+    {
+      "booking date": "2014-10-31",
+      "number of bookings": 15822
+    },
+    {
+      "booking date": "2014-11-01",
+      "number of bookings": 14478
+    },
+    {
+      "booking date": "2014-11-02",
+      "number of bookings": 12020
+    },
+    {
+      "booking date": "2014-11-03",
+      "number of bookings": 13949
+    },
+    {
+      "booking date": "2014-11-04",
+      "number of bookings": 12937
+    },
+    {
+      "booking date": "2014-11-05",
+      "number of bookings": 12173
+    },
+    {
+      "booking date": "2014-11-06",
+      "number of bookings": 15182
+    },
+    {
+      "booking date": "2014-11-07",
+      "number of bookings": 14186
+    },
+    {
+      "booking date": "2014-11-08",
+      "number of bookings": 12900
+    },
+    {
+      "booking date": "2014-11-09",
+      "number of bookings": 10278
+    },
+    {
+      "booking date": "2014-11-10",
+      "number of bookings": 12769
+    },
+    {
+      "booking date": "2014-11-11",
+      "number of bookings": 13730
+    },
+    {
+      "booking date": "2014-11-12",
+      "number of bookings": 12790
+    },
+    {
+      "booking date": "2014-11-13",
+      "number of bookings": 14346
+    },
+    {
+      "booking date": "2014-11-14",
+      "number of bookings": 13915
+    },
+    {
+      "booking date": "2014-11-15",
+      "number of bookings": 9920
+    },
+    {
+      "booking date": "2014-11-16",
+      "number of bookings": 5858
+    },
+    {
+      "booking date": "2014-11-17",
+      "number of bookings": 12951
+    },
+    {
+      "booking date": "2014-11-18",
+      "number of bookings": 11195
+    },
+    {
+      "booking date": "2014-11-19",
+      "number of bookings": 12613
+    },
+    {
+      "booking date": "2014-11-20",
+      "number of bookings": 13100
+    },
+    {
+      "booking date": "2014-11-21",
+      "number of bookings": 12099
+    },
+    {
+      "booking date": "2014-11-22",
+      "number of bookings": 8073
+    },
+    {
+      "booking date": "2014-11-23",
+      "number of bookings": 7532
+    },
+    {
+      "booking date": "2014-11-24",
+      "number of bookings": 11096
+    },
+    {
+      "booking date": "2014-11-25",
+      "number of bookings": 11474
+    },
+    {
+      "booking date": "2014-11-26",
+      "number of bookings": 11356
+    },
+    {
+      "booking date": "2014-11-27",
+      "number of bookings": 10767
+    },
+    {
+      "booking date": "2014-11-28",
+      "number of bookings": 9978
+    },
+    {
+      "booking date": "2014-11-29",
+      "number of bookings": 6452
+    },
+    {
+      "booking date": "2014-11-30",
+      "number of bookings": 5106
+    },
+    {
+      "booking date": "2014-12-01",
+      "number of bookings": 8882
+    },
+    {
+      "booking date": "2014-12-02",
+      "number of bookings": 8921
+    },
+    {
+      "booking date": "2014-12-03",
+      "number of bookings": 9053
+    },
+    {
+      "booking date": "2014-12-04",
+      "number of bookings": 9144
+    },
+    {
+      "booking date": "2014-12-05",
+      "number of bookings": 9749
+    },
+    {
+      "booking date": "2014-12-06",
+      "number of bookings": 7481
+    },
+    {
+      "booking date": "2014-12-07",
+      "number of bookings": 4729
+    },
+    {
+      "booking date": "2014-12-08",
+      "number of bookings": 9267
+    },
+    {
+      "booking date": "2014-12-09",
+      "number of bookings": 9688
+    },
+    {
+      "booking date": "2014-12-10",
+      "number of bookings": 8142
+    },
+    {
+      "booking date": "2014-12-11",
+      "number of bookings": 8536
+    },
+    {
+      "booking date": "2014-12-12",
+      "number of bookings": 7643
+    },
+    {
+      "booking date": "2014-12-13",
+      "number of bookings": 6414
+    },
+    {
+      "booking date": "2014-12-14",
+      "number of bookings": 5610
+    },
+    {
+      "booking date": "2014-12-15",
+      "number of bookings": 7730
+    },
+    {
+      "booking date": "2014-12-16",
+      "number of bookings": 8412
+    },
+    {
+      "booking date": "2014-12-17",
+      "number of bookings": 6580
+    },
+    {
+      "booking date": "2014-12-18",
+      "number of bookings": 7463
+    },
+    {
+      "booking date": "2014-12-19",
+      "number of bookings": 6678
+    },
+    {
+      "booking date": "2014-12-20",
+      "number of bookings": 3898
+    },
+    {
+      "booking date": "2014-12-21",
+      "number of bookings": 3325
+    },
+    {
+      "booking date": "2014-12-22",
+      "number of bookings": 3818
+    },
+    {
+      "booking date": "2014-12-23",
+      "number of bookings": 3439
+    },
+    {
+      "booking date": "2014-12-24",
+      "number of bookings": 1681
+    },
+    {
+      "booking date": "2014-12-25",
+      "number of bookings": 1179
+    },
+    {
+      "booking date": "2014-12-26",
+      "number of bookings": 1728
+    },
+    {
+      "booking date": "2014-12-27",
+      "number of bookings": 2440
+    },
+    {
+      "booking date": "2014-12-28",
+      "number of bookings": 2744
+    },
+    {
+      "booking date": "2014-12-29",
+      "number of bookings": 3251
+    },
+    {
+      "booking date": "2014-12-30",
+      "number of bookings": 4218
+    },
+    {
+      "booking date": "2014-12-31",
+      "number of bookings": 2927
+    },
+    {
+      "booking date": "2015-01-01",
+      "number of bookings": 3278
+    },
+    {
+      "booking date": "2015-01-02",
+      "number of bookings": 4368
+    },
+    {
+      "booking date": "2015-01-03",
+      "number of bookings": 2755
+    },
+    {
+      "booking date": "2015-01-04",
+      "number of bookings": 4589
+    },
+    {
+      "booking date": "2015-01-05",
+      "number of bookings": 6935
+    },
+    {
+      "booking date": "2015-01-06",
+      "number of bookings": 7033
+    },
+    {
+      "booking date": "2015-01-07",
+      "number of bookings": 7478
+    },
+    {
+      "booking date": "2015-01-08",
+      "number of bookings": 4901
+    },
+    {
+      "booking date": "2015-01-09",
+      "number of bookings": 5075
+    },
+    {
+      "booking date": "2015-01-10",
+      "number of bookings": 3798
+    },
+    {
+      "booking date": "2015-01-11",
+      "number of bookings": 2938
+    },
+    {
+      "booking date": "2015-01-12",
+      "number of bookings": 6207
+    },
+    {
+      "booking date": "2015-01-13",
+      "number of bookings": 6918
+    },
+    {
+      "booking date": "2015-01-14",
+      "number of bookings": 7038
+    },
+    {
+      "booking date": "2015-01-15",
+      "number of bookings": 7378
+    },
+    {
+      "booking date": "2015-01-16",
+      "number of bookings": 8752
+    },
+    {
+      "booking date": "2015-01-17",
+      "number of bookings": 6870
+    },
+    {
+      "booking date": "2015-01-18",
+      "number of bookings": 4127
+    },
+    {
+      "booking date": "2015-01-19",
+      "number of bookings": 7724
+    },
+    {
+      "booking date": "2015-01-20",
+      "number of bookings": 7447
+    },
+    {
+      "booking date": "2015-01-21",
+      "number of bookings": 7425
+    },
+    {
+      "booking date": "2015-01-22",
+      "number of bookings": 7681
+    },
+    {
+      "booking date": "2015-01-23",
+      "number of bookings": 7396
+    },
+    {
+      "booking date": "2015-01-24",
+      "number of bookings": 3323
+    },
+    {
+      "booking date": "2015-01-25",
+      "number of bookings": 3544
+    },
+    {
+      "booking date": "2015-01-26",
+      "number of bookings": 4936
+    },
+    {
+      "booking date": "2015-01-27",
+      "number of bookings": 8093
+    },
+    {
+      "booking date": "2015-01-28",
+      "number of bookings": 6364
+    },
+    {
+      "booking date": "2015-01-29",
+      "number of bookings": 7223
+    },
+    {
+      "booking date": "2015-01-30",
+      "number of bookings": 7131
+    },
+    {
+      "booking date": "2015-01-31",
+      "number of bookings": 5670
+    },
+    {
+      "booking date": "2015-02-01",
+      "number of bookings": 3670
+    },
+    {
+      "booking date": "2015-02-02",
+      "number of bookings": 6946
+    },
+    {
+      "booking date": "2015-02-03",
+      "number of bookings": 7359
+    },
+    {
+      "booking date": "2015-02-04",
+      "number of bookings": 7586
+    },
+    {
+      "booking date": "2015-02-05",
+      "number of bookings": 6821
+    },
+    {
+      "booking date": "2015-02-06",
+      "number of bookings": 7039
+    },
+    {
+      "booking date": "2015-02-07",
+      "number of bookings": 4118
+    },
+    {
+      "booking date": "2015-02-08",
+      "number of bookings": 5334
+    },
+    {
+      "booking date": "2015-02-09",
+      "number of bookings": 6530
+    },
+    {
+      "booking date": "2015-02-10",
+      "number of bookings": 8091
+    },
+    {
+      "booking date": "2015-02-11",
+      "number of bookings": 8142
+    },
+    {
+      "booking date": "2015-02-12",
+      "number of bookings": 7529
+    },
+    {
+      "booking date": "2015-02-13",
+      "number of bookings": 7518
+    },
+    {
+      "booking date": "2015-02-14",
+      "number of bookings": 6657
+    },
+    {
+      "booking date": "2015-02-15",
+      "number of bookings": 5019
+    },
+    {
+      "booking date": "2015-02-16",
+      "number of bookings": 7229
+    },
+    {
+      "booking date": "2015-02-17",
+      "number of bookings": 7367
+    },
+    {
+      "booking date": "2015-02-18",
+      "number of bookings": 8094
+    },
+    {
+      "booking date": "2015-02-19",
+      "number of bookings": 8307
+    },
+    {
+      "booking date": "2015-02-20",
+      "number of bookings": 6888
+    },
+    {
+      "booking date": "2015-02-21",
+      "number of bookings": 4512
+    },
+    {
+      "booking date": "2015-02-22",
+      "number of bookings": 5757
+    },
+    {
+      "booking date": "2015-02-23",
+      "number of bookings": 5972
+    },
+    {
+      "booking date": "2015-02-24",
+      "number of bookings": 7221
+    },
+    {
+      "booking date": "2015-02-25",
+      "number of bookings": 8424
+    },
+    {
+      "booking date": "2015-02-26",
+      "number of bookings": 9211
+    },
+    {
+      "booking date": "2015-02-27",
+      "number of bookings": 5341
+    },
+    {
+      "booking date": "2015-02-28",
+      "number of bookings": 7091
+    },
+    {
+      "booking date": "2015-03-01",
+      "number of bookings": 3987
+    },
+    {
+      "booking date": "2015-03-02",
+      "number of bookings": 6711
+    },
+    {
+      "booking date": "2015-03-03",
+      "number of bookings": 6307
+    },
+    {
+      "booking date": "2015-03-04",
+      "number of bookings": 6309
+    },
+    {
+      "booking date": "2015-03-05",
+      "number of bookings": 8039
+    },
+    {
+      "booking date": "2015-03-06",
+      "number of bookings": 8675
+    },
+    {
+      "booking date": "2015-03-07",
+      "number of bookings": 8129
+    },
+    {
+      "booking date": "2015-03-08",
+      "number of bookings": 11283
+    },
+    {
+      "booking date": "2015-03-09",
+      "number of bookings": 10479
+    },
+    {
+      "booking date": "2015-03-10",
+      "number of bookings": 8897
+    },
+    {
+      "booking date": "2015-03-11",
+      "number of bookings": 9898
+    },
+    {
+      "booking date": "2015-03-12",
+      "number of bookings": 10127
+    },
+    {
+      "booking date": "2015-03-13",
+      "number of bookings": 8196
+    },
+    {
+      "booking date": "2015-03-14",
+      "number of bookings": 5346
+    },
+    {
+      "booking date": "2015-03-15",
+      "number of bookings": 4933
+    },
+    {
+      "booking date": "2015-03-16",
+      "number of bookings": 10006
+    },
+    {
+      "booking date": "2015-03-17",
+      "number of bookings": 12368
+    },
+    {
+      "booking date": "2015-03-18",
+      "number of bookings": 14423
+    },
+    {
+      "booking date": "2015-03-19",
+      "number of bookings": 13202
+    },
+    {
+      "booking date": "2015-03-20",
+      "number of bookings": 11122
+    },
+    {
+      "booking date": "2015-03-21",
+      "number of bookings": 5596
+    },
+    {
+      "booking date": "2015-03-22",
+      "number of bookings": 7711
+    },
+    {
+      "booking date": "2015-03-23",
+      "number of bookings": 10899
+    },
+    {
+      "booking date": "2015-03-24",
+      "number of bookings": 11370
+    },
+    {
+      "booking date": "2015-03-25",
+      "number of bookings": 12410
+    },
+    {
+      "booking date": "2015-03-26",
+      "number of bookings": 10491
+    },
+    {
+      "booking date": "2015-03-27",
+      "number of bookings": 9562
+    },
+    {
+      "booking date": "2015-03-28",
+      "number of bookings": 8956
+    },
+    {
+      "booking date": "2015-03-29",
+      "number of bookings": 3940
+    },
+    {
+      "booking date": "2015-03-30",
+      "number of bookings": 7855
+    },
+    {
+      "booking date": "2015-03-31",
+      "number of bookings": 5667
+    },
+    {
+      "booking date": "2015-04-01",
+      "number of bookings": 8928
+    },
+    {
+      "booking date": "2015-04-02",
+      "number of bookings": 8870
+    },
+    {
+      "booking date": "2015-04-03",
+      "number of bookings": 7251
+    },
+    {
+      "booking date": "2015-04-04",
+      "number of bookings": 6933
+    },
+    {
+      "booking date": "2015-04-05",
+      "number of bookings": 6927
+    },
+    {
+      "booking date": "2015-04-06",
+      "number of bookings": 8951
+    },
+    {
+      "booking date": "2015-04-07",
+      "number of bookings": 12023
+    },
+    {
+      "booking date": "2015-04-08",
+      "number of bookings": 13636
+    },
+    {
+      "booking date": "2015-04-09",
+      "number of bookings": 17243
+    },
+    {
+      "booking date": "2015-04-10",
+      "number of bookings": 19169
+    },
+    {
+      "booking date": "2015-04-11",
+      "number of bookings": 13097
+    },
+    {
+      "booking date": "2015-04-12",
+      "number of bookings": 12917
+    },
+    {
+      "booking date": "2015-04-13",
+      "number of bookings": 14506
+    },
+    {
+      "booking date": "2015-04-14",
+      "number of bookings": 16310
+    },
+    {
+      "booking date": "2015-04-15",
+      "number of bookings": 21291
+    },
+    {
+      "booking date": "2015-04-16",
+      "number of bookings": 17688
+    },
+    {
+      "booking date": "2015-04-17",
+      "number of bookings": 15697
+    },
+    {
+      "booking date": "2015-04-18",
+      "number of bookings": 14528
+    },
+    {
+      "booking date": "2015-04-19",
+      "number of bookings": 14909
+    },
+    {
+      "booking date": "2015-04-20",
+      "number of bookings": 19256
+    },
+    {
+      "booking date": "2015-04-21",
+      "number of bookings": 20409
+    },
+    {
+      "booking date": "2015-04-22",
+      "number of bookings": 19245
+    },
+    {
+      "booking date": "2015-04-23",
+      "number of bookings": 19986
+    },
+    {
+      "booking date": "2015-04-24",
+      "number of bookings": 21329
+    },
+    {
+      "booking date": "2015-04-25",
+      "number of bookings": 11312
+    },
+    {
+      "booking date": "2015-04-26",
+      "number of bookings": 10589
+    },
+    {
+      "booking date": "2015-04-27",
+      "number of bookings": 13260
+    },
+    {
+      "booking date": "2015-04-28",
+      "number of bookings": 15796
+    },
+    {
+      "booking date": "2015-04-29",
+      "number of bookings": 18455
+    },
+    {
+      "booking date": "2015-04-30",
+      "number of bookings": 14123
+    },
+    {
+      "booking date": "2015-05-01",
+      "number of bookings": 12133
+    },
+    {
+      "booking date": "2015-05-02",
+      "number of bookings": 14062
+    },
+    {
+      "booking date": "2015-05-03",
+      "number of bookings": 10712
+    },
+    {
+      "booking date": "2015-05-04",
+      "number of bookings": 18963
+    },
+    {
+      "booking date": "2015-05-05",
+      "number of bookings": 18198
+    },
+    {
+      "booking date": "2015-05-06",
+      "number of bookings": 19976
+    },
+    {
+      "booking date": "2015-05-07",
+      "number of bookings": 18898
+    },
+    {
+      "booking date": "2015-05-08",
+      "number of bookings": 22272
+    },
+    {
+      "booking date": "2015-05-09",
+      "number of bookings": 15090
+    },
+    {
+      "booking date": "2015-05-10",
+      "number of bookings": 14436
+    },
+    {
+      "booking date": "2015-05-11",
+      "number of bookings": 21151
+    },
+    {
+      "booking date": "2015-05-12",
+      "number of bookings": 19603
+    },
+    {
+      "booking date": "2015-05-13",
+      "number of bookings": 19892
+    },
+    {
+      "booking date": "2015-05-14",
+      "number of bookings": 13765
+    },
+    {
+      "booking date": "2015-05-15",
+      "number of bookings": 18603
+    },
+    {
+      "booking date": "2015-05-16",
+      "number of bookings": 12674
+    },
+    {
+      "booking date": "2015-05-17",
+      "number of bookings": 11224
+    },
+    {
+      "booking date": "2015-05-18",
+      "number of bookings": 18031
+    },
+    {
+      "booking date": "2015-05-19",
+      "number of bookings": 16639
+    },
+    {
+      "booking date": "2015-05-20",
+      "number of bookings": 17743
+    },
+    {
+      "booking date": "2015-05-21",
+      "number of bookings": 19644
+    },
+    {
+      "booking date": "2015-05-22",
+      "number of bookings": 21345
+    },
+    {
+      "booking date": "2015-05-23",
+      "number of bookings": 15950
+    },
+    {
+      "booking date": "2015-05-24",
+      "number of bookings": 18143
+    },
+    {
+      "booking date": "2015-05-25",
+      "number of bookings": 12206
+    },
+    {
+      "booking date": "2015-05-26",
+      "number of bookings": 17157
+    },
+    {
+      "booking date": "2015-05-27",
+      "number of bookings": 17919
+    },
+    {
+      "booking date": "2015-05-28",
+      "number of bookings": 17429
+    },
+    {
+      "booking date": "2015-05-29",
+      "number of bookings": 19349
+    },
+    {
+      "booking date": "2015-05-30",
+      "number of bookings": 13677
+    },
+    {
+      "booking date": "2015-05-31",
+      "number of bookings": 13804
+    },
+    {
+      "booking date": "2015-06-01",
+      "number of bookings": 18034
+    },
+    {
+      "booking date": "2015-06-02",
+      "number of bookings": 19183
+    },
+    {
+      "booking date": "2015-06-03",
+      "number of bookings": 22016
+    },
+    {
+      "booking date": "2015-06-04",
+      "number of bookings": 23481
+    },
+    {
+      "booking date": "2015-06-05",
+      "number of bookings": 25824
+    },
+    {
+      "booking date": "2015-06-06",
+      "number of bookings": 21265
+    },
+    {
+      "booking date": "2015-06-07",
+      "number of bookings": 18457
+    },
+    {
+      "booking date": "2015-06-08",
+      "number of bookings": 19347
+    },
+    {
+      "booking date": "2015-06-09",
+      "number of bookings": 20500
+    },
+    {
+      "booking date": "2015-06-10",
+      "number of bookings": 24282
+    },
+    {
+      "booking date": "2015-06-11",
+      "number of bookings": 25254
+    },
+    {
+      "booking date": "2015-06-12",
+      "number of bookings": 26707
+    },
+    {
+      "booking date": "2015-06-13",
+      "number of bookings": 18044
+    },
+    {
+      "booking date": "2015-06-14",
+      "number of bookings": 16776
+    },
+    {
+      "booking date": "2015-06-15",
+      "number of bookings": 19751
+    },
+    {
+      "booking date": "2015-06-16",
+      "number of bookings": 20495
+    },
+    {
+      "booking date": "2015-06-17",
+      "number of bookings": 20935
+    },
+    {
+      "booking date": "2015-06-18",
+      "number of bookings": 17340
+    },
+    {
+      "booking date": "2015-06-19",
+      "number of bookings": 16914
+    },
+    {
+      "booking date": "2015-06-20",
+      "number of bookings": 16067
+    },
+    {
+      "booking date": "2015-06-21",
+      "number of bookings": 14964
+    },
+    {
+      "booking date": "2015-06-22",
+      "number of bookings": 13740
+    },
+    {
+      "booking date": "2015-06-23",
+      "number of bookings": 18985
+    },
+    {
+      "booking date": "2015-06-24",
+      "number of bookings": 20369
+    },
+    {
+      "booking date": "2015-06-25",
+      "number of bookings": 23269
+    },
+    {
+      "booking date": "2015-06-26",
+      "number of bookings": 22819
+    },
+    {
+      "booking date": "2015-06-27",
+      "number of bookings": 18040
+    },
+    {
+      "booking date": "2015-06-28",
+      "number of bookings": 18925
+    },
+    {
+      "booking date": "2015-06-29",
+      "number of bookings": 23624
+    },
+    {
+      "booking date": "2015-06-30",
+      "number of bookings": 26403
+    },
+    {
+      "booking date": "2015-07-01",
+      "number of bookings": 27959
+    },
+    {
+      "booking date": "2015-07-02",
+      "number of bookings": 27520
+    },
+    {
+      "booking date": "2015-07-03",
+      "number of bookings": 25377
+    },
+    {
+      "booking date": "2015-07-04",
+      "number of bookings": 19653
+    },
+    {
+      "booking date": "2015-07-05",
+      "number of bookings": 16338
+    },
+    {
+      "booking date": "2015-07-06",
+      "number of bookings": 23925
+    },
+    {
+      "booking date": "2015-07-07",
+      "number of bookings": 22052
+    },
+    {
+      "booking date": "2015-07-08",
+      "number of bookings": 19334
+    },
+    {
+      "booking date": "2015-07-09",
+      "number of bookings": 15687
+    },
+    {
+      "booking date": "2015-07-10",
+      "number of bookings": 23070
+    },
+    {
+      "booking date": "2015-07-11",
+      "number of bookings": 22013
+    },
+    {
+      "booking date": "2015-07-12",
+      "number of bookings": 14159
+    },
+    {
+      "booking date": "2015-07-13",
+      "number of bookings": 16508
+    },
+    {
+      "booking date": "2015-07-14",
+      "number of bookings": 18689
+    },
+    {
+      "booking date": "2015-07-15",
+      "number of bookings": 23608
+    },
+    {
+      "booking date": "2015-07-16",
+      "number of bookings": 25164
+    },
+    {
+      "booking date": "2015-07-17",
+      "number of bookings": 25659
+    },
+    {
+      "booking date": "2015-07-18",
+      "number of bookings": 21593
+    },
+    {
+      "booking date": "2015-07-19",
+      "number of bookings": 12611
+    },
+    {
+      "booking date": "2015-07-20",
+      "number of bookings": 21900
+    },
+    {
+      "booking date": "2015-07-21",
+      "number of bookings": 22629
+    },
+    {
+      "booking date": "2015-07-22",
+      "number of bookings": 23523
+    },
+    {
+      "booking date": "2015-07-23",
+      "number of bookings": 22721
+    },
+    {
+      "booking date": "2015-07-24",
+      "number of bookings": 23876
+    },
+    {
+      "booking date": "2015-07-25",
+      "number of bookings": 16019
+    },
+    {
+      "booking date": "2015-07-26",
+      "number of bookings": 16367
+    },
+    {
+      "booking date": "2015-07-27",
+      "number of bookings": 15921
+    },
+    {
+      "booking date": "2015-07-28",
+      "number of bookings": 16709
+    },
+    {
+      "booking date": "2015-07-29",
+      "number of bookings": 17555
+    },
+    {
+      "booking date": "2015-07-30",
+      "number of bookings": 18564
+    },
+    {
+      "booking date": "2015-07-31",
+      "number of bookings": 21682
+    },
+    {
+      "booking date": "2015-08-01",
+      "number of bookings": 21222
+    },
+    {
+      "booking date": "2015-08-02",
+      "number of bookings": 20419
+    },
+    {
+      "booking date": "2015-08-03",
+      "number of bookings": 23788
+    },
+    {
+      "booking date": "2015-08-04",
+      "number of bookings": 17819
+    },
+    {
+      "booking date": "2015-08-05",
+      "number of bookings": 24687
+    },
+    {
+      "booking date": "2015-08-06",
+      "number of bookings": 25289
+    },
+    {
+      "booking date": "2015-08-07",
+      "number of bookings": 21043
+    },
+    {
+      "booking date": "2015-08-08",
+      "number of bookings": 19977
+    },
+    {
+      "booking date": "2015-08-09",
+      "number of bookings": 20414
+    },
+    {
+      "booking date": "2015-08-10",
+      "number of bookings": 21757
+    },
+    {
+      "booking date": "2015-08-11",
+      "number of bookings": 23624
+    },
+    {
+      "booking date": "2015-08-12",
+      "number of bookings": 23342
+    },
+    {
+      "booking date": "2015-08-13",
+      "number of bookings": 25046
+    },
+    {
+      "booking date": "2015-08-14",
+      "number of bookings": 23090
+    },
+    {
+      "booking date": "2015-08-15",
+      "number of bookings": 18507
+    },
+    {
+      "booking date": "2015-08-16",
+      "number of bookings": 15980
+    },
+    {
+      "booking date": "2015-08-17",
+      "number of bookings": 14970
+    },
+    {
+      "booking date": "2015-08-18",
+      "number of bookings": 13023
+    },
+    {
+      "booking date": "2015-08-19",
+      "number of bookings": 16882
+    },
+    {
+      "booking date": "2015-08-20",
+      "number of bookings": 22684
+    },
+    {
+      "booking date": "2015-08-21",
+      "number of bookings": 24580
+    },
+    {
+      "booking date": "2015-08-22",
+      "number of bookings": 21692
+    },
+    {
+      "booking date": "2015-08-23",
+      "number of bookings": 19816
+    },
+    {
+      "booking date": "2015-08-24",
+      "number of bookings": 19247
+    },
+    {
+      "booking date": "2015-08-25",
+      "number of bookings": 18807
+    },
+    {
+      "booking date": "2015-08-26",
+      "number of bookings": 22262
+    },
+    {
+      "booking date": "2015-08-27",
+      "number of bookings": 14783
+    },
+    {
+      "booking date": "2015-08-28",
+      "number of bookings": 19759
+    },
+    {
+      "booking date": "2015-08-29",
+      "number of bookings": 20753
+    },
+    {
+      "booking date": "2015-08-30",
+      "number of bookings": 17828
+    },
+    {
+      "booking date": "2015-08-31",
+      "number of bookings": 22112
+    },
+    {
+      "booking date": "2015-09-01",
+      "number of bookings": 15562
+    },
+    {
+      "booking date": "2015-09-02",
+      "number of bookings": 19001
+    },
+    {
+      "booking date": "2015-09-03",
+      "number of bookings": 19165
+    },
+    {
+      "booking date": "2015-09-04",
+      "number of bookings": 18865
+    },
+    {
+      "booking date": "2015-09-05",
+      "number of bookings": 10597
+    },
+    {
+      "booking date": "2015-09-06",
+      "number of bookings": 11723
+    },
+    {
+      "booking date": "2015-09-07",
+      "number of bookings": 17792
+    },
+    {
+      "booking date": "2015-09-08",
+      "number of bookings": 19319
+    },
+    {
+      "booking date": "2015-09-09",
+      "number of bookings": 19558
+    },
+    {
+      "booking date": "2015-09-10",
+      "number of bookings": 19279
+    },
+    {
+      "booking date": "2015-09-11",
+      "number of bookings": 17226
+    },
+    {
+      "booking date": "2015-09-12",
+      "number of bookings": 17149
+    },
+    {
+      "booking date": "2015-09-13",
+      "number of bookings": 11907
+    },
+    {
+      "booking date": "2015-09-14",
+      "number of bookings": 14246
+    },
+    {
+      "booking date": "2015-09-15",
+      "number of bookings": 16404
+    },
+    {
+      "booking date": "2015-09-16",
+      "number of bookings": 13419
+    },
+    {
+      "booking date": "2015-09-17",
+      "number of bookings": 15024
+    },
+    {
+      "booking date": "2015-09-18",
+      "number of bookings": 18654
+    },
+    {
+      "booking date": "2015-09-19",
+      "number of bookings": 11379
+    },
+    {
+      "booking date": "2015-09-20",
+      "number of bookings": 11986
+    },
+    {
+      "booking date": "2015-09-21",
+      "number of bookings": 15770
+    },
+    {
+      "booking date": "2015-09-22",
+      "number of bookings": 13814
+    },
+    {
+      "booking date": "2015-09-23",
+      "number of bookings": 16694
+    },
+    {
+      "booking date": "2015-09-24",
+      "number of bookings": 15512
+    },
+    {
+      "booking date": "2015-09-25",
+      "number of bookings": 17324
+    },
+    {
+      "booking date": "2015-09-26",
+      "number of bookings": 14588
+    },
+    {
+      "booking date": "2015-09-27",
+      "number of bookings": 13416
+    },
+    {
+      "booking date": "2015-09-28",
+      "number of bookings": 16079
+    },
+    {
+      "booking date": "2015-09-29",
+      "number of bookings": 16913
+    },
+    {
+      "booking date": "2015-09-30",
+      "number of bookings": 18178
+    },
+    {
+      "booking date": "2015-10-01",
+      "number of bookings": 18202
+    },
+    {
+      "booking date": "2015-10-02",
+      "number of bookings": 18089
+    },
+    {
+      "booking date": "2015-10-03",
+      "number of bookings": 17102
+    },
+    {
+      "booking date": "2015-10-04",
+      "number of bookings": 14036
+    },
+    {
+      "booking date": "2015-10-05",
+      "number of bookings": 17159
+    },
+    {
+      "booking date": "2015-10-06",
+      "number of bookings": 14115
+    },
+    {
+      "booking date": "2015-10-07",
+      "number of bookings": 12260
+    },
+    {
+      "booking date": "2015-10-08",
+      "number of bookings": 13194
+    },
+    {
+      "booking date": "2015-10-09",
+      "number of bookings": 15604
+    },
+    {
+      "booking date": "2015-10-10",
+      "number of bookings": 13427
+    },
+    {
+      "booking date": "2015-10-11",
+      "number of bookings": 11088
+    },
+    {
+      "booking date": "2015-10-12",
+      "number of bookings": 14464
+    },
+    {
+      "booking date": "2015-10-13",
+      "number of bookings": 13903
+    },
+    {
+      "booking date": "2015-10-14",
+      "number of bookings": 11118
+    },
+    {
+      "booking date": "2015-10-15",
+      "number of bookings": 9788
+    },
+    {
+      "booking date": "2015-10-16",
+      "number of bookings": 10344
+    },
+    {
+      "booking date": "2015-10-17",
+      "number of bookings": 8839
+    },
+    {
+      "booking date": "2015-10-18",
+      "number of bookings": 7462
+    },
+    {
+      "booking date": "2015-10-19",
+      "number of bookings": 14403
+    },
+    {
+      "booking date": "2015-10-20",
+      "number of bookings": 15002
+    },
+    {
+      "booking date": "2015-10-21",
+      "number of bookings": 16126
+    },
+    {
+      "booking date": "2015-10-22",
+      "number of bookings": 13976
+    },
+    {
+      "booking date": "2015-10-23",
+      "number of bookings": 17049
+    },
+    {
+      "booking date": "2015-10-24",
+      "number of bookings": 13417
+    },
+    {
+      "booking date": "2015-10-25",
+      "number of bookings": 12225
+    },
+    {
+      "booking date": "2015-10-26",
+      "number of bookings": 15864
+    },
+    {
+      "booking date": "2015-10-27",
+      "number of bookings": 16037
+    },
+    {
+      "booking date": "2015-10-28",
+      "number of bookings": 15762
+    },
+    {
+      "booking date": "2015-10-29",
+      "number of bookings": 16430
+    },
+    {
+      "booking date": "2015-10-30",
+      "number of bookings": 16073
+    },
+    {
+      "booking date": "2015-10-31",
+      "number of bookings": 12982
+    },
+    {
+      "booking date": "2015-11-01",
+      "number of bookings": 11527
+    },
+    {
+      "booking date": "2015-11-02",
+      "number of bookings": 14272
+    },
+    {
+      "booking date": "2015-11-03",
+      "number of bookings": 14454
+    },
+    {
+      "booking date": "2015-11-04",
+      "number of bookings": 15924
+    },
+    {
+      "booking date": "2015-11-05",
+      "number of bookings": 16446
+    },
+    {
+      "booking date": "2015-11-06",
+      "number of bookings": 14646
+    },
+    {
+      "booking date": "2015-11-07",
+      "number of bookings": 12368
+    },
+    {
+      "booking date": "2015-11-08",
+      "number of bookings": 13458
+    },
+    {
+      "booking date": "2015-11-09",
+      "number of bookings": 15956
+    },
+    {
+      "booking date": "2015-11-10",
+      "number of bookings": 15480
+    },
+    {
+      "booking date": "2015-11-11",
+      "number of bookings": 15592
+    },
+    {
+      "booking date": "2015-11-12",
+      "number of bookings": 17582
+    },
+    {
+      "booking date": "2015-11-13",
+      "number of bookings": 15470
+    },
+    {
+      "booking date": "2015-11-14",
+      "number of bookings": 8813
+    },
+    {
+      "booking date": "2015-11-15",
+      "number of bookings": 5265
+    },
+    {
+      "booking date": "2015-11-16",
+      "number of bookings": 13774
+    },
+    {
+      "booking date": "2015-11-17",
+      "number of bookings": 12432
+    },
+    {
+      "booking date": "2015-11-18",
+      "number of bookings": 15032
+    },
+    {
+      "booking date": "2015-11-19",
+      "number of bookings": 12561
+    },
+    {
+      "booking date": "2015-11-20",
+      "number of bookings": 11352
+    },
+    {
+      "booking date": "2015-11-21",
+      "number of bookings": 8150
+    },
+    {
+      "booking date": "2015-11-22",
+      "number of bookings": 5354
+    },
+    {
+      "booking date": "2015-11-23",
+      "number of bookings": 11826
+    },
+    {
+      "booking date": "2015-11-24",
+      "number of bookings": 10578
+    },
+    {
+      "booking date": "2015-11-25",
+      "number of bookings": 10978
+    },
+    {
+      "booking date": "2015-11-26",
+      "number of bookings": 13123
+    },
+    {
+      "booking date": "2015-11-27",
+      "number of bookings": 12753
+    },
+    {
+      "booking date": "2015-11-28",
+      "number of bookings": 7362
+    },
+    {
+      "booking date": "2015-11-29",
+      "number of bookings": 5465
+    },
+    {
+      "booking date": "2015-11-30",
+      "number of bookings": 9224
+    },
+    {
+      "booking date": "2015-12-01",
+      "number of bookings": 12008
+    },
+    {
+      "booking date": "2015-12-02",
+      "number of bookings": 14370
+    },
+    {
+      "booking date": "2015-12-03",
+      "number of bookings": 14986
+    },
+    {
+      "booking date": "2015-12-04",
+      "number of bookings": 12671
+    },
+    {
+      "booking date": "2015-12-05",
+      "number of bookings": 9482
+    },
+    {
+      "booking date": "2015-12-06",
+      "number of bookings": 7786
+    },
+    {
+      "booking date": "2015-12-07",
+      "number of bookings": 13740
+    },
+    {
+      "booking date": "2015-12-08",
+      "number of bookings": 14489
+    },
+    {
+      "booking date": "2015-12-09",
+      "number of bookings": 13413
+    },
+    {
+      "booking date": "2015-12-10",
+      "number of bookings": 13075
+    },
+    {
+      "booking date": "2015-12-11",
+      "number of bookings": 10589
+    },
+    {
+      "booking date": "2015-12-12",
+      "number of bookings": 7750
+    },
+    {
+      "booking date": "2015-12-13",
+      "number of bookings": 7536
+    },
+    {
+      "booking date": "2015-12-14",
+      "number of bookings": 12634
+    },
+    {
+      "booking date": "2015-12-15",
+      "number of bookings": 13333
+    },
+    {
+      "booking date": "2015-12-16",
+      "number of bookings": 11106
+    },
+    {
+      "booking date": "2015-12-17",
+      "number of bookings": 14225
+    },
+    {
+      "booking date": "2015-12-18",
+      "number of bookings": 14684
+    },
+    {
+      "booking date": "2015-12-19",
+      "number of bookings": 11369
+    },
+    {
+      "booking date": "2015-12-20",
+      "number of bookings": 8694
+    },
+    {
+      "booking date": "2015-12-21",
+      "number of bookings": 10730
+    },
+    {
+      "booking date": "2015-12-22",
+      "number of bookings": 10269
+    },
+    {
+      "booking date": "2015-12-23",
+      "number of bookings": 9370
+    },
+    {
+      "booking date": "2015-12-24",
+      "number of bookings": 4034
+    },
+    {
+      "booking date": "2015-12-25",
+      "number of bookings": 2915
+    },
+    {
+      "booking date": "2015-12-26",
+      "number of bookings": 3597
+    },
+    {
+      "booking date": "2015-12-27",
+      "number of bookings": 4901
+    },
+    {
+      "booking date": "2015-12-28",
+      "number of bookings": 7979
+    },
+    {
+      "booking date": "2015-12-29",
+      "number of bookings": 7945
+    },
+    {
+      "booking date": "2015-12-30",
+      "number of bookings": 7563
+    },
+    {
+      "booking date": "2015-12-31",
+      "number of bookings": 4103
+    },
+    {
+      "booking date": "2016-01-01",
+      "number of bookings": 5488
+    },
+    {
+      "booking date": "2016-01-02",
+      "number of bookings": 3787
+    },
+    {
+      "booking date": "2016-01-03",
+      "number of bookings": 3311
+    },
+    {
+      "booking date": "2016-01-04",
+      "number of bookings": 6295
+    },
+    {
+      "booking date": "2016-01-05",
+      "number of bookings": 6523
+    },
+    {
+      "booking date": "2016-01-06",
+      "number of bookings": 7041
+    },
+    {
+      "booking date": "2016-01-07",
+      "number of bookings": 7364
+    },
+    {
+      "booking date": "2016-01-08",
+      "number of bookings": 7955
+    },
+    {
+      "booking date": "2016-01-09",
+      "number of bookings": 6981
+    },
+    {
+      "booking date": "2016-01-10",
+      "number of bookings": 5072
+    },
+    {
+      "booking date": "2016-01-11",
+      "number of bookings": 9232
+    },
+    {
+      "booking date": "2016-01-12",
+      "number of bookings": 10845
+    },
+    {
+      "booking date": "2016-01-13",
+      "number of bookings": 10744
+    },
+    {
+      "booking date": "2016-01-14",
+      "number of bookings": 11183
+    },
+    {
+      "booking date": "2016-01-15",
+      "number of bookings": 10236
+    },
+    {
+      "booking date": "2016-01-16",
+      "number of bookings": 6285
+    },
+    {
+      "booking date": "2016-01-17",
+      "number of bookings": 5184
+    },
+    {
+      "booking date": "2016-01-18",
+      "number of bookings": 9084
+    },
+    {
+      "booking date": "2016-01-19",
+      "number of bookings": 8187
+    },
+    {
+      "booking date": "2016-01-20",
+      "number of bookings": 9570
+    },
+    {
+      "booking date": "2016-01-21",
+      "number of bookings": 9451
+    },
+    {
+      "booking date": "2016-01-22",
+      "number of bookings": 8768
+    },
+    {
+      "booking date": "2016-01-23",
+      "number of bookings": 5444
+    },
+    {
+      "booking date": "2016-01-24",
+      "number of bookings": 6213
+    },
+    {
+      "booking date": "2016-01-25",
+      "number of bookings": 11799
+    },
+    {
+      "booking date": "2016-01-26",
+      "number of bookings": 13586
+    },
+    {
+      "booking date": "2016-01-27",
+      "number of bookings": 12984
+    },
+    {
+      "booking date": "2016-01-28",
+      "number of bookings": 13686
+    },
+    {
+      "booking date": "2016-01-29",
+      "number of bookings": 11599
+    },
+    {
+      "booking date": "2016-01-30",
+      "number of bookings": 5568
+    },
+    {
+      "booking date": "2016-01-31",
+      "number of bookings": 6226
+    },
+    {
+      "booking date": "2016-02-01",
+      "number of bookings": 10773
+    },
+    {
+      "booking date": "2016-02-02",
+      "number of bookings": 11669
+    },
+    {
+      "booking date": "2016-02-03",
+      "number of bookings": 11579
+    },
+    {
+      "booking date": "2016-02-04",
+      "number of bookings": 9715
+    },
+    {
+      "booking date": "2016-02-05",
+      "number of bookings": 10721
+    },
+    {
+      "booking date": "2016-02-06",
+      "number of bookings": 10425
+    },
+    {
+      "booking date": "2016-02-07",
+      "number of bookings": 8901
+    },
+    {
+      "booking date": "2016-02-08",
+      "number of bookings": 10806
+    },
+    {
+      "booking date": "2016-02-09",
+      "number of bookings": 9569
+    },
+    {
+      "booking date": "2016-02-10",
+      "number of bookings": 10755
+    },
+    {
+      "booking date": "2016-02-11",
+      "number of bookings": 11502
+    },
+    {
+      "booking date": "2016-02-12",
+      "number of bookings": 12628
+    },
+    {
+      "booking date": "2016-02-13",
+      "number of bookings": 8509
+    },
+    {
+      "booking date": "2016-02-14",
+      "number of bookings": 4880
+    },
+    {
+      "booking date": "2016-02-15",
+      "number of bookings": 10193
+    },
+    {
+      "booking date": "2016-02-16",
+      "number of bookings": 11834
+    },
+    {
+      "booking date": "2016-02-17",
+      "number of bookings": 11022
+    },
+    {
+      "booking date": "2016-02-18",
+      "number of bookings": 11197
+    },
+    {
+      "booking date": "2016-02-19",
+      "number of bookings": 10907
+    },
+    {
+      "booking date": "2016-02-20",
+      "number of bookings": 5089
+    },
+    {
+      "booking date": "2016-02-21",
+      "number of bookings": 4786
+    },
+    {
+      "booking date": "2016-02-22",
+      "number of bookings": 10020
+    },
+    {
+      "booking date": "2016-02-23",
+      "number of bookings": 10364
+    },
+    {
+      "booking date": "2016-02-24",
+      "number of bookings": 11302
+    },
+    {
+      "booking date": "2016-02-25",
+      "number of bookings": 10421
+    },
+    {
+      "booking date": "2016-02-26",
+      "number of bookings": 10742
+    },
+    {
+      "booking date": "2016-02-27",
+      "number of bookings": 9370
+    },
+    {
+      "booking date": "2016-02-28",
+      "number of bookings": 9288
+    },
+    {
+      "booking date": "2016-02-29",
+      "number of bookings": 10744
+    },
+    {
+      "booking date": "2016-03-01",
+      "number of bookings": 10179
+    },
+    {
+      "booking date": "2016-03-02",
+      "number of bookings": 9818
+    },
+    {
+      "booking date": "2016-03-03",
+      "number of bookings": 11243
+    },
+    {
+      "booking date": "2016-03-04",
+      "number of bookings": 10818
+    },
+    {
+      "booking date": "2016-03-05",
+      "number of bookings": 6661
+    },
+    {
+      "booking date": "2016-03-06",
+      "number of bookings": 6870
+    },
+    {
+      "booking date": "2016-03-07",
+      "number of bookings": 11228
+    },
+    {
+      "booking date": "2016-03-08",
+      "number of bookings": 11230
+    },
+    {
+      "booking date": "2016-03-09",
+      "number of bookings": 13006
+    },
+    {
+      "booking date": "2016-03-10",
+      "number of bookings": 12205
+    },
+    {
+      "booking date": "2016-03-11",
+      "number of bookings": 12120
+    },
+    {
+      "booking date": "2016-03-12",
+      "number of bookings": 9810
+    },
+    {
+      "booking date": "2016-03-13",
+      "number of bookings": 7465
+    },
+    {
+      "booking date": "2016-03-14",
+      "number of bookings": 12302
+    },
+    {
+      "booking date": "2016-03-15",
+      "number of bookings": 12180
+    },
+    {
+      "booking date": "2016-03-16",
+      "number of bookings": 14247
+    },
+    {
+      "booking date": "2016-03-17",
+      "number of bookings": 15658
+    },
+    {
+      "booking date": "2016-03-18",
+      "number of bookings": 13488
+    },
+    {
+      "booking date": "2016-03-19",
+      "number of bookings": 10736
+    },
+    {
+      "booking date": "2016-03-20",
+      "number of bookings": 9299
+    },
+    {
+      "booking date": "2016-03-21",
+      "number of bookings": 10481
+    },
+    {
+      "booking date": "2016-03-22",
+      "number of bookings": 12996
+    },
+    {
+      "booking date": "2016-03-23",
+      "number of bookings": 13883
+    },
+    {
+      "booking date": "2016-03-24",
+      "number of bookings": 13932
+    },
+    {
+      "booking date": "2016-03-25",
+      "number of bookings": 4603
+    },
+    {
+      "booking date": "2016-03-26",
+      "number of bookings": 12138
+    },
+    {
+      "booking date": "2016-03-27",
+      "number of bookings": 6608
+    },
+    {
+      "booking date": "2016-03-28",
+      "number of bookings": 6793
+    },
+    {
+      "booking date": "2016-03-29",
+      "number of bookings": 12512
+    },
+    {
+      "booking date": "2016-03-30",
+      "number of bookings": 12816
+    },
+    {
+      "booking date": "2016-03-31",
+      "number of bookings": 15133
+    },
+    {
+      "booking date": "2016-04-01",
+      "number of bookings": 19397
+    },
+    {
+      "booking date": "2016-04-02",
+      "number of bookings": 19729
+    },
+    {
+      "booking date": "2016-04-03",
+      "number of bookings": 19186
+    },
+    {
+      "booking date": "2016-04-04",
+      "number of bookings": 19666
+    },
+    {
+      "booking date": "2016-04-05",
+      "number of bookings": 14913
+    },
+    {
+      "booking date": "2016-04-06",
+      "number of bookings": 18809
+    },
+    {
+      "booking date": "2016-04-07",
+      "number of bookings": 17189
+    },
+    {
+      "booking date": "2016-04-08",
+      "number of bookings": 18237
+    },
+    {
+      "booking date": "2016-04-09",
+      "number of bookings": 19340
+    },
+    {
+      "booking date": "2016-04-10",
+      "number of bookings": 18169
+    },
+    {
+      "booking date": "2016-04-11",
+      "number of bookings": 21403
+    },
+    {
+      "booking date": "2016-04-12",
+      "number of bookings": 21094
+    },
+    {
+      "booking date": "2016-04-13",
+      "number of bookings": 20354
+    },
+    {
+      "booking date": "2016-04-14",
+      "number of bookings": 22580
+    },
+    {
+      "booking date": "2016-04-15",
+      "number of bookings": 15190
+    },
+    {
+      "booking date": "2016-04-16",
+      "number of bookings": 15869
+    },
+    {
+      "booking date": "2016-04-17",
+      "number of bookings": 14880
+    },
+    {
+      "booking date": "2016-04-18",
+      "number of bookings": 19462
+    },
+    {
+      "booking date": "2016-04-19",
+      "number of bookings": 19415
+    },
+    {
+      "booking date": "2016-04-20",
+      "number of bookings": 22792
+    },
+    {
+      "booking date": "2016-04-21",
+      "number of bookings": 25520
+    },
+    {
+      "booking date": "2016-04-22",
+      "number of bookings": 21893
+    },
+    {
+      "booking date": "2016-04-23",
+      "number of bookings": 13591
+    },
+    {
+      "booking date": "2016-04-24",
+      "number of bookings": 8906
+    },
+    {
+      "booking date": "2016-04-25",
+      "number of bookings": 12149
+    },
+    {
+      "booking date": "2016-04-26",
+      "number of bookings": 13754
+    },
+    {
+      "booking date": "2016-04-27",
+      "number of bookings": 13639
+    },
+    {
+      "booking date": "2016-04-28",
+      "number of bookings": 17883
+    },
+    {
+      "booking date": "2016-04-29",
+      "number of bookings": 18638
+    },
+    {
+      "booking date": "2016-04-30",
+      "number of bookings": 14339
+    },
+    {
+      "booking date": "2016-05-01",
+      "number of bookings": 18417
+    },
+    {
+      "booking date": "2016-05-02",
+      "number of bookings": 25933
+    },
+    {
+      "booking date": "2016-05-03",
+      "number of bookings": 20040
+    },
+    {
+      "booking date": "2016-05-04",
+      "number of bookings": 24760
+    },
+    {
+      "booking date": "2016-05-05",
+      "number of bookings": 23127
+    },
+    {
+      "booking date": "2016-05-06",
+      "number of bookings": 28468
+    },
+    {
+      "booking date": "2016-05-07",
+      "number of bookings": 27613
+    },
+    {
+      "booking date": "2016-05-08",
+      "number of bookings": 23398
+    },
+    {
+      "booking date": "2016-05-09",
+      "number of bookings": 28336
+    },
+    {
+      "booking date": "2016-05-10",
+      "number of bookings": 28011
+    },
+    {
+      "booking date": "2016-05-11",
+      "number of bookings": 28518
+    },
+    {
+      "booking date": "2016-05-12",
+      "number of bookings": 27282
+    },
+    {
+      "booking date": "2016-05-13",
+      "number of bookings": 24334
+    },
+    {
+      "booking date": "2016-05-14",
+      "number of bookings": 13843
+    },
+    {
+      "booking date": "2016-05-15",
+      "number of bookings": 10078
+    },
+    {
+      "booking date": "2016-05-16",
+      "number of bookings": 12797
+    },
+    {
+      "booking date": "2016-05-17",
+      "number of bookings": 19026
+    },
+    {
+      "booking date": "2016-05-18",
+      "number of bookings": 24547
+    },
+    {
+      "booking date": "2016-05-19",
+      "number of bookings": 25076
+    },
+    {
+      "booking date": "2016-05-20",
+      "number of bookings": 24126
+    },
+    {
+      "booking date": "2016-05-21",
+      "number of bookings": 24597
+    },
+    {
+      "booking date": "2016-05-22",
+      "number of bookings": 22642
+    },
+    {
+      "booking date": "2016-05-23",
+      "number of bookings": 18295
+    },
+    {
+      "booking date": "2016-05-24",
+      "number of bookings": 17955
+    },
+    {
+      "booking date": "2016-05-25",
+      "number of bookings": 23778
+    },
+    {
+      "booking date": "2016-05-26",
+      "number of bookings": 20923
+    },
+    {
+      "booking date": "2016-05-27",
+      "number of bookings": 24696
+    },
+    {
+      "booking date": "2016-05-28",
+      "number of bookings": 25217
+    },
+    {
+      "booking date": "2016-05-29",
+      "number of bookings": 16909
+    },
+    {
+      "booking date": "2016-05-30",
+      "number of bookings": 21460
+    },
+    {
+      "booking date": "2016-05-31",
+      "number of bookings": 26376
+    },
+    {
+      "booking date": "2016-06-01",
+      "number of bookings": 24338
+    },
+    {
+      "booking date": "2016-06-02",
+      "number of bookings": 23221
+    },
+    {
+      "booking date": "2016-06-03",
+      "number of bookings": 27827
+    },
+    {
+      "booking date": "2016-06-04",
+      "number of bookings": 26080
+    },
+    {
+      "booking date": "2016-06-05",
+      "number of bookings": 22593
+    },
+    {
+      "booking date": "2016-06-06",
+      "number of bookings": 29956
+    },
+    {
+      "booking date": "2016-06-07",
+      "number of bookings": 30298
+    },
+    {
+      "booking date": "2016-06-08",
+      "number of bookings": 26769
+    },
+    {
+      "booking date": "2016-06-09",
+      "number of bookings": 28632
+    },
+    {
+      "booking date": "2016-06-10",
+      "number of bookings": 29416
+    },
+    {
+      "booking date": "2016-06-11",
+      "number of bookings": 23199
+    },
+    {
+      "booking date": "2016-06-12",
+      "number of bookings": 14500
+    },
+    {
+      "booking date": "2016-06-13",
+      "number of bookings": 20108
+    },
+    {
+      "booking date": "2016-06-14",
+      "number of bookings": 20553
+    },
+    {
+      "booking date": "2016-06-15",
+      "number of bookings": 22184
+    },
+    {
+      "booking date": "2016-06-16",
+      "number of bookings": 26373
+    },
+    {
+      "booking date": "2016-06-17",
+      "number of bookings": 21782
+    },
+    {
+      "booking date": "2016-06-18",
+      "number of bookings": 20426
+    },
+    {
+      "booking date": "2016-06-19",
+      "number of bookings": 17214
+    },
+    {
+      "booking date": "2016-06-20",
+      "number of bookings": 23146
+    },
+    {
+      "booking date": "2016-06-21",
+      "number of bookings": 26224
+    },
+    {
+      "booking date": "2016-06-22",
+      "number of bookings": 29462
+    },
+    {
+      "booking date": "2016-06-23",
+      "number of bookings": 30833
+    },
+    {
+      "booking date": "2016-06-24",
+      "number of bookings": 25210
+    },
+    {
+      "booking date": "2016-06-25",
+      "number of bookings": 15386
+    },
+    {
+      "booking date": "2016-06-26",
+      "number of bookings": 21721
+    },
+    {
+      "booking date": "2016-06-27",
+      "number of bookings": 24200
+    },
+    {
+      "booking date": "2016-06-28",
+      "number of bookings": 27752
+    },
+    {
+      "booking date": "2016-06-29",
+      "number of bookings": 27128
+    },
+    {
+      "booking date": "2016-06-30",
+      "number of bookings": 25816
+    },
+    {
+      "booking date": "2016-07-01",
+      "number of bookings": 25103
+    },
+    {
+      "booking date": "2016-07-02",
+      "number of bookings": 16570
+    },
+    {
+      "booking date": "2016-07-03",
+      "number of bookings": 18840
+    }
+  ]
+}
