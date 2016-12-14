@@ -90,12 +90,12 @@ app.controller('BookingCityCtrl',['$state','$scope','dataService', function($sta
     ];
     */
 
+//TODO: apply filter and based on user input
     function getBookingCountDaily() {
         dataService.getBookingsDailyPerCity().then(function(data){
-            console.log(data);
-            $scope.bookingCountDailyData =
+
+            $scope.origData =
                 data.data.map( d=> {
-                    console.log(d)
                     return {
                         key: d.city,
                         values: d.bookings.map(b=>{
@@ -106,24 +106,24 @@ app.controller('BookingCityCtrl',['$state','$scope','dataService', function($sta
                         })
                     }
                 });
-          /*
-           [
-           {
-           key: data.data.map(d=> d.city),
-           values: data.data.map(d => {
-           return {
-           x: new Date(d['day']).getTime(),
-           y: d['bookings']
-           }
-           })
-           }
-           ]
-           */
+            $scope.bookingCountDailyData = $scope.origData.filter(c=>
+                c === c
+             //   c in defined array
+            );
+
         });
 
     }
 
     getBookingCountDaily();
+    
+    function inTop5() {
+
+    }
+
+    $scope.cities = [
+
+    ]
 
     $scope.options = {
         chart: {
@@ -165,7 +165,7 @@ app.controller('BookingCityCtrl',['$state','$scope','dataService', function($sta
         },
     };
 
-
+/*
     function getData() {
 
         dataService.getBookingsDailyPerCity().then(function(data){
@@ -222,5 +222,6 @@ app.controller('BookingCityCtrl',['$state','$scope','dataService', function($sta
     }
 
     getData();
+    */
 
 }]);
