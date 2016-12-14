@@ -75,7 +75,7 @@ app.controller('BookingCityCtrl',['$state','$scope','dataService', function($sta
             }
         }
     };
-
+/*
   $scope.bookingCountDailyData2 =
     [
       {
@@ -88,18 +88,22 @@ app.controller('BookingCityCtrl',['$state','$scope','dataService', function($sta
         })
       }
     ];
+    */
 
     function getBookingCountDaily() {
         dataService.getBookingsDailyPerCity().then(function(data){
             console.log(data);
             $scope.bookingCountDailyData =
-                data.data.map( (d, i)=> {
+                data.data.map( d=> {
+                    console.log(d)
                     return {
                         key: d.city,
-                        values: {
-                            x: d.day,
-                            y: d.count
-                        }
+                        values: d.bookings.map(b=>{
+                            return {
+                                x: new Date(b.date).getTime(),
+                                y: b.count
+                            }
+                        })
                     }
                 });
           /*
