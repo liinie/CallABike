@@ -21,7 +21,7 @@ app.service('dataService',['$q','$http',function($q,$http){
         },
 
         getBookingsDailyPerCity: function () {
-            return $http.get('data/bookings_per_city_daily.json').then(function(data){
+            return $http.get('data/cityBookingsDaily.json').then(function(data){
                 return data;
             })
         },

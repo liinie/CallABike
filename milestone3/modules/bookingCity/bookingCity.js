@@ -76,6 +76,18 @@ app.controller('BookingCityCtrl',['$state','$scope','dataService', function($sta
         }
     };
 
+  $scope.bookingCountDailyData2 =
+    [
+      {
+        key: 'Number of bookings daily',
+        values: data.data.rows.map(d => {
+          return {
+            x: new Date(d['booking date']).getTime(),
+            y: d['number of bookings']
+          }
+        })
+      }
+    ];
 
     function getBookingCountDaily() {
         dataService.getBookingsDailyPerCity().then(function(data){
@@ -86,7 +98,7 @@ app.controller('BookingCityCtrl',['$state','$scope','dataService', function($sta
                         key: d.city,
                         values: {
                             x: d.day,
-                            y: d.bookings
+                            y: d.count
                         }
                     }
                 });
