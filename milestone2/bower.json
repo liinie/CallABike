@@ -26,6 +26,10 @@
     "Materialize": "materialize#~0.97.5",
     "angular-chart.js": "~0.8.8",
     "angular-materialize": "^0.2.1",
-    "angular-nvd3": "^1.0.9"
+    "angular-nvd3": "^1.0.9",
+    "angular": "^1.5.9"
+  },
+  "resolutions": {
+    "angular": "^1.5.9"
   }
 }
