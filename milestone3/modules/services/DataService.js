@@ -25,5 +25,11 @@ app.service('dataService',['$q','$http',function($q,$http){
                 return data;
             })
         },
+
+        getCities: function () {
+            return $http.get('data/cities.json').then(function(data){
+                return data;
+            })
+        },
     };
 }]);

@@ -6,15 +6,11 @@ app.controller('MilestonesCtrl',['$scope','$state',function($scope,$state){
     },
     {
       date: new Date("2016-12-15"),
-      goal: 'Getting all the needed queries'
-    },
-    {
-      date: new Date("2016-12-29"),
-      goal: 'Finish all charts'
+      goal: 'Vertical Prototype: to keep the charts readable, we clusterd the cities by their total booking amount, you can interactively select subsets as well as single selections, on hover will show you the exact data'
     },
     {
       date: new Date("2017-01-12"),
-      goal: 'Finish all interactions'
+      goal: 'We prepared some multivariate data that we want to encode, the SQL statement to prepare the data can be found in the text file of the submission. '
     },
   ]
 }]);

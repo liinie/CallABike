@@ -4,6 +4,9 @@
     <list default="true" id="b4797aef-4c1b-4b1f-9f12-63f2e5dc2237" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/milestone3/modules/bookingCity/bookingCity.js" afterPath="$PROJECT_DIR$/milestone3/modules/bookingCity/bookingCity.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/milestone3/modules/bookingCity/bookingcity.html" afterPath="$PROJECT_DIR$/milestone3/modules/bookingCity/bookingcity.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/milestone3/modules/milestones/milestones.js" afterPath="$PROJECT_DIR$/milestone3/modules/milestones/milestones.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/milestone3/modules/services/DataService.js" afterPath="$PROJECT_DIR$/milestone3/modules/services/DataService.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,38 +27,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="connection.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/milestone3/queryy/connection.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="query.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/milestone3/queryy/query.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="19" lean-forward="false" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/milestone3/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="-104">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bookings_city_daily.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/milestone3/data/bookings_city_daily.json">
+      <file leaf-file-name="BookingStationCountPerCity.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/milestone3/data/BookingStationCountPerCity.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -64,36 +47,65 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="go.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/milestone3/preprocess-node/go.js">
+      <file leaf-file-name="cityBookingsDaily.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/milestone3/data/cityBookingsDaily.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bookingCity.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="bookingCity.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/milestone3/modules/bookingCity/bookingCity.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="109" column="23" lean-forward="true" selection-start-line="109" selection-start-column="23" selection-end-line="109" selection-end-column="23" />
+            <state relative-caret-position="-561">
+              <caret line="6" column="24" lean-forward="false" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
               <folding>
-                <element signature="e#165#2729#0" expanded="false" />
-                <element signature="e#182#1379#0" expanded="false" />
-                <marker date="1481737309073" expanded="true" signature="1960:1987" ph="..." />
-                <marker date="1481737309073" expanded="true" signature="2240:2255" ph="..." />
+                <element signature="e#3347#4294#0" expanded="false" />
+                <marker date="1481800771604" expanded="true" signature="3531:3558" ph="..." />
+                <marker date="1481800771604" expanded="true" signature="3811:3826" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DashboardCtrl.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/milestone3/modules/dashboard/DashboardCtrl.js">
+      <file leaf-file-name="milestones.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/milestone3/modules/milestones/milestones.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1496">
-              <caret line="88" column="0" lean-forward="false" selection-start-line="88" selection-start-column="0" selection-end-line="99" selection-end-column="9" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="milestones.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/milestone3/modules/milestones/milestones.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="159" lean-forward="false" selection-start-line="12" selection-start-column="159" selection-end-line="12" selection-end-column="159" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/milestone3/bower_components/angular-nvd3/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/milestone3/js/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -102,8 +114,8 @@
       <file leaf-file-name="DataService.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/milestone3/modules/services/DataService.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="52" lean-forward="false" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="52" />
+            <state relative-caret-position="272">
+              <caret line="16" column="32" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -112,18 +124,8 @@
       <file leaf-file-name="bookingcity.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/milestone3/modules/bookingCity/bookingcity.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="11" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="query.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CallABike/query.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="37" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="26" selection-end-column="2" />
+            <state relative-caret-position="408">
+              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -148,6 +150,7 @@
       <find>data</find>
       <find>test</find>
       <find>hamb</find>
+      <find>angular.copy(</find>
     </findStrings>
     <replaceStrings>
       <replace>bower_components</replace>
@@ -193,8 +196,10 @@
         <option value="$PROJECT_DIR$/milestone3/queryy/query.php" />
         <option value="$PROJECT_DIR$/milestone3/preprocess-node/go.js" />
         <option value="$PROJECT_DIR$/milestone3/modules/services/DataService.js" />
+        <option value="$PROJECT_DIR$/milestone3/js/app.js" />
         <option value="$PROJECT_DIR$/milestone3/modules/bookingCity/bookingcity.html" />
         <option value="$PROJECT_DIR$/milestone3/modules/bookingCity/bookingCity.js" />
+        <option value="$PROJECT_DIR$/milestone3/modules/milestones/milestones.js" />
       </list>
     </option>
   </component>
@@ -270,6 +275,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -310,6 +316,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="preprocess-node" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CallABike" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CallABike" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="milestone3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="modules" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -332,7 +356,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dashboard" />
+              <option name="myItemId" value="services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CallABike" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CallABike" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="milestone3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="milestones" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -358,9 +404,62 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CallABike" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CallABike" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="milestone3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CallABike" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CallABike" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="milestone3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CallABike" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CallABike" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="milestone3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bower_components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -369,7 +468,7 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="JavaScriptPreferStrict" value="false" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
@@ -488,7 +587,8 @@
       <workItem from="1480846630131" duration="180000" />
       <workItem from="1481642007881" duration="604000" />
       <workItem from="1481707563222" duration="2700000" />
-      <workItem from="1481733066166" duration="3303000" />
+      <workItem from="1481733066166" duration="3336000" />
+      <workItem from="1481793496377" duration="7800000" />
     </task>
     <task id="LOCAL-00001" summary="milestone 3">
       <created>1481707614819</created>
@@ -518,11 +618,18 @@
       <option name="project" value="LOCAL" />
       <updated>1481734030384</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="milestone 3">
+      <created>1481737313967</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1481737313967</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46864000" />
+    <option name="totallyTimeSpent" value="54697000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="960" y="0" width="960" height="1040" extended-state="0" />
@@ -560,18 +667,12 @@
     <option name="LAST_COMMIT_MESSAGE" value="milestone 3" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/FirstVersion/src/app/footer.spec.js" />
-    <entry file="file://$PROJECT_DIR$/FirstVersion/src/app/footer.js" />
-    <entry file="file://$PROJECT_DIR$/FirstVersion/src/app/footer.html" />
-    <entry file="file://$PROJECT_DIR$/FirstVersion/src/app/techs/techs.spec.js" />
-    <entry file="file://$PROJECT_DIR$/FirstVersion/src/app/techs/techs.json" />
-    <entry file="file://$PROJECT_DIR$/FirstVersion/src/app/techs/tech.js" />
-    <entry file="file://$PROJECT_DIR$/FirstVersion/src/app/techs/tech.html" />
-    <entry file="file://$PROJECT_DIR$/FirstVersion/src/app/techs/tech.spec.js" />
     <entry file="file://$PROJECT_DIR$/InitialVersion/app/index.html" />
     <entry file="file://$PROJECT_DIR$/InitialVersion/app/css/style.css" />
     <entry file="file://$PROJECT_DIR$/InitialVersion/app/img/README.md" />
@@ -628,7 +729,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -720,7 +820,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/milestone3/index.html">
+    <entry file="file://$PROJECT_DIR$/milestone3/data/cityBookingsDaily" />
+    <entry file="file://$PROJECT_DIR$/milestone3/modules/dashboard/DashboardCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1496">
+          <caret line="88" column="0" lean-forward="false" selection-start-line="88" selection-start-column="0" selection-end-line="99" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/milestone3/preprocess-node/go.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/milestone3/data/BookingCountDaily.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -730,55 +847,101 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/milestone3/data/bookings_city_daily.json">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="28" lean-forward="true" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/milestone3/data/bookings_per_city_daily.json">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/milestone3/data/cityBookingsDaily" />
-    <entry file="file://$PROJECT_DIR$/milestone3/preprocess-node/go.js">
+    <entry file="file://$PROJECT_DIR$/milestone3/data/cityBookingsDaily.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/milestone3/modules/services/DataService.js">
+    <entry file="file://$PROJECT_DIR$/milestone3/data/BookingStationCountPerCity.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="52" lean-forward="false" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="52" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/milestone3/modules/dashboard/DashboardCtrl.js">
+    <entry file="file://$PROJECT_DIR$/milestone3/bower_components/angular-nvd3/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1496">
-          <caret line="88" column="0" lean-forward="false" selection-start-line="88" selection-start-column="0" selection-end-line="99" selection-end-column="9" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/milestone3/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-104">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/milestone3/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/milestone3/modules/bookingCity/bookingcity.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="11" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+        <state relative-caret-position="408">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/milestone3/modules/milestones/milestones.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/milestone3/modules/bookingCity/bookingCity.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="109" column="23" lean-forward="true" selection-start-line="109" selection-start-column="23" selection-end-line="109" selection-end-column="23" />
+        <state relative-caret-position="-561">
+          <caret line="6" column="24" lean-forward="false" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
           <folding>
-            <element signature="e#165#2729#0" expanded="false" />
-            <element signature="e#182#1379#0" expanded="false" />
-            <marker date="1481737309073" expanded="true" signature="1960:1987" ph="..." />
-            <marker date="1481737309073" expanded="true" signature="2240:2255" ph="..." />
+            <element signature="e#3347#4294#0" expanded="false" />
+            <marker date="1481800771604" expanded="true" signature="3531:3558" ph="..." />
+            <marker date="1481800771604" expanded="true" signature="3811:3826" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/milestone3/modules/services/DataService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="32" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/milestone3/modules/milestones/milestones.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="159" lean-forward="false" selection-start-line="12" selection-start-column="159" selection-end-line="12" selection-end-column="159" />
+          <folding />
         </state>
       </provider>
     </entry>

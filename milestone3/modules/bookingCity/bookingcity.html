@@ -9,11 +9,27 @@
       </div>
     </div>
   </div>
+
+
   <div class="col s12 m12">
     <div class="card">
-      <div class="card-content">
+      <div class="card-content ">
+
+        <h5 class="text-center center-align">Call A Bike Bookings per city daily</h5>
+        <h6 class="text-center center-align">Show cities by total booking amount ranking: </h6>
+
+        <div class="center-align">
+          <button ng-click="getData(1)" class="waves-effect waves-light btn">Top 1 - 10</button>
+          <button ng-click="getData(2)" class="waves-effect waves-light btn">10 - 20</button>
+          <button ng-click="getData(3)" class="waves-effect waves-light btn">20 - 30</button>
+          <button ng-click="getData(4)" class="waves-effect waves-light btn">30 - 40</button>
+          <button ng-click="getData(5)" class="waves-effect waves-light btn">40 - 50</button>
+        </div>
+
         <nvd3 options="bookingCountDailyOptions" data="bookingCountDailyData"></nvd3>
+
       </div>
     </div>
   </div>
+</div>
 </div>
