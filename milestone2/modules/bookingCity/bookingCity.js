@@ -174,9 +174,9 @@ app.controller('BookingCityCtrl',['$state','$scope','dataService', function($sta
                         })
                     }
                 ];
-            console.log(     JSON.stringify( $scope.data))
         });
     }
+
     function getRankData() {
         dataService.getBookingStationPerCity().then(function(data){
             $scope.data =
