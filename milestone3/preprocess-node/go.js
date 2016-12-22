@@ -31,10 +31,7 @@ fs.readFile('../data/cities.json', 'utf8', function (err, data) {
 
           item.bookings.push(subitem);
         }
-
-
-
-
+        
       }
       items.push(item);
     }
