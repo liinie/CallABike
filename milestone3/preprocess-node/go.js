@@ -11,7 +11,7 @@ fs.readFile('../data/cities.json', 'utf8', function (err, data) {
     var items = [];
 
     for(let i = 0; i<obj.length; i++){
-
+      
       let city = obj[i].city;
 
       var item = {
@@ -31,7 +31,7 @@ fs.readFile('../data/cities.json', 'utf8', function (err, data) {
 
           item.bookings.push(subitem);
         }
-        
+
       }
       items.push(item);
     }

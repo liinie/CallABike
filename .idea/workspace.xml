@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b4797aef-4c1b-4b1f-9f12-63f2e5dc2237" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/milestone3/preprocess-node/go.js" afterPath="$PROJECT_DIR$/milestone3/preprocess-node/go.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,16 +24,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="bookingCity.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="bookingCity.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/milestone3/modules/bookingCity/bookingCity.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1502">
-              <caret line="184" column="39" lean-forward="false" selection-start-line="184" selection-start-column="39" selection-end-line="184" selection-end-column="39" />
+            <state relative-caret-position="1320">
+              <caret line="217" column="21" lean-forward="false" selection-start-line="217" selection-start-column="20" selection-end-line="217" selection-end-column="21" />
               <folding>
-                <element signature="e#3347#4294#0" expanded="false" />
-                <marker date="1481807746435" expanded="true" signature="3531:3558" ph="..." />
-                <marker date="1481807746435" expanded="true" signature="3811:3826" ph="..." />
+                <marker date="1482398730682" expanded="true" signature="3531:3558" ph="..." />
+                <marker date="1482398730682" expanded="true" signature="3811:3826" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="go.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/milestone3/preprocess-node/go.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="6" lean-forward="false" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -50,7 +60,7 @@
       <file leaf-file-name="dashboard.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/milestone2/modules/dashboard/dashboard.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
+            <state relative-caret-position="357">
               <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="29" selection-end-column="8" />
               <folding />
             </state>
@@ -72,7 +82,14 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
               <caret line="12" column="159" lean-forward="false" selection-start-line="12" selection-start-column="159" selection-end-line="12" selection-end-column="159" />
-              <folding />
+              <folding>
+                <marker date="1482398730688" expanded="true" signature="32:681" ph="[...]" />
+                <marker date="1482398730688" expanded="true" signature="74:680" ph="{...}" />
+                <marker date="1482398730688" expanded="true" signature="98:678" ph="[...]" />
+                <marker date="1482398730688" expanded="true" signature="104:192" ph="{&quot;goal&quot;: 'Getting the whole stack to run'...}" />
+                <marker date="1482398730688" expanded="true" signature="198:463" ph="{&quot;goal&quot;: 'Vertical Prototype: to keep the charts readable, we clusterd the cities by their total booking amount, you can interactively select subsets as well as single selections, on hover will show you the exact data'...}" />
+                <marker date="1482398730688" expanded="true" signature="469:673" ph="{&quot;goal&quot;: 'We prepared some multivariate data that we want to encode, the SQL statement to prepare the data can be found in the text file of the submission. '...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -80,11 +97,37 @@
       <file leaf-file-name="DashboardCtrl.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/milestone2/modules/dashboard/DashboardCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
+            <state relative-caret-position="1462">
               <caret line="86" column="37" lean-forward="false" selection-start-line="86" selection-start-column="37" selection-end-line="86" selection-end-column="37" />
               <folding>
-                <marker date="1481016278012" expanded="true" signature="1689:1716" ph="..." />
-                <marker date="1481016278012" expanded="true" signature="1957:1972" ph="..." />
+                <marker date="1482398730641" expanded="true" signature="31:2883" ph="[...]" />
+                <marker date="1482398730641" expanded="true" signature="100:2882" ph="{...}" />
+                <marker date="1482398730641" expanded="true" signature="121:237" ph="{&quot;value&quot;: &quot;Option1&quot;...}" />
+                <marker date="1482398730641" expanded="true" signature="243:262" ph="/*...*/" />
+                <marker date="1482398730641" expanded="true" signature="299:2388" ph="{...}" />
+                <marker date="1482398730641" expanded="true" signature="312:1217" ph="{&quot;type&quot;: 'lineWithFocusChart'...}" />
+                <marker date="1482398730641" expanded="true" signature="382:464" ph="{...}" />
+                <marker date="1482398730641" expanded="true" signature="537:698" ph="{&quot;axisLabel&quot;: 'X Axis'...}" />
+                <marker date="1482398730641" expanded="true" signature="628:690" ph="{...}" />
+                <marker date="1482398730641" expanded="true" signature="714:817" ph="{...}" />
+                <marker date="1482398730641" expanded="true" signature="747:809" ph="{...}" />
+                <marker date="1482398730641" expanded="true" signature="832:980" ph="{&quot;axisLabel&quot;: 'Bookings'...}" />
+                <marker date="1482398730641" expanded="true" signature="896:943" ph="{...}" />
+                <marker date="1482398730641" expanded="true" signature="996:1084" ph="{...}" />
+                <marker date="1482398730641" expanded="true" signature="1029:1076" ph="{...}" />
+                <marker date="1482398730641" expanded="true" signature="1101:1208" ph="{...}" />
+                <marker date="1482398730641" expanded="true" signature="1137:1200" ph="{...}" />
+                <marker date="1482398730641" expanded="true" signature="1230:1309" ph="{&quot;html&quot;: &quot;&lt;h5&gt;Call A Bike Bookings per day&lt;/h5&gt;&quot;...}" />
+                <marker date="1482398730641" expanded="true" signature="1325:1520" ph="{&quot;text&quot;: &quot;Available datasets ranges from 2014-01-01 to 2016-07-04&quot;...}" />
+                <marker date="1482398730641" expanded="true" signature="1435:1514" ph="{&quot;text-align&quot;: &quot;center&quot;...}" />
+                <marker date="1482398730641" expanded="true" signature="1535:2384" ph="{...}" />
+                <marker date="1482398730641" expanded="true" signature="2298:2378" ph="{&quot;text-align&quot;: &quot;justify&quot;...}" />
+                <marker date="1482398730641" expanded="true" signature="2426:2852" ph="{...}" />
+                <marker date="1482398730641" expanded="true" signature="2486:2845" ph="{...}" />
+                <marker date="1482398730641" expanded="true" signature="2558:2816" ph="[...]" />
+                <marker date="1482398730641" expanded="true" signature="2570:2816" ph="{&quot;key&quot;: 'Number of bookings daily'...}" />
+                <marker date="1482398730641" expanded="true" signature="2661:2816" ph="{...}" />
+                <marker date="1482398730641" expanded="true" signature="2684:2802" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -96,23 +139,61 @@
             <state relative-caret-position="170">
               <caret line="111" column="0" lean-forward="false" selection-start-line="111" selection-start-column="0" selection-end-line="177" selection-end-column="5" />
               <folding>
-                <element signature="e#165#2729#0" expanded="false" />
-                <element signature="e#2769#3501#0" expanded="false" />
-                <element signature="e#3553#4755#0" expanded="false" />
-                <element signature="e#4782#5609#0" expanded="false" />
-                <marker date="1481807136549" expanded="true" signature="1960:1987" ph="..." />
-                <marker date="1481807136549" expanded="true" signature="2240:2255" ph="..." />
+                <marker date="1482398730639" expanded="true" signature="33:6545" ph="[...]" />
+                <marker date="1482398730639" expanded="true" signature="102:6544" ph="{...}" />
+                <marker date="1482398730639" expanded="true" signature="107:126" ph="/*...*/" />
+                <marker date="1482398730639" expanded="false" signature="165:2729" ph="{...}" />
+                <marker date="1482398730639" expanded="true" signature="182:1379" ph="{&quot;type&quot;: 'lineWithFocusChart'...}" />
+                <marker date="1482398730639" expanded="true" signature="270:390" ph="{...}" />
+                <marker date="1482398730639" expanded="true" signature="481:688" ph="{&quot;axisLabel&quot;: 'Date'...}" />
+                <marker date="1482398730639" expanded="true" signature="594:674" ph="{...}" />
+                <marker date="1482398730639" expanded="true" signature="710:845" ph="{...}" />
+                <marker date="1482398730639" expanded="true" signature="751:831" ph="{...}" />
+                <marker date="1482398730639" expanded="true" signature="866:1062" ph="{&quot;axisLabel&quot;: 'Bookings'...}" />
+                <marker date="1482398730639" expanded="true" signature="946:1011" ph="{...}" />
+                <marker date="1482398730639" expanded="true" signature="1084:1204" ph="{...}" />
+                <marker date="1482398730639" expanded="true" signature="1125:1190" ph="{...}" />
+                <marker date="1482398730639" expanded="true" signature="1227:1366" ph="{...}" />
+                <marker date="1482398730639" expanded="true" signature="1271:1352" ph="{...}" />
+                <marker date="1482398730639" expanded="true" signature="1396:1498" ph="{&quot;html&quot;: &quot;&lt;h5&gt;Call A Bike Bookings per city daily&lt;/h5&gt;&quot;...}" />
+                <marker date="1482398730639" expanded="true" signature="1518:1757" ph="{&quot;text&quot;: &quot;Available datasets ranges from 2014-01-01 to 2016-07-04&quot;...}" />
+                <marker date="1482398730639" expanded="true" signature="1646:1747" ph="{&quot;text-align&quot;: &quot;center&quot;...}" />
+                <marker date="1482398730639" expanded="true" signature="1776:2723" ph="{...}" />
+                <marker date="1482398730639" expanded="true" signature="2611:2713" ph="{&quot;text-align&quot;: &quot;justify&quot;...}" />
+                <marker date="1482398730639" expanded="false" signature="2769:3501" ph="{...}" />
+                <marker date="1482398730639" expanded="true" signature="2836:3492" ph="{...}" />
+                <marker date="1482398730639" expanded="true" signature="2952:3199" ph="{...}" />
+                <marker date="1482398730639" expanded="true" signature="2981:3181" ph="{&quot;key&quot;: d.city...}" />
+                <marker date="1482398730639" expanded="true" signature="3052:3159" ph="{&quot;x&quot;: d.day...}" />
+                <marker date="1482398730639" expanded="true" signature="3212:3482" ph="/*...*/" />
+                <marker date="1482398730639" expanded="false" signature="3553:4755" ph="{...}" />
+                <marker date="1482398730639" expanded="true" signature="3570:4352" ph="{&quot;type&quot;: 'multiBarHorizontalChart'...}" />
+                <marker date="1482398730639" expanded="true" signature="3664:3785" ph="{...}" />
+                <marker date="1482398730639" expanded="true" signature="4112:4161" ph="{...}" />
+                <marker date="1482398730639" expanded="true" signature="4182:4342" ph="{&quot;axisLabel&quot;: 'Values'...}" />
+                <marker date="1482398730639" expanded="true" signature="4260:4328" ph="{...}" />
+                <marker date="1482398730639" expanded="true" signature="4369:4478" ph="{&quot;html&quot;: &quot;&lt;h5&gt;Call A Bike Bookings and Stations per City&lt;/h5&gt;&quot;...}" />
+                <marker date="1482398730639" expanded="true" signature="4498:4748" ph="{&quot;text&quot;: &quot;Based on available datasets (ranges from 2014-01-01 to 2016-07-04)&quot;...}" />
+                <marker date="1482398730639" expanded="true" signature="4637:4738" ph="{&quot;text-align&quot;: &quot;center&quot;...}" />
+                <marker date="1482398730639" expanded="false" signature="4782:5609" ph="{...}" />
+                <marker date="1482398730639" expanded="true" signature="4850:5601" ph="{...}" />
+                <marker date="1482398730639" expanded="true" signature="4894:5210" ph="[...]" />
+                <marker date="1482398730639" expanded="true" signature="4916:5210" ph="{&quot;key&quot;: 'Bookings'...}" />
+                <marker date="1482398730639" expanded="true" signature="5015:5210" ph="{...}" />
+                <marker date="1482398730639" expanded="true" signature="5052:5184" ph="{&quot;label&quot;: d.city...}" />
+                <marker date="1482398730639" expanded="true" signature="5255:5572" ph="{...}" />
+                <marker date="1482398730639" expanded="true" signature="5354:5549" ph="{...}" />
+                <marker date="1482398730639" expanded="true" signature="5391:5523" ph="{&quot;label&quot;: d.city...}" />
+                <marker date="1482398730639" expanded="true" signature="5638:6525" ph="{...}" />
+                <marker date="1482398730639" expanded="true" signature="5706:6516" ph="{...}" />
+                <marker date="1482398730639" expanded="true" signature="5750:6066" ph="[...]" />
+                <marker date="1482398730639" expanded="true" signature="5772:6066" ph="{&quot;key&quot;: 'Bookings'...}" />
+                <marker date="1482398730639" expanded="true" signature="5871:6066" ph="{...}" />
+                <marker date="1482398730639" expanded="true" signature="5908:6040" ph="{&quot;label&quot;: d.city...}" />
+                <marker date="1482398730639" expanded="true" signature="6111:6428" ph="{...}" />
+                <marker date="1482398730639" expanded="true" signature="6210:6405" ph="{...}" />
+                <marker date="1482398730639" expanded="true" signature="6247:6379" ph="{&quot;label&quot;: d.city...}" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/milestone3/js/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -122,7 +203,21 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
               <caret line="16" column="32" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="32" />
-              <folding />
+              <folding>
+                <marker date="1482398730688" expanded="true" signature="56:1000" ph="[...]" />
+                <marker date="1482398730688" expanded="true" signature="88:999" ph="{...}" />
+                <marker date="1482398730688" expanded="true" signature="101:996" ph="{...}" />
+                <marker date="1482398730688" expanded="true" signature="139:271" ph="{...}" />
+                <marker date="1482398730688" expanded="true" signature="216:260" ph="{...}" />
+                <marker date="1482398730688" expanded="true" signature="316:452" ph="{...}" />
+                <marker date="1482398730688" expanded="true" signature="397:441" ph="{...}" />
+                <marker date="1482398730688" expanded="true" signature="501:646" ph="{...}" />
+                <marker date="1482398730688" expanded="true" signature="591:635" ph="{...}" />
+                <marker date="1482398730688" expanded="true" signature="694:830" ph="{...}" />
+                <marker date="1482398730688" expanded="true" signature="775:819" ph="{...}" />
+                <marker date="1482398730688" expanded="true" signature="864:989" ph="{...}" />
+                <marker date="1482398730688" expanded="true" signature="934:978" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -130,7 +225,7 @@
       <file leaf-file-name="bookingcity.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/milestone3/modules/bookingCity/bookingcity.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
+            <state relative-caret-position="646">
               <caret line="38" column="50" lean-forward="false" selection-start-line="38" selection-start-column="50" selection-end-line="38" selection-end-column="50" />
               <folding />
             </state>
@@ -199,13 +294,13 @@
         <option value="$PROJECT_DIR$/milestone2/bower.json" />
         <option value="$PROJECT_DIR$/milestone3/queryy/connection.php" />
         <option value="$PROJECT_DIR$/milestone3/queryy/query.php" />
-        <option value="$PROJECT_DIR$/milestone3/preprocess-node/go.js" />
         <option value="$PROJECT_DIR$/milestone3/modules/services/DataService.js" />
         <option value="$PROJECT_DIR$/milestone3/js/app.js" />
         <option value="$PROJECT_DIR$/milestone3/modules/milestones/milestones.js" />
         <option value="$PROJECT_DIR$/milestone2/modules/bookingCity/bookingCity.js" />
         <option value="$PROJECT_DIR$/milestone3/modules/bookingCity/bookingcity.html" />
         <option value="$PROJECT_DIR$/milestone3/modules/bookingCity/bookingCity.js" />
+        <option value="$PROJECT_DIR$/milestone3/preprocess-node/go.js" />
       </list>
     </option>
   </component>
@@ -223,9 +318,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="960" />
-    <option name="width" value="960" />
-    <option name="height" value="1040" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1176" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -280,6 +376,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -444,28 +542,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CallABike" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CallABike" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="milestone3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bower_components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -474,7 +552,7 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="JavaScriptPreferStrict" value="false" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
@@ -485,116 +563,6 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\xampp\htdocs\CallABike\js" />
     </key>
-  </component>
-  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
-    <UpdatedFiles>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Updated from server" />
-        <option name="myStatusName" value="Changed on server" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="CHANGED_ON_SERVER" />
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated" />
-          <option name="myStatusName" value="Changed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/milestone3/README.md</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Created" />
-          <option name="myStatusName" value="Created" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CREATED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Deleted" />
-          <option name="myStatusName" value="Deleted" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="true" />
-          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Restored" />
-          <option name="myStatusName" value="Will be restored" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="RESTORED" />
-        </FILE-GROUP>
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Modified" />
-        <option name="myStatusName" value="Modified" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MODIFIED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Skipped" />
-        <option name="myStatusName" value="Skipped" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SKIPPED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with conflicts" />
-        <option name="myStatusName" value="Will be merged with conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_CONFLICTS" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with tree conflicts" />
-        <option name="myStatusName" value="Merged with tree conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with property conflicts" />
-        <option name="myStatusName" value="Will be merged with property conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged" />
-        <option name="myStatusName" value="Will be merged" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Not in repository" />
-        <option name="myStatusName" value="Not in repository" />
-        <option name="mySupportsDeletion" value="true" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="UNKNOWN" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally added" />
-        <option name="myStatusName" value="Locally added" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_ADDED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally removed" />
-        <option name="myStatusName" value="Locally removed" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_REMOVED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Switched" />
-        <option name="myStatusName" value="Switched" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SWITCHED" />
-      </FILE-GROUP>
-    </UpdatedFiles>
   </component>
   <component name="RunManager" selected="JavaScript Debug.index.html (1)">
     <configuration default="false" name="index.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/CallABike/index.php">
@@ -706,6 +674,7 @@
       <workItem from="1481733066166" duration="3336000" />
       <workItem from="1481793496377" duration="8234000" />
       <workItem from="1481806651928" duration="1641000" />
+      <workItem from="1482398749538" duration="136000" />
     </task>
     <task id="LOCAL-00001" summary="milestone 3">
       <created>1481707614819</created>
@@ -756,33 +725,40 @@
       <option name="project" value="LOCAL" />
       <updated>1481808265246</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="milestone 3">
+      <created>1482398790095</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1482398790095</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56772000" />
+    <option name="totallyTimeSpent" value="56908000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="960" y="0" width="960" height="1040" extended-state="0" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24894068" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2484375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23093449" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23055296" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -924,14 +900,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1496">
           <caret line="88" column="0" lean-forward="false" selection-start-line="88" selection-start-column="0" selection-end-line="99" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/milestone3/preprocess-node/go.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -967,23 +935,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/milestone3/bower_components/angular-nvd3/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/milestone3/bower_components/angular-nvd3/package.json" />
     <entry file="file://$PROJECT_DIR$/milestone3/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -991,7 +950,44 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1482398730680" expanded="true" signature="34:109" ph="[...]" />
+            <marker date="1482398730680" expanded="true" signature="113:750" ph="[...]" />
+            <marker date="1482398730680" expanded="true" signature="145:749" ph="{...}" />
+            <marker date="1482398730680" expanded="true" signature="285:660" ph="{...}" />
+            <marker date="1482398730680" expanded="true" signature="400:628" ph="{...}" />
+            <marker date="1482398730680" expanded="true" signature="479:583" ph="{...}" />
+            <marker date="1482398730680" expanded="true" signature="807:2695" ph="{...}" />
+            <marker date="1482398730680" expanded="true" signature="846:987" ph="{&quot;url&quot;: '/login'...}" />
+            <marker date="1482398730680" expanded="true" signature="1007:1236" ph="{...}" />
+            <marker date="1482398730680" expanded="true" signature="1022:1229" ph="{...}" />
+            <marker date="1482398730680" expanded="true" signature="1267:1490" ph="{&quot;url&quot;: '/milestones'...}" />
+            <marker date="1482398730680" expanded="true" signature="1306:1452" ph="{...}" />
+            <marker date="1482398730680" expanded="true" signature="1335:1444" ph="{&quot;templateUrl&quot;: 'modules/milestones/milestones.html'...}" />
+            <marker date="1482398730680" expanded="true" signature="1520:1743" ph="{&quot;url&quot;: '/bookingsTotal'...}" />
+            <marker date="1482398730680" expanded="true" signature="1562:1705" ph="{...}" />
+            <marker date="1482398730680" expanded="true" signature="1591:1697" ph="{&quot;templateUrl&quot;: 'modules/dashboard/dashboard.html'...}" />
+            <marker date="1482398730680" expanded="true" signature="1779:2010" ph="{&quot;url&quot;: '/bookingsPerCity'...}" />
+            <marker date="1482398730680" expanded="true" signature="1823:1972" ph="{...}" />
+            <marker date="1482398730680" expanded="true" signature="1852:1964" ph="{&quot;templateUrl&quot;: 'modules/bookingCity/bookingcity.html'...}" />
+            <marker date="1482398730680" expanded="true" signature="2042:2307" ph="{&quot;url&quot;: '/bookingsPerCity'...}" />
+            <marker date="1482398730680" expanded="true" signature="2094:2263" ph="{...}" />
+            <marker date="1482398730680" expanded="true" signature="2129:2251" ph="{&quot;templateUrl&quot;: 'modules/map/cityparts.html'...}" />
+            <marker date="1482398730680" expanded="true" signature="2333:2538" ph="{&quot;url&quot;: '/users'...}" />
+            <marker date="1482398730680" expanded="true" signature="2367:2500" ph="{...}" />
+            <marker date="1482398730680" expanded="true" signature="2396:2492" ph="{&quot;templateUrl&quot;: 'modules/users/userList.html'...}" />
+            <marker date="1482398730680" expanded="true" signature="2560:2650" ph="{&quot;url&quot;: '/logout'...}" />
+            <marker date="1482398730680" expanded="true" signature="2782:3645" ph="{...}" />
+            <marker date="1482398730680" expanded="true" signature="2869:3641" ph="{...}" />
+            <marker date="1482398730680" expanded="true" signature="2927:3388" ph="{...}" />
+            <marker date="1482398730680" expanded="true" signature="2964:3165" ph="{...}" />
+            <marker date="1482398730680" expanded="true" signature="3075:3155" ph="{...}" />
+            <marker date="1482398730680" expanded="true" signature="3176:3381" ph="{...}" />
+            <marker date="1482398730680" expanded="true" signature="3291:3371" ph="{...}" />
+            <marker date="1482398730680" expanded="true" signature="3397:3637" ph="{...}" />
+            <marker date="1482398730680" expanded="true" signature="3434:3630" ph="{...}" />
+            <marker date="1482398730680" expanded="true" signature="3540:3620" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1007,17 +1003,50 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="159" lean-forward="false" selection-start-line="12" selection-start-column="159" selection-end-line="12" selection-end-column="159" />
-          <folding />
+          <folding>
+            <marker date="1482398730688" expanded="true" signature="32:681" ph="[...]" />
+            <marker date="1482398730688" expanded="true" signature="74:680" ph="{...}" />
+            <marker date="1482398730688" expanded="true" signature="98:678" ph="[...]" />
+            <marker date="1482398730688" expanded="true" signature="104:192" ph="{&quot;goal&quot;: 'Getting the whole stack to run'...}" />
+            <marker date="1482398730688" expanded="true" signature="198:463" ph="{&quot;goal&quot;: 'Vertical Prototype: to keep the charts readable, we clusterd the cities by their total booking amount, you can interactively select subsets as well as single selections, on hover will show you the exact data'...}" />
+            <marker date="1482398730688" expanded="true" signature="469:673" ph="{&quot;goal&quot;: 'We prepared some multivariate data that we want to encode, the SQL statement to prepare the data can be found in the text file of the submission. '...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/milestone2/modules/dashboard/DashboardCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
+        <state relative-caret-position="1462">
           <caret line="86" column="37" lean-forward="false" selection-start-line="86" selection-start-column="37" selection-end-line="86" selection-end-column="37" />
           <folding>
-            <marker date="1481016278012" expanded="true" signature="1689:1716" ph="..." />
-            <marker date="1481016278012" expanded="true" signature="1957:1972" ph="..." />
+            <marker date="1482398730641" expanded="true" signature="31:2883" ph="[...]" />
+            <marker date="1482398730641" expanded="true" signature="100:2882" ph="{...}" />
+            <marker date="1482398730641" expanded="true" signature="121:237" ph="{&quot;value&quot;: &quot;Option1&quot;...}" />
+            <marker date="1482398730641" expanded="true" signature="243:262" ph="/*...*/" />
+            <marker date="1482398730641" expanded="true" signature="299:2388" ph="{...}" />
+            <marker date="1482398730641" expanded="true" signature="312:1217" ph="{&quot;type&quot;: 'lineWithFocusChart'...}" />
+            <marker date="1482398730641" expanded="true" signature="382:464" ph="{...}" />
+            <marker date="1482398730641" expanded="true" signature="537:698" ph="{&quot;axisLabel&quot;: 'X Axis'...}" />
+            <marker date="1482398730641" expanded="true" signature="628:690" ph="{...}" />
+            <marker date="1482398730641" expanded="true" signature="714:817" ph="{...}" />
+            <marker date="1482398730641" expanded="true" signature="747:809" ph="{...}" />
+            <marker date="1482398730641" expanded="true" signature="832:980" ph="{&quot;axisLabel&quot;: 'Bookings'...}" />
+            <marker date="1482398730641" expanded="true" signature="896:943" ph="{...}" />
+            <marker date="1482398730641" expanded="true" signature="996:1084" ph="{...}" />
+            <marker date="1482398730641" expanded="true" signature="1029:1076" ph="{...}" />
+            <marker date="1482398730641" expanded="true" signature="1101:1208" ph="{...}" />
+            <marker date="1482398730641" expanded="true" signature="1137:1200" ph="{...}" />
+            <marker date="1482398730641" expanded="true" signature="1230:1309" ph="{&quot;html&quot;: &quot;&lt;h5&gt;Call A Bike Bookings per day&lt;/h5&gt;&quot;...}" />
+            <marker date="1482398730641" expanded="true" signature="1325:1520" ph="{&quot;text&quot;: &quot;Available datasets ranges from 2014-01-01 to 2016-07-04&quot;...}" />
+            <marker date="1482398730641" expanded="true" signature="1435:1514" ph="{&quot;text-align&quot;: &quot;center&quot;...}" />
+            <marker date="1482398730641" expanded="true" signature="1535:2384" ph="{...}" />
+            <marker date="1482398730641" expanded="true" signature="2298:2378" ph="{&quot;text-align&quot;: &quot;justify&quot;...}" />
+            <marker date="1482398730641" expanded="true" signature="2426:2852" ph="{...}" />
+            <marker date="1482398730641" expanded="true" signature="2486:2845" ph="{...}" />
+            <marker date="1482398730641" expanded="true" signature="2558:2816" ph="[...]" />
+            <marker date="1482398730641" expanded="true" signature="2570:2816" ph="{&quot;key&quot;: 'Number of bookings daily'...}" />
+            <marker date="1482398730641" expanded="true" signature="2661:2816" ph="{...}" />
+            <marker date="1482398730641" expanded="true" signature="2684:2802" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1027,19 +1056,67 @@
         <state relative-caret-position="170">
           <caret line="111" column="0" lean-forward="false" selection-start-line="111" selection-start-column="0" selection-end-line="177" selection-end-column="5" />
           <folding>
-            <element signature="e#165#2729#0" expanded="false" />
-            <element signature="e#2769#3501#0" expanded="false" />
-            <element signature="e#3553#4755#0" expanded="false" />
-            <element signature="e#4782#5609#0" expanded="false" />
-            <marker date="1481807136549" expanded="true" signature="1960:1987" ph="..." />
-            <marker date="1481807136549" expanded="true" signature="2240:2255" ph="..." />
+            <marker date="1482398730639" expanded="true" signature="33:6545" ph="[...]" />
+            <marker date="1482398730639" expanded="true" signature="102:6544" ph="{...}" />
+            <marker date="1482398730639" expanded="true" signature="107:126" ph="/*...*/" />
+            <marker date="1482398730639" expanded="false" signature="165:2729" ph="{...}" />
+            <marker date="1482398730639" expanded="true" signature="182:1379" ph="{&quot;type&quot;: 'lineWithFocusChart'...}" />
+            <marker date="1482398730639" expanded="true" signature="270:390" ph="{...}" />
+            <marker date="1482398730639" expanded="true" signature="481:688" ph="{&quot;axisLabel&quot;: 'Date'...}" />
+            <marker date="1482398730639" expanded="true" signature="594:674" ph="{...}" />
+            <marker date="1482398730639" expanded="true" signature="710:845" ph="{...}" />
+            <marker date="1482398730639" expanded="true" signature="751:831" ph="{...}" />
+            <marker date="1482398730639" expanded="true" signature="866:1062" ph="{&quot;axisLabel&quot;: 'Bookings'...}" />
+            <marker date="1482398730639" expanded="true" signature="946:1011" ph="{...}" />
+            <marker date="1482398730639" expanded="true" signature="1084:1204" ph="{...}" />
+            <marker date="1482398730639" expanded="true" signature="1125:1190" ph="{...}" />
+            <marker date="1482398730639" expanded="true" signature="1227:1366" ph="{...}" />
+            <marker date="1482398730639" expanded="true" signature="1271:1352" ph="{...}" />
+            <marker date="1482398730639" expanded="true" signature="1396:1498" ph="{&quot;html&quot;: &quot;&lt;h5&gt;Call A Bike Bookings per city daily&lt;/h5&gt;&quot;...}" />
+            <marker date="1482398730639" expanded="true" signature="1518:1757" ph="{&quot;text&quot;: &quot;Available datasets ranges from 2014-01-01 to 2016-07-04&quot;...}" />
+            <marker date="1482398730639" expanded="true" signature="1646:1747" ph="{&quot;text-align&quot;: &quot;center&quot;...}" />
+            <marker date="1482398730639" expanded="true" signature="1776:2723" ph="{...}" />
+            <marker date="1482398730639" expanded="true" signature="2611:2713" ph="{&quot;text-align&quot;: &quot;justify&quot;...}" />
+            <marker date="1482398730639" expanded="false" signature="2769:3501" ph="{...}" />
+            <marker date="1482398730639" expanded="true" signature="2836:3492" ph="{...}" />
+            <marker date="1482398730639" expanded="true" signature="2952:3199" ph="{...}" />
+            <marker date="1482398730639" expanded="true" signature="2981:3181" ph="{&quot;key&quot;: d.city...}" />
+            <marker date="1482398730639" expanded="true" signature="3052:3159" ph="{&quot;x&quot;: d.day...}" />
+            <marker date="1482398730639" expanded="true" signature="3212:3482" ph="/*...*/" />
+            <marker date="1482398730639" expanded="false" signature="3553:4755" ph="{...}" />
+            <marker date="1482398730639" expanded="true" signature="3570:4352" ph="{&quot;type&quot;: 'multiBarHorizontalChart'...}" />
+            <marker date="1482398730639" expanded="true" signature="3664:3785" ph="{...}" />
+            <marker date="1482398730639" expanded="true" signature="4112:4161" ph="{...}" />
+            <marker date="1482398730639" expanded="true" signature="4182:4342" ph="{&quot;axisLabel&quot;: 'Values'...}" />
+            <marker date="1482398730639" expanded="true" signature="4260:4328" ph="{...}" />
+            <marker date="1482398730639" expanded="true" signature="4369:4478" ph="{&quot;html&quot;: &quot;&lt;h5&gt;Call A Bike Bookings and Stations per City&lt;/h5&gt;&quot;...}" />
+            <marker date="1482398730639" expanded="true" signature="4498:4748" ph="{&quot;text&quot;: &quot;Based on available datasets (ranges from 2014-01-01 to 2016-07-04)&quot;...}" />
+            <marker date="1482398730639" expanded="true" signature="4637:4738" ph="{&quot;text-align&quot;: &quot;center&quot;...}" />
+            <marker date="1482398730639" expanded="false" signature="4782:5609" ph="{...}" />
+            <marker date="1482398730639" expanded="true" signature="4850:5601" ph="{...}" />
+            <marker date="1482398730639" expanded="true" signature="4894:5210" ph="[...]" />
+            <marker date="1482398730639" expanded="true" signature="4916:5210" ph="{&quot;key&quot;: 'Bookings'...}" />
+            <marker date="1482398730639" expanded="true" signature="5015:5210" ph="{...}" />
+            <marker date="1482398730639" expanded="true" signature="5052:5184" ph="{&quot;label&quot;: d.city...}" />
+            <marker date="1482398730639" expanded="true" signature="5255:5572" ph="{...}" />
+            <marker date="1482398730639" expanded="true" signature="5354:5549" ph="{...}" />
+            <marker date="1482398730639" expanded="true" signature="5391:5523" ph="{&quot;label&quot;: d.city...}" />
+            <marker date="1482398730639" expanded="true" signature="5638:6525" ph="{...}" />
+            <marker date="1482398730639" expanded="true" signature="5706:6516" ph="{...}" />
+            <marker date="1482398730639" expanded="true" signature="5750:6066" ph="[...]" />
+            <marker date="1482398730639" expanded="true" signature="5772:6066" ph="{&quot;key&quot;: 'Bookings'...}" />
+            <marker date="1482398730639" expanded="true" signature="5871:6066" ph="{...}" />
+            <marker date="1482398730639" expanded="true" signature="5908:6040" ph="{&quot;label&quot;: d.city...}" />
+            <marker date="1482398730639" expanded="true" signature="6111:6428" ph="{...}" />
+            <marker date="1482398730639" expanded="true" signature="6210:6405" ph="{...}" />
+            <marker date="1482398730639" expanded="true" signature="6247:6379" ph="{&quot;label&quot;: d.city...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/milestone2/modules/dashboard/dashboard.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
+        <state relative-caret-position="357">
           <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="29" selection-end-column="8" />
           <folding />
         </state>
@@ -1055,7 +1132,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/milestone3/modules/bookingCity/bookingcity.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
+        <state relative-caret-position="646">
           <caret line="38" column="50" lean-forward="false" selection-start-line="38" selection-start-column="50" selection-end-line="38" selection-end-column="50" />
           <folding />
         </state>
@@ -1065,19 +1142,40 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="32" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="32" />
-          <folding />
+          <folding>
+            <marker date="1482398730688" expanded="true" signature="56:1000" ph="[...]" />
+            <marker date="1482398730688" expanded="true" signature="88:999" ph="{...}" />
+            <marker date="1482398730688" expanded="true" signature="101:996" ph="{...}" />
+            <marker date="1482398730688" expanded="true" signature="139:271" ph="{...}" />
+            <marker date="1482398730688" expanded="true" signature="216:260" ph="{...}" />
+            <marker date="1482398730688" expanded="true" signature="316:452" ph="{...}" />
+            <marker date="1482398730688" expanded="true" signature="397:441" ph="{...}" />
+            <marker date="1482398730688" expanded="true" signature="501:646" ph="{...}" />
+            <marker date="1482398730688" expanded="true" signature="591:635" ph="{...}" />
+            <marker date="1482398730688" expanded="true" signature="694:830" ph="{...}" />
+            <marker date="1482398730688" expanded="true" signature="775:819" ph="{...}" />
+            <marker date="1482398730688" expanded="true" signature="864:989" ph="{...}" />
+            <marker date="1482398730688" expanded="true" signature="934:978" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/milestone3/modules/bookingCity/bookingCity.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1502">
-          <caret line="184" column="39" lean-forward="false" selection-start-line="184" selection-start-column="39" selection-end-line="184" selection-end-column="39" />
+        <state relative-caret-position="1320">
+          <caret line="217" column="21" lean-forward="false" selection-start-line="217" selection-start-column="20" selection-end-line="217" selection-end-column="21" />
           <folding>
-            <element signature="e#3347#4294#0" expanded="false" />
-            <marker date="1481807746435" expanded="true" signature="3531:3558" ph="..." />
-            <marker date="1481807746435" expanded="true" signature="3811:3826" ph="..." />
+            <marker date="1482398730682" expanded="true" signature="3531:3558" ph="..." />
+            <marker date="1482398730682" expanded="true" signature="3811:3826" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/milestone3/preprocess-node/go.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="6" lean-forward="false" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
